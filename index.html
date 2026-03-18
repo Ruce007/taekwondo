@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Taekwondo – History, Founders, and Practice | tkd.wiki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A professionally structured Taekwondo reference covering history, kwan founders, major organizations, technical practice, and notable modern masters." />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --fg: #111827;
+      --muted: #6b7280;
+      --accent: #1d4ed8;
+      --accent-soft: #e0ebff;
+      --border: #e5e7eb;
+      --card: #ffffff;
+      --table-header: #f3f4ff;
+      --code-bg: #111827;
+      --code-fg: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header.site-header {
+      background: #020617;
+      color: #e5e7eb;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid #020617;
+    }
+
+    .site-header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background:
+        radial-gradient(circle at 30% 30%, #ffffff 0, #ffffff 30%, #ef4444 31%, #ef4444 60%, #020617 61%, #020617 100%);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #0f172a;
+    }
+
+    .logo-mark::before,
+    .logo-mark::after {
+      content: "";
+      position: absolute;
+      inset: 50% 18%;
+      border-radius: 999px;
+      border: 2px solid #e5e7eb;
+      transform: translateY(-50%) rotate(90deg);
+    }
+
+    .logo-mark::after {
+      inset: 18% 50%;
+      transform: translateX(-50%) rotate(0deg);
+    }
+
+    .brand-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .brand-subtitle {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    nav.top-nav {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+
+    nav.top-nav a {
+      color: #e5e7eb;
+      opacity: 0.85;
+    }
+
+    nav.top-nav a:hover {
+      opacity: 1;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem 2.5rem;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(260px, 1.2fr);
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+    }
+
+    .intro-card {
+      grid-column: 1 / -1;
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .intro-card h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .intro-meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    nav.toc {
+      grid-column: 1 / -1;
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 1rem 1.25rem;
+      margin-top: 0.5rem;
+    }
+
+    nav.toc h2 {
+      margin-top: 0;
+      font-size: 1.05rem;
+    }
+
+    nav.toc ul {
+      margin: 0.25rem 0 0;
+      padding-left: 1.25rem;
+      columns: 2;
+      column-gap: 2rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      nav.toc ul { columns: 1; }
+    }
+
+    nav.toc li { margin: 0.15rem 0; }
+
+    article {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+    }
+
+    article h2 {
+      margin-top: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.25rem;
+      font-size: 1.35rem;
+    }
+
+    article h3 {
+      margin-top: 1.1rem;
+      font-size: 1.1rem;
+    }
+
+    article p { margin: 0.5rem 0; }
+
+    article ul,
+    article ol {
+      margin: 0.4rem 0 0.6rem 1.25rem;
+    }
+
+    .note-box {
+      background: #fefce8;
+      border-left: 4px solid #facc15;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+      font-size: 0.95rem;
+    }
+
+    .subtle {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    table.standard {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.5rem 0 1rem;
+      font-size: 0.95rem;
+    }
+
+    table.standard th,
+    table.standard td {
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    table.standard th {
+      background: var(--table-header);
+    }
+
+    aside.infobox {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 1rem 1.25rem;
+      align-self: flex-start;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 1rem;
+    }
+
+    @media (max-width: 900px) {
+      aside.infobox { position: static; }
+    }
+
+    .infobox h2 {
+      margin-top: 0;
+      font-size: 1.05rem;
+      text-align: center;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.1rem 0.45rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .infobox table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.5rem;
+    }
+
+    .infobox th,
+    .infobox td {
+      padding: 0.25rem 0;
+      vertical-align: top;
+    }
+
+    .infobox th {
+      text-align: left;
+      width: 40%;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .infobox tr + tr {
+      border-top: 1px solid #e5e7eb;
+    }
+
+    footer.site-footer {
+      max-width: 1120px;
+      margin: 0 auto 2rem;
+      padding: 0 1.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer.site-footer p { margin: 0.25rem 0; }
+
+    code {
+      background: var(--code-bg);
+      color: var(--code-fg);
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <div>
+          <div class="brand-title">tkd.wiki</div>
+          <div class="brand-subtitle">Taekwondo history &amp; reference library</div>
+        </div>
+      </div>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#history">History</a>
+        <a href="#founders">Founders</a>
+        <a href="#organizations">Organizations</a>
+        <a href="#kang">Il‑Do Taekwondo</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro-card">
+      <h1>Taekwondo</h1>
+      <p>
+        Taekwondo is a Korean martial art and combat sport emphasizing dynamic kicking techniques, disciplined training,
+        and a codified ethical philosophy. It is practiced worldwide in many styles and organizational frameworks.
+      </p>
+      <p class="intro-meta">
+        This page is structured as a public educational reference. It presents documented, verifiable information and
+        avoids speculative or unsupported historical claims.
+      </p>
+    </section>
+
+    <nav class="toc" aria-label="Table of contents">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#etymology">Etymology</a></li>
+        <li><a href="#history">Historical development</a></li>
+        <li><a href="#founders">Founders, kwans, and early leaders</a></li>
+        <li><a href="#organizations">Major organizations</a></li>
+        <li><a href="#kang">Grandmaster Chang Jin Kang &amp; Il‑Do Taekwondo</a></li>
+        <li><a href="#practice">Characteristics and practice</a></li>
+        <li><a href="#ranks">Ranks and belt system</a></li>
+        <li><a href="#olympics">Taekwondo in the Olympic Games</a></li>
+        <li><a href="#safety">Safety and protective equipment</a></li>
+        <li><a href="#sources">Sources &amp; further reading</a></li>
+      </ul>
+    </nav>
+
+    <article>
+
+      <!-- Etymology -->
+      <section id="etymology">
+        <h2>Etymology</h2>
+        <p>
+          The word <strong>Taekwondo</strong> (Korean: 태권도) is commonly analyzed as:
+        </p>
+        <ul>
+          <li><strong>Tae</strong> (태): “foot” or “to strike with the foot”</li>
+          <li><strong>Kwon</strong> (권): “fist” or “to strike with the hand”</li>
+          <li><strong>Do</strong> (도): “way”, “path”, or “discipline”</li>
+        </ul>
+        <p>
+          Taekwondo is therefore often translated as “the way of the foot and fist,” reflecting both physical technique
+          and a guiding way of life.
+        </p>
+      </section>
+
+      <!-- History -->
+      <section id="history">
+        <h2>Historical development</h2>
+
+        <div class="note-box">
+          Modern Taekwondo did not arise from a single universally recognized “founder.” It developed through multiple
+          schools (<em>kwans</em>) and organizations. This section summarizes widely documented historical developments.
+        </div>
+
+        <h3>1. Ancient Korean martial traditions</h3>
+        <p>
+          Pre‑modern Korea had various indigenous martial practices, including systems such as <em>subak</em> and
+          <em>taekkyon</em>. These arts are referenced in historical texts and artwork and are often cited as part of the
+          cultural background from which modern Korean striking arts later emerged.
+        </p>
+
+        <h3>2. Japanese occupation (1910–1945)</h3>
+        <p>
+          During Japanese colonial rule, Korean cultural expression—including martial arts—was restricted. Many Koreans
+          who later became influential martial arts teachers studied Japanese karate or other systems, shaping the
+          technical base of the post‑liberation kwans.
+        </p>
+
+        <h3>3. Post‑liberation kwan formation (1944–1955)</h3>
+        <p>
+          After 1945, several martial arts schools known as <strong>kwans</strong> were founded. These blended karate,
+          Chinese martial arts, and Korean traditions. Key early kwans include:
+        </p>
+
+        <table class="standard">
+          <thead>
+            <tr>
+              <th>Kwan</th>
+              <th>Founder</th>
+              <th>Approx. founding date</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chung Do Kwan</td>
+              <td>Lee Won‑kuk (1907–2003)</td>
+              <td>c. 1944</td>
+              <td>One of the earliest kwans; major influence on later Taekwondo leaders.</td>
+            </tr>
+            <tr>
+              <td>Moo Duk Kwan</td>
+              <td>Hwang Kee (1914–2002)</td>
+              <td>1945</td>
+              <td>Associated with Tang Soo Do / Soo Bahk Do; intersected with Taekwondo unification efforts.</td>
+            </tr>
+            <tr>
+              <td>Song Moo Kwan</td>
+              <td>Ro Byung‑jick (1919–2015)</td>
+              <td>1945</td>
+              <td>Karate‑influenced kwan contributing to early Korean striking arts.</td>
+            </tr>
+            <tr>
+              <td>Chang Moo Kwan</td>
+              <td>Yun Byung‑in (1920–c. 1950s)</td>
+              <td>mid‑1940s</td>
+              <td>Integrated Chinese Chuan‑fa influences.</td>
+            </tr>
+            <tr>
+              <td>Jidokwan</td>
+              <td>Early leaders incl. Chun Sang‑sup</td>
+              <td>1940s</td>
+              <td>Developed from judo/karate background; later recognized as a principal kwan.</td>
+            </tr>
+            <tr>
+              <td>Oh Do Kwan</td>
+              <td>Choi Hong‑hi &amp; Nam Tae‑hi</td>
+              <td>1950s</td>
+              <td>Military‑oriented kwan; closely tied to ITF development.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>4. Naming and early unification (1955–1960s)</h3>
+        <p>
+          In 1955, a committee of martial arts leaders adopted the name <strong>Taekwondo</strong> for a unified Korean
+          martial art. General Choi Hong‑hi strongly promoted the term, though unification remained incomplete and
+          contested among kwans.
+        </p>
+
+        <h3>5. Organizational divergence (1960s–1970s)</h3>
+        <p>
+          In 1966, General Choi founded the <strong>International Taekwon‑Do Federation (ITF)</strong>. In 1973, the
+          <strong>World Taekwondo Federation</strong> (now <strong>World Taekwondo</strong>, WT) was established in
+          Seoul. These organizations developed distinct technical emphases, patterns, and competition rules.
+        </p>
+
+        <h3>6. Global expansion (1970s–present)</h3>
+        <p>
+          Taekwondo spread worldwide through demonstration teams, military instructors, immigration, and organized
+          federations. It is now practiced in more than 200 countries and is one of the most widely practiced martial
+          arts globally.
+        </p>
+      </section>
+
+      <!-- Founders -->
+      <section id="founders">
+        <h2>Founders, kwans, and early leaders</h2>
+        <p>
+          Because Taekwondo developed through multiple kwans and organizations, there is <strong>no single universally
+          accepted list of “founders.”</strong> Instead, historians highlight key kwan founders and early leaders whose
+          work shaped modern Taekwondo.
+        </p>
+
+        <h3>Key contributors</h3>
+        <ul>
+          <li><strong>Lee Won‑kuk (Chung Do Kwan):</strong> Early Korean karate/kwan leader; many Taekwondo masters trace lineage through his school.</li>
+          <li><strong>Hwang Kee (Moo Duk Kwan):</strong> Founder of Moo Duk Kwan, associated with Tang Soo Do and Soo Bahk Do; highly influential in Korean martial arts.</li>
+          <li><strong>Ro Byung‑jick (Song Moo Kwan):</strong> Founder of Song Moo Kwan; contributed to the technical base of modern Taekwondo.</li>
+          <li><strong>Yun Byung‑in (Chang Moo Kwan):</strong> Integrated Chinese and Japanese influences; his students helped carry forward Chang Moo Kwan traditions.</li>
+          <li><strong>Choi Hong‑hi (Oh Do Kwan, ITF founder):</strong> Central figure in naming and systematizing Taekwon‑Do within the ITF framework.</li>
+          <li><strong>Nam Tae‑hi (Oh Do Kwan):</strong> Influential military instructor and demonstrator who helped popularize Taekwondo domestically and internationally.</li>
+        </ul>
+        <p>
+          Different organizations and lineages may emphasize some of these figures more than others. This page presents
+          them as historically documented contributors rather than as an exclusive or exhaustive list.
+        </p>
+      </section>
+
+      <!-- Organizations -->
+      <section id="organizations">
+        <h2>Major organizations</h2>
+        <ul>
+          <li><strong>World Taekwondo (WT):</strong> Headquartered in South Korea; recognized by the International Olympic Committee (IOC) as the governing body for Olympic‑style Taekwondo. Emphasizes full‑contact sport sparring with electronic scoring.</li>
+          <li><strong>International Taekwon‑Do Federation (ITF):</strong> Founded in 1966 by General Choi Hong‑hi; uses its own patterns, terminology, and semi‑contact competition rules. Multiple groups now claim ITF heritage.</li>
+          <li><strong>National federations and independent bodies:</strong> Many countries maintain national Taekwondo associations affiliated with WT, ITF, or independent lineages, overseeing instructor certification, rank promotion, and competition.</li>
+        </ul>
+      </section>
+
+      <!-- Grandmaster Chang Jin Kang & Il-Do Taekwondo -->
+      <section id="kang">
+        <h2>Grandmaster Chang Jin Kang &amp; Il‑Do Taekwondo</h2>
+        <p>
+          <strong>Grandmaster Chang Jin Kang</strong> is the founder and head instructor of <strong>Il‑Do Taekwondo</strong>, a traditional Taekwondo organization established in <strong>Orange County, California, in 1980</strong>. The name <strong>“Il‑Do”</strong> translates to <strong>“One Way,”</strong> reflecting the school’s emphasis on consistency, discipline, and character development through traditional martial arts training.
+          <span class="subtle">(Source: ildotkd.com)</span>
+        </p>
+        <p>
+          Grandmaster Kang holds the rank of <strong>9th Degree Black Belt</strong> and has devoted more than half a century to the practice, instruction, and promotion of Taekwondo. His career includes competitive achievements in Korea, service in the <strong>Republic of Korea Army</strong>, and leadership roles in national and international Taekwondo exhibitions and events.
+          <span class="subtle">(Source: ildotkd.com)</span>
+        </p>
+        <p>
+          In the United States, Grandmaster Kang has been instrumental in expanding access to traditional Taekwondo education. In addition to founding and operating Il‑Do Taekwondo schools, he helped establish one of the first <strong>bachelor’s degree programs in Taekwondo</strong> at <strong>Concordia University in Irvine</strong>, making it the first such academic program offered outside of Korea.
+          <span class="subtle">(Source: ildotkd.com)</span>
+        </p>
+        <p>
+          Through Il‑Do Taekwondo, Grandmaster Kang emphasizes the core values of <strong>courtesy, integrity, perseverance, self‑control, and indomitable spirit</strong>. Under his leadership, the organization has trained thousands of students and has been actively involved in community outreach, youth programs, charity events, and cultural exchanges for more than four decades.
+          <span class="subtle">(Sources: ildotkd.com)</span>
+        </p>
+      </section>
+
+      <!-- Practice -->
+      <section id="practice">
+        <h2>Characteristics and practice</h2>
+        <p>
+          Taekwondo is primarily a striking art, with a strong emphasis on kicking techniques delivered from a mobile
+          stance. While hand strikes and blocks are important, high, spinning, and jumping kicks are especially
+          characteristic of the art.
+        </p>
+
+        <h3>Technical elements</h3>
+        <ul>
+          <li><strong>Kicks:</strong> front kick, roundhouse kick, side kick, back kick, axe kick, spinning hook kick, and various jumping and turning kicks.</li>
+          <li><strong>Hand techniques:</strong> straight punches, knife‑hand strikes, ridge‑hand strikes, backfists, and palm‑heel strikes.</li>
+          <li><strong>Blocks:</strong> low, middle, and high blocks, inward and outward blocks, and specialized deflections.</li>
+          <li><strong>Stances:</strong> walking stance, front stance, back stance, sitting stance, and sparring stance, each optimized for balance and power.</li>
+        </ul>
+
+        <h3>Patterns and forms</h3>
+        <p>
+          Taekwondo uses pre‑arranged sequences of techniques known as <strong>patterns</strong> or <strong>forms</strong> (called <em>tuls</em>, <em>poomsae</em>, or <em>hyung</em>, depending on the style). These forms encode fundamental movements, principles of power generation, and tactical ideas, and they serve as a key method of technical and mental training.
+        </p>
+
+        <h3>Sparring</h3>
+        <p>
+          Sparring (<em>matsogi</em> or <em>kyorugi</em>) is a core component of Taekwondo training. In WT‑style sport sparring, competitors typically wear electronic chest protectors and headgear, and points are awarded for valid kicks and punches to scoring areas. ITF‑style sparring is usually light‑to‑medium contact with a different scoring emphasis and protective equipment.
+        </p>
+      </section>
+
+      <!-- Ranks -->
+      <section id="ranks">
+        <h2>Ranks and belt system</h2>
+        <p>
+          Taekwondo uses a colored belt system to indicate a practitioner’s level of progress. While specific colors and
+          sequences vary by organization and school, most systems distinguish between <strong>gup</strong> (or
+          <strong>kup</strong>) grades for color belts and <strong>dan</strong> grades for black belts.
+        </p>
+
+        <table class="standard" aria-label="Typical Taekwondo belt progression">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Typical belt colors (example)</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Beginner gup grades</td>
+              <td>White, yellow, orange</td>
+              <td>Fundamental stances, basic kicks and blocks, introductory forms.</td>
+            </tr>
+            <tr>
+              <td>Intermediate gup grades</td>
+              <td>Green, blue</td>
+              <td>More complex combinations, higher kicks, intermediate forms.</td>
+            </tr>
+            <tr>
+              <td>Advanced gup grades</td>
+              <td>Brown, red (and stripes)</td>
+              <td>Advanced techniques, tactical sparring, preparation for black belt.</td>
+            </tr>
+            <tr>
+              <td>Dan grades</td>
+              <td>Black belt (1st dan and above)</td>
+              <td>Indicates a serious, long‑term practitioner; ranks may extend to 9th dan or higher, depending on the organization.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Olympics -->
+      <section id="olympics">
+        <h2>Taekwondo in the Olympic Games</h2>
+        <p>
+          Taekwondo was first included as a demonstration sport at the 1988 Seoul Olympic Games and again in 1992. It
+          became an official medal sport at the <strong>2000 Sydney Olympics</strong> and has remained on the Olympic
+          program since then. Olympic Taekwondo uses the WT ruleset, with weight classes for men and women and a strong
+          emphasis on dynamic kicking techniques to the head and torso.
+        </p>
+      </section>
+
+      <!-- Safety -->
+      <section id="safety">
+        <h2>Safety and protective equipment</h2>
+        <p>
+          Modern Taekwondo training and competition make extensive use of protective equipment to reduce the risk of
+          injury, particularly in full‑contact sparring.
+        </p>
+        <ul>
+          <li><strong>Hogu:</strong> chest protector covering the torso.</li>
+          <li><strong>Headgear:</strong> foam or padded helmet protecting the head and sides of the face.</li>
+          <li><strong>Forearm and shin guards:</strong> padding for limbs that frequently block or deliver kicks.</li>
+          <li><strong>Groin and mouth guards:</strong> standard protective gear in contact sports.</li>
+          <li><strong>Optional padding:</strong> instep guards, hand protectors, and other equipment depending on rules and level.</li>
+        </ul>
+      </section>
+
+      <!-- Sources -->
+      <section id="sources">
+        <h2>Sources &amp; further reading</h2>
+        <p class="subtle">
+          The following works and organizations are commonly consulted in studies of Taekwondo history and development.
+          This list is not exhaustive and may be expanded as tkd.wiki grows.
+        </p>
+        <ul>
+          <li><strong>Kukkiwon</strong> (World Taekwondo Headquarters) publications and historical summaries.</li>
+          <li><strong>World Taekwondo (WT)</strong> official rules, history, and organizational materials.</li>
+          <li><strong>International Taekwon‑Do Federation (ITF)</strong> historical materials and official manuals.</li>
+          <li><strong>Kang Won Sik &amp; Lee Kyong Myong</strong>, <em>A Modern History of Taekwondo</em> (Kido Kwan Martial Arts Research Institute).</li>
+          <li>National Taekwondo federations’ official histories and archival documents.</li>
+          <li>Academic articles and books on Korean martial arts history and the development of modern Taekwondo.</li>
+          <li><strong>Il‑Do Taekwondo (ildotkd.com)</strong> – biographical and organizational information on Grandmaster Chang Jin Kang and Il‑Do Taekwondo.</li>
+        </ul>
+      </section>
+    </article>
+
+    <aside class="infobox" aria-label="Taekwondo summary infobox">
+      <h2>Taekwondo</h2>
+      <p class="tag">Martial art &amp; combat sport</p>
+      <table>
+        <tr>
+          <th>Country of origin</th>
+          <td>Korea</td>
+        </tr>
+        <tr>
+          <th>Primary focus</th>
+          <td>Striking, especially kicking</td>
+        </tr>
+        <tr>
+          <th>Historical roots</th>
+          <td>Early Korean martial traditions, Japanese karate, Chinese martial arts</td>
+        </tr>
+        <tr>
+          <th>Modern era</th>
+          <td>Post‑1945, with kwan formation and unification efforts in the 1950s</td>
+        </tr>
+        <tr>
+          <th>Key structures</th>
+          <td>Kwans, national federations, international bodies (WT, ITF, others)</td>
+        </tr>
+        <tr>
+          <th>Olympic status</th>
+          <td>Official medal sport since Sydney 2000 (WT rules)</td>
+        </tr>
+        <tr>
+          <th>Typical attire</th>
+          <td><em>Dobok</em> (uniform) with colored belt indicating rank</td>
+        </tr>
+        <tr>
+          <th>Training area</th>
+          <td><em>Dojang</em> (training hall)</td>
+        </tr>
+      </table>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      tkd.wiki aims to provide a clear, sourced, and evolving reference on Taekwondo history and practice. Content is
+      intentionally conservative about claims that cannot be independently verified.
+    </p>
+    <p>
+      This page may be updated as new primary sources, archival materials, and scholarly research become available.
+    </p>
+  </footer>
+</body>
+</html>
