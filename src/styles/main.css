@@ -436,6 +436,44 @@ tbody th {
   }
 }
 
+/* ---------- desktop: locked header and side column ---------- */
+@media (min-width: 52rem) {
+  :root {
+    --header-h: 7.75rem;
+  }
+  html {
+    scroll-padding-top: calc(var(--header-h) + 1rem);
+  }
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+}
+@media (min-width: 70rem) {
+  .entry-body {
+    display: grid;
+    grid-template-columns: minmax(0, var(--measure)) 19rem;
+    column-gap: 2.5rem;
+    align-items: start;
+  }
+  .entry-body > .toc,
+  .entry-body > .prose {
+    grid-column: 1;
+  }
+  .entry-body > .infobox {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    float: none;
+    width: auto;
+    margin: 0;
+    position: sticky;
+    top: calc(var(--header-h) + 1rem);
+    max-height: calc(100vh - var(--header-h) - 2rem);
+    overflow-y: auto;
+  }
+}
+
 /* ---------- lists & cards ---------- */
 .card-list {
   list-style: none;

@@ -238,11 +238,6 @@ export function homePage(ctx, { pages, featured }) {
   const body = `<section class="hero" aria-labelledby="hero-title">
   <h1 id="hero-title">${esc(site.tagline)}</h1>
   <p class="lede">${esc(site.description)}</p>
-  <form class="hero-search" role="search" action="/search/" method="get">
-    <label for="hero-q" class="visually-hidden">Search the wiki</label>
-    <input id="hero-q" name="q" type="search" placeholder="Try &ldquo;Song Moo Kwan&rdquo; or &ldquo;Kukkiwon&rdquo;" autocomplete="off">
-    <button type="submit">Search</button>
-  </form>
 </section>
 ${
   featured.length
