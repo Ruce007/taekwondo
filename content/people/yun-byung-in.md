@@ -18,7 +18,7 @@ Yun Byung-in founded a Kwon Bup club at the YMCA in 1946. After he disappeared, 
 
 ## Background
 
-According to Wikipedia, Yun had trained in Shudokan karate under Kanken Toyama and is said to have studied ch'uan-fa in Manchuria. He was a close associate of [[Chun Sang-sup]].[^2]
+Yun had trained in Shudokan karate under Kanken Toyama and is said to have studied ch'uan-fa in Manchuria. He was a close associate of [[Chun Sang-sup]].[^2]
 
 ## What happened to him
 
@@ -27,4 +27,3 @@ Sources disagree:
 - One account says he went missing during the Korean War.[^1]
 - A footnote in another article says he defected to North Korea with his elder brother, a North Korean army officer, and died of lung cancer on 3 April 1983 in Chongjin.[^2]
 
-This site does not choose between them until better sources are found. His birth year is not verified and is not given here.

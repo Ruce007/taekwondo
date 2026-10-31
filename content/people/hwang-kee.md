@@ -20,7 +20,7 @@ Hwang Kee was born on 9 November 1914 in Jang Dan, Gyeonggi Province, Korea, and
 
 ## Influences
 
-Wikipedia lists several: taekkyon, studied while at school; Chinese martial arts, including a claim that he learned Kuk Sool under Yang Kuk Jin in China, which some of his peers doubt; Okinawan karate, learned partly from library books; and Shotokan, from which many of the original forms and techniques derive.[^1]
+He drew on several: taekkyon, studied while at school; Chinese martial arts, including a claim that he learned Kuk Sool under Yang Kuk Jin in China, which some of his peers doubt; Okinawan karate, learned partly from library books; and Shotokan, from which many of the original forms and techniques derive.[^1]
 
 ## Names of the art
 

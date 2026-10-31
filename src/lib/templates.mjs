@@ -124,9 +124,10 @@ function toc(headings) {
 
 export function entryPage(ctx, page, r) {
   const st = statuses[page.status];
+  const statusNote = (page.fm && page.fm.statusNote) || st.note;
   const banner =
-    page.status !== 'reviewed' && st.note
-      ? `<aside class="notice" aria-label="Review status"><p><strong>${esc(st.label)}.</strong> ${esc(st.note)} <a href="/editorial-policy/">How we review</a>.</p></aside>`
+    page.status !== 'reviewed' && statusNote
+      ? `<aside class="notice" aria-label="Review status"><p><strong>${esc(st.label)}.</strong> ${esc(statusNote)} <a href="/editorial-policy/">How we review</a>.</p></aside>`
       : '';
   const infobox = r.infobox.length
     ? `<aside class="infobox" aria-labelledby="infobox-title"><h2 id="infobox-title">Quick facts</h2><dl>${r.infobox

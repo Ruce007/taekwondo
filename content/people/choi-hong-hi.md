@@ -26,4 +26,4 @@ His organization named the art Taekwon-Do on 11 April 1955.[^1] The ITF calls hi
 
 ## Exile
 
-Wikipedia says that in 1972 he went into exile in Canada after the South Korean government refused to let his organization teach Taekwondo in North Korea.[^1] After the ITF's headquarters moved to Vienna, he led it until his death in 2002; the federation then divided into separate groups.[^3]
+In 1972 he went into exile in Canada after the South Korean government refused to let his organization teach Taekwondo in North Korea.[^1] After the ITF's headquarters moved to Vienna, he led it until his death in 2002; the federation then divided into separate groups.[^3]

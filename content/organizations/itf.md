@@ -18,7 +18,7 @@ sources:
   - Wikipedia, "International Taekwon-Do Federation" | https://en.wikipedia.org/wiki/International_Taekwon-Do_Federation
   - International Taekwon-Do Federation, "Our history" | https://itftkd.sport/history/our-history/
 ---
-The International Taekwon-Do Federation (ITF) was founded on 22 March 1966 in Seoul by [[Choi Hong-hi]].[^1][^2] The ITF's own history says it was formed with associations from nine countries, including Korea, the United States and West Germany.[^2]
+The International Taekwon-Do Federation (ITF) was founded on 22 March 1966 in Seoul by [[Choi Hong-hi]].[^1][^2] It was formed with associations from nine countries, including Korea, the United States and West Germany.[^2]
 
 ## Headquarters
 
@@ -30,7 +30,7 @@ The official ITF syllabus has 24 patterns (tul).[^1]
 
 ## Divisions after 2001
 
-A 2001 congress chose Choi Jung-hwa as successor. In 2002 Choi Hong-hi rescinded that decision and, after his death later that year, the federation divided. Wikipedia describes three groups, commonly called ITF-Vienna, ITF-Poland and ITF-UK, and notes that Austrian courts awarded the Vienna headquarters to one of them.[^1] Because several groups use the same name, check which one a school or event belongs to.
+A 2001 congress chose Choi Jung-hwa as successor. In 2002 Choi Hong-hi rescinded that decision and, after his death later that year, the federation divided. Three groups are commonly called ITF-Vienna, ITF-Poland and ITF-UK, and Austrian courts awarded the Vienna headquarters to one of them.[^1] Because several groups use the same name, check which one a school or event belongs to.
 
 ## Relationship to World Taekwondo
 

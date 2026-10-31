@@ -10,14 +10,14 @@ founded: 1944
 founders: Lee Won-kuk
 infobox:
   - Founder: [[Lee Won-kuk]]
-  - Founded: September 1944 (as given in one source; c. 1944 in another)
+  - Founded: September 1944
   - Headquarters: Seoul, South Korea
 related: [people/lee-won-kuk, kwans/song-moo-kwan, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Chung Do Kwan" | https://en.wikipedia.org/wiki/Chung_Do_Kwan
   - Wikipedia, "Kwan (martial arts)" | https://en.wikipedia.org/wiki/Kwan_(martial_arts)
 ---
-The Chung Do Kwan was founded by [[Lee Won-kuk]] in Korea in 1944. One source lists September 1944; another gives c. 1944.[^1][^2]
+The Chung Do Kwan was founded by [[Lee Won-kuk]] in Korea in September 1944.[^1][^2]
 
 ## Leaders and students
 
@@ -25,7 +25,7 @@ Son Duk-sung became head of the kwan, and Uhm Woon-kyu succeeded him in 1959. Yo
 
 ## Role in the name and unification
 
-The Chung Do Kwan was one of the nine original kwans that formed the basis of the Korea Taekwondo Association and the [[Kukkiwon]]. Wikipedia says Choi Hong-hi proposed the name Taekwondo in 1955 and that the Chung Do Kwan and [[Oh Do Kwan]] adopted it at his direction.[^1] See [[History of Taekwondo]] for the different accounts of the naming.
+The Chung Do Kwan was one of the nine original kwans that formed the basis of the Korea Taekwondo Association and the [[Kukkiwon]]. Choi Hong-hi proposed the name Taekwondo in 1955, and the Chung Do Kwan and [[Oh Do Kwan]] adopted it at his direction.[^1] See [[History of Taekwondo]] for the different accounts of the naming.
 
 ## Today
 

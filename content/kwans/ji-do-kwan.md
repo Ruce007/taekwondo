@@ -22,7 +22,7 @@ The Ji Do Kwan began as a Kong Soo Do club founded by [[Chun Sang-sup]] on 3 Mar
 
 ## The Yun Moo Kwan
 
-Chun taught karate in the Kwon Bup section of the Chosun Yun Moo Kwan, which Wikipedia says was one of the few martial arts schools the Japanese occupying forces allowed to stay open.[^2] The school's name appears as Yun Moo Kwan and Yun Mu Kwan.
+Chun taught karate in the Kwon Bup section of the Chosun Yun Moo Kwan, which was one of the few martial arts schools the Japanese occupying forces allowed to stay open.[^2] The school's name appears as Yun Moo Kwan and Yun Mu Kwan.
 
 ## After the war
 
@@ -30,4 +30,4 @@ After the Korean War the school was restarted under new teachers and the name Ji
 
 ## Today
 
-The Ji Do Kwan was absorbed into the unified Korean Taekwondo system. Wikipedia says it operates in Korea today as a social fraternal order that endorses the Kukkiwon method and supports World Taekwondo.[^2]
+The Ji Do Kwan was absorbed into the unified Korean Taekwondo system. It operates in Korea today as a social fraternal order that endorses the Kukkiwon method and supports World Taekwondo.[^2]

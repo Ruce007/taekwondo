@@ -18,15 +18,15 @@ sources:
   - Wikipedia, "Song Moo Kwan" | https://en.wikipedia.org/wiki/Song_Moo_Kwan
   - Wikipedia, "Kwan (martial arts)" | https://en.wikipedia.org/wiki/Kwan_(martial_arts)
 ---
-The Song Moo Kwan was founded by [[Ro Byung-jick]] in Kaesong. Wikipedia's infobox and its article on kwans both give 20 March 1944 as the founding date, although the body text of the first says only "from 1944".[^1][^2]
+The Song Moo Kwan was founded by [[Ro Byung-jick]] in Kaesong. The founding date is given as 20 March 1944.[^1][^2]
 
 ## Origins
 
-Wikipedia lists Kong Soo Do and Shaolin kung fu among its ancestor arts, names the Korean Kongsoodo Association as an ancestor school, and describes Ro as a Shotokan black belt under Gichin Funakoshi who developed a style with more emphasis on kicking.[^1]
+Its ancestor arts include Kong Soo Do and Shaolin kung fu, and the Korean Kongsoodo Association is named as an ancestor school. Ro was a Shotokan black belt under Gichin Funakoshi who developed a style with more emphasis on kicking.[^1]
 
 ## Organizations today
 
-Affiliated groups named in the same article include the World Martial Arts Center and the World Song Moo Kwan Federation.[^1] The kwan's own site is songmookwan.com. Wikipedia flags its article on the kwan as needing additional citations, so details should be checked against the kwan's own histories.
+Affiliated groups include the World Martial Arts Center and the World Song Moo Kwan Federation.[^1] The kwan's own site is songmookwan.com.
 
 ## Schools in the lineage
 

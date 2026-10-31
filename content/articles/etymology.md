@@ -25,7 +25,7 @@ It is therefore often translated as "the way of the foot and the fist".
 
 ## An earlier name: Tae Soo Do
 
-An earlier name, Tae Soo Do, used the characters 跆 (tae), 手 (su, "hand") and 道 (do). According to Wikipedia, [[Choi Hong-hi]] replaced 手 with 拳 (kwon, "fist") to form the name Taekwondo.[^1] The page [[History of Taekwondo]] covers the disputed dates for when the name was adopted.
+An earlier name, Tae Soo Do, used the characters 跆 (tae), 手 (su, "hand") and 道 (do). [[Choi Hong-hi]] replaced 手 with 拳 (kwon, "fist") to form the name Taekwondo.[^1] The page [[History of Taekwondo]] covers the disputed dates for when the name was adopted.
 
 ## Spellings
 

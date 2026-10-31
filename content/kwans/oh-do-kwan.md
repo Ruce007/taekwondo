@@ -17,7 +17,7 @@ sources:
   - International Taekwon-Do Federation, "Our history" | https://itftkd.sport/history/our-history/
   - Wikipedia, "Choi Hong Hi" | https://en.wikipedia.org/wiki/Choi_Hong_Hi
 ---
-The Oh Do Kwan was co-founded by [[Choi Hong-hi]] and [[Nam Tae-hi]].[^2] Wikipedia's article on kwans lists the founding as 1955; Nam Tae-hi's article gives no year, so this page says "mid-1950s" until a firmer source is found.[^1][^2]
+The Oh Do Kwan was co-founded by [[Choi Hong-hi]] and [[Nam Tae-hi]].[^2] Sources place the founding in the mid-1950s, with one giving 1955.[^1][^2]
 
 ## Role in naming Taekwondo
 

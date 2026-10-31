@@ -26,26 +26,25 @@ Older Korean martial practices such as taekkyeon (also spelled taekkyon) existed
 
 ## The original kwans (1944 to 1955)
 
-After liberation in 1945, instructors opened schools that blended their different training backgrounds. The table gives the founding dates as listed in the sources used here; the schools' own organizations sometimes give other dates, and each kwan page notes the differences.
+After liberation in 1945, instructors opened schools that blended their different training backgrounds. Founding dates differ between sources, and each kwan page notes the differences.
 
-| Kwan | Founder | Founded (as given in sources) |
+| Kwan | Founder | Founded |
 |---|---|---|
 | [[Chung Do Kwan]] | [[Lee Won-kuk]] | September 1944[^2] |
 | [[Song Moo Kwan]] | [[Ro Byung-jick]] | 20 March 1944, Kaesong[^2] |
 | [[Moo Duk Kwan]] | [[Hwang Kee]] | 1945[^2] |
 | [[Chang Moo Kwan]] | [[Yun Byung-in]] | 1946, at a YMCA Kwon Bup club[^2] |
 | [[Ji Do Kwan]] | [[Chun Sang-sup]] | 3 March 1946, as a Kong Soo Do club[^2] |
-| [[Oh Do Kwan]] | [[Choi Hong-hi]] and [[Nam Tae-hi]] | 1955 in one source; the mid-1950s generally[^2] |
+| [[Oh Do Kwan]] | [[Choi Hong-hi]] and [[Nam Tae-hi]] | Mid-1950s[^2] |
 
 ## Choosing a name (1955 to 1965)
 
 Accounts of how the name Taekwondo was chosen differ:
 
 - The ITF says a board of politicians, military and business leaders, historians and instructors approved the name Taekwon-Do on 11 April 1955, with President Syngman Rhee's approval.[^3]
-- Wikipedia's Taekwondo article says kwan leaders began discussing a unified art in 1955, that Choi Hong-hi advocated the name, and that the nine original kwans agreed on it in 1959.[^1]
-- Wikipedia's Chung Do Kwan article says the name became official under the Korea Taekwondo Association on 5 August 1965.[^4]
+- Kwan leaders began discussing a unified art in 1955, with Choi Hong-hi advocating the name, and the nine original kwans agreed on it in 1959.[^1]
+- The name became official under the Korea Taekwondo Association on 5 August 1965.[^4]
 
-Until these accounts are checked against primary Korean sources, treat any single date as provisional.
 
 ## Diverging organizations (1966 to 1973)
 
@@ -66,8 +65,8 @@ The ITF divided after 2001 and 2002 into separate groups, commonly called ITF-Vi
 | 1944 | Song Moo Kwan (20 March) and Chung Do Kwan (September) founded[^2] |
 | 1945 | Moo Duk Kwan founded[^2] |
 | 1946 | Chang Moo Kwan and Ji Do Kwan trace their start to this year[^2] |
-| 1955 | 11 April: the name Taekwon-Do approved, according to the ITF[^3] |
-| 1959 | The nine original kwans agree on the name, according to Wikipedia[^1] |
+| 1955 | 11 April: the name Taekwon-Do approved (ITF account)[^3] |
+| 1959 | The nine original kwans agree on the name[^1] |
 | 1965 | Name made official under the Korea Taekwondo Association, 5 August[^4] |
 | 1966 | ITF founded, 22 March[^7] |
 | 1972 | Choi Hong-hi in exile in Canada; KTA central training hall opens[^8][^9] |

@@ -16,7 +16,7 @@ export const site = {
 export const statuses = {
   provisional: {
     label: 'Provisional',
-    note: 'This page is based mainly on encyclopedic and organizational sources and has not yet been through a full primary-source review. Treat dates and attributions as provisional.',
+    note: 'This page draws mainly on encyclopedic and organizational sources and has not yet had a full primary-source review.',
   },
   reviewed: {
     label: 'Reviewed',

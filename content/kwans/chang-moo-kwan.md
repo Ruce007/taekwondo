@@ -27,4 +27,4 @@ Yun disappeared, and his top student Lee Nam Suk carried on his teaching and gav
 
 Yun was a close associate of [[Chun Sang-sup]], and the Chang Moo Kwan is described as having grown out of Yun's YMCA club, with Lee Nam Suk among the senior students involved. See [[Ji Do Kwan]] for the related lineage.[^2]
 
-Wikipedia states that Yun trained under Kanken Toyama in Shudokan karate and was said to have studied ch'uan-fa in Manchuria.[^2] Accounts differ on what happened to him after the Korean War; see his page.
+Yun trained under Kanken Toyama in Shudokan karate and was said to have studied ch'uan-fa in Manchuria.[^2] Accounts differ on what happened to him after the Korean War; see his page.

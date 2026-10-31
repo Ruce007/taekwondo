@@ -16,7 +16,7 @@ related: [organizations/world-taekwondo, organizations/itf, articles/history-of-
 sources:
   - Wikipedia, "Kukkiwon" | https://en.wikipedia.org/wiki/Kukkiwon
 ---
-The Kukkiwon is in the Gangnam district of Seoul, South Korea. Wikipedia describes it as "the central institution and the highest technical authority of Taekwondo" and the headquarters of the World Taekwondo Academy.[^1]
+The Kukkiwon is in the Gangnam district of Seoul, South Korea. It is described as "the central institution and the highest technical authority of Taekwondo" and is the headquarters of the World Taekwondo Academy.[^1]
 
 ## Founding
 
@@ -24,6 +24,6 @@ The Kukkiwon's formation is dated to 1972 and 1973. Its central training hall an
 
 ## Role
 
-Wikipedia says the Kukkiwon regulates, promotes and develops Taekwondo nationally and internationally, works closely with World Taekwondo and operates under the International Sports Division of South Korea's Ministry of Culture, Sports and Tourism.[^1]
+The Kukkiwon regulates, promotes and develops Taekwondo nationally and internationally, works closely with World Taekwondo and operates under the International Sports Division of South Korea's Ministry of Culture, Sports and Tourism.[^1]
 
 The Kukkiwon's authority applies to the World Taekwondo style. The [[International Taekwon-Do Federation]] and its successor groups follow their own technical standards.

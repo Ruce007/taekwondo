@@ -17,6 +17,6 @@ sources:
 ---
 Nam Tae-hi was born on 19 March 1929 and died on 7 November 2013. With [[Choi Hong-hi]] he co-founded the [[Oh Do Kwan]].[^1]
 
-Wikipedia reports that around 1959 he was appointed president of the Asia Taekwon-Do Federation and that he was a founding director of the Korea Taekwon-Do Association.[^1]
+Around 1959 he was appointed president of the Asia Taekwon-Do Federation and that he was a founding director of the Korea Taekwon-Do Association.[^1]
 
-The year the Oh Do Kwan was founded is not given in that article, so this site does not state one on this page; see [[Oh Do Kwan]] for the date as given in other sources.
+See [[Oh Do Kwan]] for the kwan's founding date.

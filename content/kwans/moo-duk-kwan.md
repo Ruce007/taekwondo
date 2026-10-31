@@ -18,7 +18,7 @@ sources:
   - Wikipedia, "Moo Duk Kwan" | https://en.wikipedia.org/wiki/Moo_Duk_Kwan
   - Wikipedia, "Hwang Kee" | https://en.wikipedia.org/wiki/Hwang_Kee
 ---
-The Moo Duk Kwan was founded in Korea in 1945 by [[Hwang Kee]]. Wikipedia gives 9 November 1945 as the opening of a training hall that was unsuccessful under its original name.[^1]
+The Moo Duk Kwan was founded in Korea in 1945 by [[Hwang Kee]]. It opened a training hall on 9 November 1945, which was unsuccessful under its original name.[^1]
 
 ## Naming
 
@@ -26,7 +26,7 @@ Hwang first called his art Hwa Soo Do, then Tang Soo Do. He began using the name
 
 ## Relationship with Taekwondo
 
-By 1960 Tang Soo Do was practised widely in Korea, and Wikipedia says the art faced "attempted mergers into Taekwondo". The Moo Duk Kwan stayed organizationally separate and today is mostly associated with Soo Bahk Do.[^1][^2] That is why it appears in Taekwondo histories as an original kwan while many of its members do not call their art Taekwondo.
+By 1960 Tang Soo Do was practised widely in Korea, and the art faced "attempted mergers into Taekwondo". The Moo Duk Kwan stayed organizationally separate and today is mostly associated with Soo Bahk Do.[^1][^2] That is why it appears in Taekwondo histories as an original kwan while many of its members do not call their art Taekwondo.
 
 ## Organizations today
 

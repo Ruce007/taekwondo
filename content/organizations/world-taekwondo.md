@@ -29,7 +29,7 @@ In June 2017 the World Taekwondo Federation was renamed World Taekwondo, partly 
 
 ## Membership and leadership
 
-Wikipedia lists 215 national member associations as of 2026, of which 214 are active and one is suspended. Choue Chung-won has led the federation since 2004.[^1]
+As of 2026 it has 215 national member associations, of which 214 are active and one is suspended. Choue Chung-won has led the federation since 2004.[^1]
 
 ## Relationship to other bodies
 
