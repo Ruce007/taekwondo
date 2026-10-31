@@ -1,7 +1,7 @@
 ---
 title: History of Taekwondo
 summary: How Taekwondo developed from the post-1945 Korean kwans through naming, unification disputes, rival federations and the Olympic Games.
-updated: 2026-10-30
+updated: 2026-10-31
 status: provisional
 category: History
 aliases: [Taekwondo history, History of Tae Kwon Do]
@@ -17,6 +17,7 @@ sources:
   - Wikipedia, "Kukkiwon" | https://en.wikipedia.org/wiki/Kukkiwon
   - Wikipedia, "Choi Hong Hi" | https://en.wikipedia.org/wiki/Choi_Hong_Hi
   - Further reading: Kang Won-sik and Lee Kyong-myong, A Modern History of Taekwondo (Seoul: Bokyung Moonhwasa, March 1999, ISBN 89-358-0124-0) | https://www.kidokwan.org/?p=4237
+  - Udo Moenig, Taekwondo: From a Martial Art to a Martial Sport (Routledge, 2015) | https://www.routledge.com/Taekwondo-From-a-Martial-Art-to-a-Martial-Sport-1st-Edition/Moenig/p/book/9781138839830
 ---
 Modern Taekwondo has no single, universally recognized founder. It grew out of several Korean schools, called kwans, and later split into separate international organizations. Dates and credit are contested in some places, and this article says so where it matters.
 
@@ -30,11 +31,11 @@ After liberation in 1945, instructors opened schools that blended their differen
 
 | Kwan | Founder | Founded |
 |---|---|---|
-| [[Chung Do Kwan]] | [[Lee Won-kuk]] | September 1944[^2] |
-| [[Song Moo Kwan]] | [[Ro Byung-jick]] | 20 March 1944, Kaesong[^2] |
+| [[Chung Do Kwan]] | [[Lee Won-kuk]] | 1944 (disputed)[^2] |
+| [[Song Moo Kwan]] | [[Ro Byung-jick]] | 20 March 1944, Kaesong (1946 in some histories)[^2] |
 | [[Moo Duk Kwan]] | [[Hwang Kee]] | 1945[^2] |
 | [[Chang Moo Kwan]] | [[Yun Byung-in]] | 1946, at a YMCA Kwon Bup club[^2] |
-| [[Ji Do Kwan]] | [[Chun Sang-sup]] | 3 March 1946, as a Kong Soo Do club[^2] |
+| [[Ji Do Kwan]] | [[Chun Sang-sup]] | 1946, as a Kong Soo Do club (3 March or 3 May)[^2] |
 | [[Oh Do Kwan]] | [[Choi Hong-hi]] and [[Nam Tae-hi]] | Mid-1950s[^2] |
 
 ## Choosing a name (1955 to 1965)
@@ -44,6 +45,8 @@ Accounts of how the name Taekwondo was chosen differ:
 - The ITF says a board of politicians, military and business leaders, historians and instructors approved the name Taekwon-Do on 11 April 1955, with President Syngman Rhee's approval.[^3]
 - Kwan leaders began discussing a unified art in 1955, with Choi Hong-hi advocating the name, and the nine original kwans agreed on it in 1959.[^1]
 - The name became official under the Korea Taekwondo Association on 5 August 1965.[^4]
+
+Kang Won-sik and Lee Kyong-myong describe a detour. The Korea Taekwondo Association was founded in 1959 and adopted the name Taekwondo, but a unification conference in September 1961 changed it to Taesoodo. A Unification Declaration ceremony followed on 18 March 1965, which Hwang Kee declared invalid the next day, and Choi Hong-hi later changed the name back to Taekwondo.[^10]
 
 
 ## Diverging organizations (1966 to 1973)
@@ -67,6 +70,7 @@ The ITF divided after 2001 and 2002 into separate groups, commonly called ITF-Vi
 | 1946 | Chang Moo Kwan and Ji Do Kwan trace their start to this year[^2] |
 | 1955 | 11 April: the name Taekwon-Do approved (ITF account)[^3] |
 | 1959 | The nine original kwans agree on the name[^1] |
+| 1961 | A unification conference renames the art Taesoodo, 14 September[^10] |
 | 1965 | Name made official under the Korea Taekwondo Association, 5 August[^4] |
 | 1966 | ITF founded, 22 March[^7] |
 | 1972 | Choi Hong-hi in exile in Canada; KTA central training hall opens[^8][^9] |

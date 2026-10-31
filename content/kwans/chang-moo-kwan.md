@@ -1,7 +1,7 @@
 ---
 title: Chang Moo Kwan
 summary: A kwan that grew from a YMCA Kwon Bup club started by Yun Byung-in in 1946 and was named by his senior student Lee Nam Suk.
-updated: 2026-10-30
+updated: 2026-10-31
 status: provisional
 aliases: [Chang Mu Kwan, Changmookwan, Chang Moo Kwon]
 meta: Founded 1946 by Yun Byung-in
@@ -16,12 +16,14 @@ related: [people/yun-byung-in, kwans/ji-do-kwan, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Kwan (martial arts)" | https://en.wikipedia.org/wiki/Kwan_(martial_arts)
   - Wikipedia, "Jidokwan" | https://en.wikipedia.org/wiki/Jidokwan
+  - Kang Won-sik and Lee Kyong-myong, A Modern History of Taekwondo (excerpt) | https://www.kidokwan.org/?p=4237
+  - Song Moo Kwan, "The original founding Kwans" | https://songmookwan.com/index.php/history/the-original-founding-kwans
 ---
-The Chang Moo Kwan traces its origin to a Kwon Bup club at the YMCA started by [[Yun Byung-in]] in 1946.[^1]
+The Chang Moo Kwan traces its origin to a Kwon Bup club at the YMCA started by [[Yun Byung-in]] in 1946.[^1][^3]
 
 ## Name and succession
 
-Yun disappeared, and his top student Lee Nam Suk carried on his teaching and gave the school the name Chang Moo Kwan.[^1] The name is also spelled Chang Mu Kwan.
+Yun disappeared, and his top student Lee Nam Suk carried on his teaching.[^1] After the Korean War, Lee and Kim Soon Bae reopened the club under the name Chang Moo Kwan, which the Song Moo Kwan's records date to 1954.[^3][^4] The name is also spelled Chang Mu Kwan.
 
 ## Relationship to the Ji Do Kwan
 

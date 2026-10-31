@@ -1,24 +1,25 @@
 ---
 title: Ji Do Kwan
 summary: A kwan that began as a Kong Soo Do club at the Chosun Yun Moo Kwan in 1946 and was restarted as Ji Do Kwan after the Korean War.
-updated: 2026-10-30
+updated: 2026-10-31
 status: provisional
 aliases: [Jidokwan, Ji Do Kwon, Chosun Yun Moo Kwan, Yun Moo Kwan, Yun Mu Kwan]
 meta: Founded 1946 by Chun Sang-sup
 order: 5
-founded: 1946-03-03
+founded: 1946
 founders: Chun Sang-sup
 infobox:
   - Founder: [[Chun Sang-sup]]
-  - Founded: 3 March 1946, as a Kong Soo Do club
+  - Founded: 1946 (3 March or 3 May), as a Kong Soo Do club
   - Origin: Kwon Bup section of the Chosun Yun Moo Kwan, a judo school
   - First headmaster: Yun Kwae-byung
 related: [people/chun-sang-sup, people/yun-byung-in, kwans/chang-moo-kwan, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Kwan (martial arts)" | https://en.wikipedia.org/wiki/Kwan_(martial_arts)
   - Wikipedia, "Jidokwan" | https://en.wikipedia.org/wiki/Jidokwan
+  - Kang Won-sik and Lee Kyong-myong, A Modern History of Taekwondo (excerpt) | https://www.kidokwan.org/?p=4237
 ---
-The Ji Do Kwan began as a Kong Soo Do club founded by [[Chun Sang-sup]] on 3 March 1946. The date marks the karate club, not the origin of the Chosun Yun Moo Kwan itself, which the sources describe as a long-established Kodokan judo school.[^1]
+The Ji Do Kwan began as a Kong Soo Do club founded by [[Chun Sang-sup]] in 1946. Sources give the date as either 3 March or 3 May, and the club took the name Ji Do Kwan during the Korean War.[^1][^3] The date marks the karate club, not the origin of the Chosun Yun Moo Kwan itself, which the sources describe as a long-established Kodokan judo school.[^1]
 
 ## The Yun Moo Kwan
 

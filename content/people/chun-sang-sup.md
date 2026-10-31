@@ -1,7 +1,7 @@
 ---
 title: Chun Sang-sup
 summary: Chun Sang-sup started a Kong Soo Do club at the Chosun Yun Moo Kwan in 1946, the origin of the Ji Do Kwan; he vanished during the Korean War.
-updated: 2026-10-30
+updated: 2026-10-31
 status: provisional
 aliases: [Chun Sang Sup, Sang Sup Chun, Jeon Sang-sup]
 meta: Founder of the club that became Ji Do Kwan
@@ -12,8 +12,9 @@ related: [kwans/ji-do-kwan, people/yun-byung-in, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Kwan (martial arts)" | https://en.wikipedia.org/wiki/Kwan_(martial_arts)
   - Wikipedia, "Jidokwan" | https://en.wikipedia.org/wiki/Jidokwan
+  - Kang Won-sik and Lee Kyong-myong, A Modern History of Taekwondo (excerpt) | https://www.kidokwan.org/?p=4237
 ---
-Chun Sang-sup is listed as the founder of the club that became the [[Ji Do Kwan]]. It was founded on 3 March 1946 as a Kong Soo Do club.[^1]
+Chun Sang-sup is listed as the founder of the club that became the [[Ji Do Kwan]]. The club was founded in 1946 as a Kong Soo Do club, on 3 March or 3 May depending on the source.[^1][^3]
 
 ## Background
 

@@ -1,7 +1,7 @@
 ---
 title: Yun Byung-in
 summary: Yun Byung-in founded the YMCA Kwon Bup club in 1946 from which the Chang Moo Kwan grew; accounts of his fate after the Korean War differ.
-updated: 2026-10-30
+updated: 2026-10-31
 status: provisional
 aliases: [Yoon Byung-in, Yoon Byung In, Yun Byung In]
 meta: Founder of the club that became Chang Moo Kwan
@@ -13,8 +13,9 @@ related: [kwans/chang-moo-kwan, kwans/ji-do-kwan, people/chun-sang-sup]
 sources:
   - Wikipedia, "Kwan (martial arts)" | https://en.wikipedia.org/wiki/Kwan_(martial_arts)
   - Wikipedia, "Jidokwan" | https://en.wikipedia.org/wiki/Jidokwan
+  - Kang Won-sik and Lee Kyong-myong, A Modern History of Taekwondo (excerpt) | https://www.kidokwan.org/?p=4237
 ---
-Yun Byung-in founded a Kwon Bup club at the YMCA in 1946. After he disappeared, his senior student Lee Nam Suk carried on the teaching and named the school [[Chang Moo Kwan]].[^1]
+Yun Byung-in (also spelled Yoon Byung-in) founded a Kwon Bup club at the YMCA in Jongno, Seoul, in 1946.[^1][^3] After he disappeared, his senior student Lee Nam Suk carried on the teaching, and after the Korean War Lee and Kim Soon Bae reopened the club as the [[Chang Moo Kwan]].[^1][^3]
 
 ## Background
 
