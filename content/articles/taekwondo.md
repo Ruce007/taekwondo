@@ -40,3 +40,4 @@ National federations and independent schools sit under, alongside or outside the
 - [[Taekwondo at the Olympics]]: demonstration status in 1988 and 1992 and medal status since 2000.
 - [[Sparring and protective equipment]]: how competition and safety gear work.
 - [Kwans](/kwans/): the schools that shaped the art.
+- [[Major Taekwondo organizations compared]]: how World Taekwondo, the Kukkiwon, the ITF, USA Taekwondo and the ATA relate.

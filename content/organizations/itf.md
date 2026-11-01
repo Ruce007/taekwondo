@@ -13,7 +13,7 @@ infobox:
   - Founder: [[Choi Hong-hi]]
   - Patterns: 24 in the official syllabus
   - Today: Several groups use the ITF name
-related: [people/choi-hong-hi, organizations/world-taekwondo, organizations/kukkiwon, kwans/oh-do-kwan, articles/history-of-taekwondo]
+related: [articles/taekwondo-organizations-compared, organizations/usa-taekwondo, organizations/ata-martial-arts, people/choi-hong-hi, organizations/world-taekwondo, organizations/kukkiwon, kwans/oh-do-kwan, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "International Taekwon-Do Federation" | https://en.wikipedia.org/wiki/International_Taekwon-Do_Federation
   - International Taekwon-Do Federation, "Our history" | https://itftkd.sport/history/our-history/

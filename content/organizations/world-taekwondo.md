@@ -13,7 +13,7 @@ infobox:
   - IOC recognition: 17 July 1980
   - Members: 215 national member associations (2026)
   - Headquarters: Seoul and Lausanne are both listed
-related: [organizations/kukkiwon, organizations/itf, articles/taekwondo-at-the-olympics, articles/history-of-taekwondo]
+related: [articles/taekwondo-organizations-compared, organizations/usa-taekwondo, organizations/ata-martial-arts, organizations/kukkiwon, organizations/itf, articles/taekwondo-at-the-olympics, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "World Taekwondo" | https://en.wikipedia.org/wiki/World_Taekwondo
 ---

@@ -12,7 +12,7 @@ infobox:
   - Named Kukkiwon: 6 February 1973
   - Role: Technical authority for World Taekwondo style
   - Hosts: The World Taekwondo Academy
-related: [organizations/world-taekwondo, organizations/itf, articles/history-of-taekwondo]
+related: [articles/taekwondo-organizations-compared, organizations/usa-taekwondo, organizations/ata-martial-arts, organizations/world-taekwondo, organizations/itf, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Kukkiwon" | https://en.wikipedia.org/wiki/Kukkiwon
 ---
