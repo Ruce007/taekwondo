@@ -169,8 +169,8 @@ export function inline(text, ctx) {
     if (/^https?:\/\//i.test(url)) {
       return tok(`<a href="${esc(url)}" rel="noopener noreferrer">${inline(label, ctx)}</a>`);
     }
-    if (/^(\/|#|mailto:)/.test(url)) return tok(`<a href="${esc(url)}">${inline(label, ctx)}</a>`);
-    ctx.error(`link "${url}" must start with https://, / or #`);
+    if (/^(\/|#|mailto:|tel:)/.test(url)) return tok(`<a href="${esc(url)}">${inline(label, ctx)}</a>`);
+    ctx.error(`link "${url}" must start with https://, /, # or tel:`);
     return tok(esc(label));
   });
 

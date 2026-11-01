@@ -2,6 +2,7 @@
 title: Lee Won-kuk
 summary: Lee Won-kuk founded the Chung Do Kwan around 1944, one of the first kwans from which modern Taekwondo developed.
 updated: 2026-10-31
+role: founder
 status: provisional
 aliases: [Won Kuk Lee, Lee Won Kuk, Won-kuk Lee]
 meta: Founder of Chung Do Kwan

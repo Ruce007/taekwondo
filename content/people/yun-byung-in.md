@@ -2,6 +2,7 @@
 title: Yun Byung-in
 summary: Yun Byung-in founded the YMCA Kwon Bup club in 1946 from which the Chang Moo Kwan grew; accounts of his fate after the Korean War differ.
 updated: 2026-10-31
+role: founder
 status: provisional
 aliases: [Yoon Byung-in, Yoon Byung In, Yun Byung In]
 meta: Founder of the club that became Chang Moo Kwan

@@ -1,7 +1,7 @@
 ---
 title: Taekwondo schools in Irvine, California
 summary: A neutral, alphabetical list of Taekwondo schools with Irvine addresses, including schools with more than one location.
-updated: 2026-10-31
+updated: 2026-11-01
 status: provisional
 statusNote: This list was compiled in October 2026 from school websites and business directories, and it may be incomplete.
 category: Practice
@@ -22,18 +22,21 @@ Irvine has at least seven Taekwondo schools. They are listed alphabetically, and
 | [[ATA Martial Arts Irvine]] | 15435 Jeffrey Road, Suite 100, 92618 | 1 | School of [[ATA Martial Arts]]; teaches Songahm Taekwondo |
 | [[Dynamic Martial Arts]] | 14805 Jeffrey Road, Suite F, 92618 | 1 | Taekwondo and Hapkido |
 | [[Elite Fitness Taekwondo]] | Woodbury Town Center: 6254 Irvine Boulevard, 92620 | 1 | The second location of [[Il-Do Taekwondo]], per Il-Do's website |
-| [[Il-Do Taekwondo]] | Heritage Plaza: 14220 Culver Drive, Suite D, 92604 | 2 including Elite Fitness | Founded by [[Chang Jin Kang]] in 1980; Song Moo Kwan lineage |
+| [[Il-Do Taekwondo]] | Heritage Plaza: 14220 Culver Drive, Suite D, 92604 | 2 including Elite Fitness | Founded by [[Chang Jin Kang]] in Santa Ana in 1980; Song Moo Kwan lineage |
 | [[Master Lee's Talium]] | 3850 Barranca Parkway, Suite G, 92606 | 2 | Second location in Tustin |
 | [[Regulus Taekwondo]] | 1150 Roosevelt, Suite 100, 92620 | 1 | |
 | [[Taekwondo 21]] | 610 Roosevelt, 92620 | 1 | |
 
 ## Schools with more than one location
 
-- **Il-Do Taekwondo and Elite Fitness Taekwondo:** Il-Do's website lists two Irvine locations, Heritage Plaza and Elite Fitness Taekwondo at Woodbury Town Center.
+- **Il-Do Taekwondo and Elite Fitness Taekwondo:** Il-Do's website lists two Irvine locations, Heritage Plaza and Elite Fitness Taekwondo at Woodbury Town Center. A third location, at University Center, has since closed.
 - **Master Lee's Talium:** one school in Irvine and one in Tustin.
 - **ATA Martial Arts Irvine:** a single school, but part of a network of about 1,100 licensed ATA locations; see [[ATA Martial Arts]].
 
 ## Nearby
+
+Schools in [[Nixa Martial Arts Institute|Ladera Ranch]] and [[Eagle Taekwondo|Las Vegas]] are listed in the [schools directory](/schools/).
+
 
 Jimmy Kim's Taekwondo Center uses "Irvine/Tustin" in its listing name but has a Tustin address, so it is not included here.
 

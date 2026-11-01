@@ -14,8 +14,9 @@ postal: 92620
 website: https://www.tkd21.com/
 related: [articles/taekwondo-schools-in-irvine]
 infobox:
-  - Location: 610 Roosevelt, Irvine, CA 92620
-  - Website: tkd21.com
+  - Address: 610 Roosevelt, Irvine, CA 92620
+  - Website: [tkd21.com](https://www.tkd21.com/)
+  - Locations: One
 sources:
   - MapQuest, "Taekwondo 21" | https://startpage.mapquest.com/us/california/taekwondo-21-375367721
 ---

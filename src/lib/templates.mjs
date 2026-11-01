@@ -189,21 +189,34 @@ ${r.html}
 export function indexPage(ctx, key, items) {
   const col = collections[key];
   const sorted = [...items].sort((a, b) => (a.order || 0) - (b.order || 0) || a.title.localeCompare(b.title));
-  const lis = sorted
-    .map(
-      (p) =>
-        `<li><a class="card-link" href="${p.path}">${esc(p.title)}</a>${p.meta ? ` <span class="meta">${esc(p.meta)}</span>` : ''}<span class="card-summary">${esc(p.summary)}</span></li>`,
-    )
-    .join('\n');
+  const card = (p) =>
+    `<li><a class="card-link" href="${p.path}">${esc(p.title)}</a>${p.meta ? ` <span class="meta">${esc(p.meta)}</span>` : ''}<span class="card-summary">${esc(p.summary)}</span></li>`;
+  // People: founders get their own group. Schools: grouped by city.
+  let groups = null;
+  if (key === 'people') {
+    const isFounder = (p) => p.fm && p.fm.role === 'founder';
+    groups = [
+      ['Founders', sorted.filter(isFounder)],
+      ['Other people', sorted.filter((p) => !isFounder(p))],
+    ];
+  } else if (key === 'schools') {
+    const cities = [...new Set(sorted.map((p) => (p.fm && p.fm.city) || ''))].sort();
+    groups = cities.map((c) => [c || 'Other', sorted.filter((p) => ((p.fm && p.fm.city) || '') === c)]);
+  }
+  const list = (items) => `<ul class="card-list">\n${items.map(card).join('\n')}\n</ul>`;
+  const lis = groups
+    ? groups
+        .filter(([, items]) => items.length)
+        .map(([name, items]) => `<h2 class="index-group">${esc(name)}</h2>\n${list(items)}`)
+        .join('\n')
+    : list(sorted);
   const body = `${breadcrumb([{ name: 'Home', path: '/' }, { name: col.plural, path: `${col.base}/` }])}
 <header class="entry-header">
   <p class="kicker">Index</p>
   <h1>${esc(col.plural)}</h1>
   <p class="lede">${esc(col.intro)}</p>
 </header>
-<ul class="card-list">
-${lis}
-</ul>`;
+${lis}`;
   return layout(ctx, {
     title: col.plural,
     description: col.description,
@@ -375,6 +388,7 @@ function structuredData(page) {
         },
       };
       if (fm.founded) main.foundingDate = fm.founded;
+      if (fm.phone) main.telephone = fm.phone;
       if (fm.website) main.sameAs = [fm.website];
       break;
     default:

@@ -2,6 +2,7 @@
 title: Ro Byung-jick
 summary: Ro Byung-jick (1919 to 2015) founded the Song Moo Kwan in Kaesong in 1944 and is credited by his kwan as a founder of modern Taekwondo.
 updated: 2026-10-31
+role: founder
 status: provisional
 aliases: [Byung Jik Ro, Byung Jick Ro, Ro Byung Jik, Ro Byung Jick]
 meta: Founder of Song Moo Kwan, 1919 to 2015
