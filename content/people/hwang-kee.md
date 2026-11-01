@@ -2,7 +2,7 @@
 title: Hwang Kee
 summary: Hwang Kee (1914 to 2002) founded the Moo Duk Kwan in 1945 and developed the art known as Tang Soo Do and later Soo Bahk Do.
 updated: 2026-10-31
-role: founder
+role: original-founder
 status: provisional
 aliases: [Hwang Ki, Kee Hwang]
 meta: Founder of Moo Duk Kwan, 1914 to 2002

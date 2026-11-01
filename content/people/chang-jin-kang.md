@@ -2,7 +2,6 @@
 title: Chang Jin Kang
 summary: Chang Jin Kang is a Taekwondo grandmaster and the founder of Il-Do Taekwondo in Orange County, California.
 updated: 2026-10-31
-role: founder
 status: provisional
 statusNote: Everything on this page comes from Il-Do Taekwondo's own website and has not been independently verified.
 aliases: [Grandmaster Chang Jin Kang, Grandmaster Kang, GM Chang Jin Kang]
@@ -19,6 +18,7 @@ sources:
   - Il-Do Taekwondo, "About Grandmaster Chang Jin Kang" | https://ildotkd.com/about-grand-master
   - Il-Do Taekwondo, home page | https://ildotkd.com/
   - Il-Do Taekwondo, about page | https://ildotkd.com/about
+  - Karate Forums, "Concordia University offers 4 year TKD degree" (June 2007) | https://karateforums.com/topic/29942-conordia-university-offers-4-year-tkd-degree/page/3
 ---
 Grandmaster Chang Jin Kang is the founder and head of [[Il-Do Taekwondo]], a Taekwondo school in Orange County, California, and holds the rank of 9th degree black belt.[^1][^3]
 
@@ -42,6 +42,14 @@ He was promoted to 9th degree in 1994, in what the school describes as the first
 
 Listed recognition includes a certificate of special recognition from Congresswoman Loretta Sanchez (2002), a Kukkiwon award (2006), a lifetime achievement award from South Korea's Ministry of Culture, Sports and Tourism (2008) and a Kukkiwon letter of commendation (2017).[^1]
 
+## University program
+
+He began teaching Taekwondo classes at Concordia University in 1998 and was named Director and Professor of Taekwondo Education in 2006. In 2007 he directed the first Concordia University Open Taekwondo Tournament and the inauguration of its bachelor's degree program in Taekwondo.[^1] Il-Do describes this as the first bachelor's degree course in Taekwondo outside Korea.[^3] A June 2007 forum discussion mentions a four-year Taekwondo degree at a Concordia University without naming him.[^4]
+
+## University program
+
+He began teaching Taekwondo classes at Concordia University in 1998 and was named Director and Professor of Taekwondo Education in 2006. In 2007 he directed the first Concordia University Open Taekwondo Tournament and the inauguration of its bachelor's degree program in Taekwondo.[^1] The school describes this as the first bachelor's degree course in Taekwondo outside Korea.[^3] A June 2007 forum discussion mentions a four-year Taekwondo degree at a Concordia University but does not name him.[^4]
+
 ## Community work
 
-In 1985 he started a Taekwondo program at Irvine Youth Services. In 1992 he raised $1,500 for the Irvine Police Department's D.A.R.E. program by breaking 500 boards, and in 1993 he broke 1,068 boards in 13 minutes 57.7 seconds, which the school describes as a world record; the Irvine and Santa Ana schools raised $8,361.42 for D.A.R.E. and scholarship funds. In 1996 he organized the Best of the Best Martial Arts Festival for D.A.R.E. programs in Irvine, Santa Ana and Tustin, and in 2002 he hosted the third festival to help victims of the 9/11 attacks. He hosted the first Irvine Mayor's Cup Taekwondo Championship in 2003.[^1]
+In 1985 he started a Taekwondo program at Irvine Youth Services. In 1992 he raised $1,500 for the Irvine Police Department's D.A.R.E. program by breaking 500 boards, and in 1993 he broke 1,068 boards in 13 minutes 57.7 seconds, which the school describes as a world record; the Irvine and Santa Ana schools raised $8,361.42 for D.A.R.E. and scholarship funds. In 1996 he organized the Best of the Best Martial Arts Festival for D.A.R.E. programs in Irvine, Santa Ana and Tustin, and in 2002 he hosted the third festival to help victims of the 9/11 attacks. He hosted the first Irvine Mayor's Cup Taekwondo Championship in 2003 and taught Taekwondo as the official P.E. class at CREAN Lutheran High School in 2010.[^1]

@@ -194,10 +194,10 @@ export function indexPage(ctx, key, items) {
   // People: founders get their own group. Schools: grouped by city.
   let groups = null;
   if (key === 'people') {
-    const isFounder = (p) => p.fm && p.fm.role === 'founder';
+    const isFounder = (p) => p.fm && p.fm.role === 'original-founder';
     groups = [
-      ['Founders', sorted.filter(isFounder)],
-      ['Other people', sorted.filter((p) => !isFounder(p))],
+      ['Original founders of Taekwondo', sorted.filter(isFounder)],
+      ['School founders and teachers', sorted.filter((p) => !isFounder(p))],
     ];
   } else if (key === 'schools') {
     const cities = [...new Set(sorted.map((p) => (p.fm && p.fm.city) || ''))].sort();

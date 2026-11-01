@@ -2,7 +2,6 @@
 title: Yong Jin Park
 summary: Yong Jin Park is the owner of Nixa Martial Arts Institute in Ladera Ranch, California, and a World Taekwondo international referee.
 updated: 2026-11-01
-role: founder
 status: provisional
 statusNote: Everything on this page comes from the school's own website and has not been independently verified.
 aliases: [Master Yong Jin Park, Master Park]

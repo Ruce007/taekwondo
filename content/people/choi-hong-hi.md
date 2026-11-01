@@ -2,7 +2,7 @@
 title: Choi Hong-hi
 summary: Choi Hong-hi (1918 to 2002) co-founded the Oh Do Kwan, championed the name Taekwon-Do and founded the ITF in 1966.
 updated: 2026-10-31
-role: founder
+role: original-founder
 status: provisional
 aliases: [Choi Hong Hi, General Choi, Hong Hi Choi]
 meta: Founder of the ITF, 1918 to 2002

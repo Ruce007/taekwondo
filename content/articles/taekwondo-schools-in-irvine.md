@@ -14,6 +14,7 @@ sources:
   - MapQuest, "Master Lee's Talium" | https://phoenix.aws.mapquest.com/us/california/master-lees-talium-24054467
   - MapQuest, "Taekwondo 21" | https://startpage.mapquest.com/us/california/taekwondo-21-375367721
   - Beakid, "Dynamic Martial Arts Taekwondo and Hapkido" | https://beakid.com/ca/irvine/dynamic-martial-arts-taekwondo-and-hapkido-address
+  - UCI Campus Recreation, "Taekwondo" club | https://campusrec.uci.edu/club/taekwondo.html
 ---
 Irvine has at least seven Taekwondo schools. They are listed alphabetically, and listing is free and does not depend on membership. Each school has its own page with sources.
 
@@ -33,9 +34,13 @@ Irvine has at least seven Taekwondo schools. They are listed alphabetically, and
 - **Master Lee's Talium:** one school in Irvine and one in Tustin.
 - **ATA Martial Arts Irvine:** a single school, but part of a network of about 1,100 licensed ATA locations; see [[ATA Martial Arts]].
 
+## University club
+
+The UCI Taekwondo Club is a student club sport at the Anteater Recreation Center rather than a commercial school. It is coached by David Kwak, competes through the National Collegiate Taekwondo Association and trains in World Taekwondo sparring and forms.[^7]
+
 ## Nearby
 
-Schools in [[Nixa Martial Arts Institute|Ladera Ranch]] and [[Eagle Taekwondo|Las Vegas]] are listed in the [schools directory](/schools/).
+Schools in Ladera Ranch, Whittier and Las Vegas are listed in [[Taekwondo schools in Las Vegas, Whittier and Ladera Ranch]].
 
 
 Jimmy Kim's Taekwondo Center uses "Irvine/Tustin" in its listing name but has a Tustin address, so it is not included here.

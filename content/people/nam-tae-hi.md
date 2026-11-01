@@ -2,7 +2,7 @@
 title: Nam Tae-hi
 summary: Nam Tae-hi (1929 to 2013) co-founded the Oh Do Kwan with Choi Hong-hi and helped popularize Taekwondo through demonstrations.
 updated: 2026-10-31
-role: founder
+role: original-founder
 status: provisional
 aliases: [Nam Tae Hi, Tae Hi Nam]
 meta: Co-founder of Oh Do Kwan, 1929 to 2013

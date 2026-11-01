@@ -2,7 +2,7 @@
 title: Chun Sang-sup
 summary: Chun Sang-sup started a Kong Soo Do club at the Chosun Yun Moo Kwan in 1946, the origin of the Ji Do Kwan; he vanished during the Korean War.
 updated: 2026-10-31
-role: founder
+role: original-founder
 status: provisional
 aliases: [Chun Sang Sup, Sang Sup Chun, Jeon Sang-sup]
 meta: Founder of the club that became Ji Do Kwan

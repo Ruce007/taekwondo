@@ -43,6 +43,14 @@ A third location, at University Center in Irvine, has since closed.
 
 Grandmaster Kang leads the school and holds the rank of 9th degree black belt.[^2] He trained directly under [[Ro Byung-jick]], the founder of the [[Song Moo Kwan]].[^1] His page covers his competition record, military service, rank history and community work.
 
+## University program
+
+Kang created the first bachelor's degree program in Taekwondo at Concordia University, which the school describes as the first institution to offer such a degree outside Korea.[^2] More detail is on his page.
+
+## University program
+
+Kang created the first bachelor's degree program in Taekwondo at Concordia University, which the school describes as the first institution to offer such a degree outside Korea.[^2] He also taught Taekwondo as the official P.E. class at CREAN Lutheran High School in 2010.[^3] His page has the details.
+
 ## Certification
 
 The school certifies students through [[World Taekwondo]] and the [[Kukkiwon]], and its website carries a "Kukkiwon certified" banner.[^1][^4]

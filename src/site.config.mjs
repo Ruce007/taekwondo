@@ -41,7 +41,7 @@ export const collections = {
     type: 'person',
     label: 'Person',
     plural: 'People',
-    intro: 'Founders, teachers and other notable contributors, with documented lineage links where sources allow.',
+    intro: 'The original founders of Taekwondo, followed by the school founders and teachers who came after them, with documented lineage links where sources allow.',
     description: 'Taekwondo founders, kwan leaders and notable masters, with sourced biographies and lineage links.',
   },
   kwans: {

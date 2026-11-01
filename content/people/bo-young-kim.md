@@ -2,7 +2,6 @@
 title: Bo Young Kim
 summary: Bo Young Kim (1956 to 2008) was a Kukkiwon 8th dan who founded Eagle Taekwondo in Las Vegas in 1986.
 updated: 2026-11-01
-role: founder
 status: provisional
 statusNote: Everything on this page comes from Eagle Taekwondo's own website and has not been independently verified.
 aliases: [Grandmaster Bo Young Kim, Grandmaster Kim]
