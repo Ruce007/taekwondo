@@ -6,17 +6,16 @@ status: provisional
 statusNote: This list was compiled in October 2026 from school websites and business directories, and it may be incomplete.
 category: Practice
 aliases: [Irvine Taekwondo schools, Taekwondo in Irvine]
-related: [schools/il-do-taekwondo, schools/elite-fitness-taekwondo, schools/regulus-taekwondo, schools/masters-lee-talium, schools/taekwondo-21, schools/dynamic-martial-arts, schools/ata-martial-arts-irvine]
+related: [schools/il-do-taekwondo, schools/elite-fitness-taekwondo, schools/regulus-taekwondo, schools/masters-lee-talium, schools/dynamic-martial-arts, schools/ata-martial-arts-irvine]
 sources:
   - Il-Do Taekwondo, home page | https://ildotkd.com/
   - Regulus Taekwondo, "Contact" | https://website-70-regulus-tkd-ca.pages.dev/contact
   - City of Irvine, "ATA Martial Arts" | https://cityofirvine.gov/node/866
   - MapQuest, "Master Lee's Talium" | https://phoenix.aws.mapquest.com/us/california/master-lees-talium-24054467
-  - MapQuest, "Taekwondo 21" | https://startpage.mapquest.com/us/california/taekwondo-21-375367721
   - Beakid, "Dynamic Martial Arts Taekwondo and Hapkido" | https://beakid.com/ca/irvine/dynamic-martial-arts-taekwondo-and-hapkido-address
   - UCI Campus Recreation, "Taekwondo" club | https://campusrec.uci.edu/club/taekwondo.html
 ---
-Irvine has at least seven Taekwondo schools. They are listed alphabetically, and listing is free and does not depend on membership. Each school has its own page with sources.
+Irvine has at least six Taekwondo schools. They are listed alphabetically, and listing is free and does not depend on membership. Each school has its own page with sources.
 
 | School | Address | Locations | Notes |
 |---|---|---|---|
@@ -26,7 +25,6 @@ Irvine has at least seven Taekwondo schools. They are listed alphabetically, and
 | [[Il-Do Taekwondo]] | Heritage Plaza: 14220 Culver Drive, Suite D, 92604 | 2 including Elite Fitness | Founded by [[Chang Jin Kang]] in Santa Ana in 1980; Song Moo Kwan lineage |
 | [[Master Lee's Talium]] | 3850 Barranca Parkway, Suite G, 92606 | 2 | Second location in Tustin |
 | [[Regulus Taekwondo]] | 1150 Roosevelt, Suite 100, 92620 | 1 | |
-| [[Taekwondo 21]] | 610 Roosevelt, 92620 | 1 | |
 
 ## Schools with more than one location
 
@@ -36,7 +34,7 @@ Irvine has at least seven Taekwondo schools. They are listed alphabetically, and
 
 ## University club
 
-The UCI Taekwondo Club is a student club sport at the Anteater Recreation Center rather than a commercial school. It is coached by David Kwak, competes through the National Collegiate Taekwondo Association and trains in World Taekwondo sparring and forms.[^7]
+The UCI Taekwondo Club is a student club sport at the Anteater Recreation Center rather than a commercial school. It is coached by David Kwak, competes through the National Collegiate Taekwondo Association and trains in World Taekwondo sparring and forms.[^6]
 
 ## Nearby
 

@@ -99,6 +99,11 @@ export const countryNames = {
   GB: 'United Kingdom',
 };
 
+// Region (state/province) names for the schools index. Add entries as regions are added.
+export const regionNames = {
+  US: { CA: 'California', NV: 'Nevada' },
+};
+
 export const articleCategories = ['Fundamentals', 'History', 'Practice', 'Competition'];
 
 // Pages shown under "Start here" on the home page, in order. Use collection/slug.

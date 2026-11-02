@@ -613,3 +613,7 @@ main > section > h2 {
 
 .index-group { margin: 2rem 0 .75rem; font-size: 1.25rem; }
 .index-group:first-of-type { margin-top: 1.5rem; }
+
+.index-region { margin: 1.5rem 0 .5rem; font-size: 1.1rem; }
+.index-city { margin: 1.1rem 0 .4rem; font-size: 1rem; }
+nav.toc ul ul { margin-top: .25rem; }

@@ -1,12 +1,12 @@
 ---
 title: Taekwondo schools in Las Vegas, Whittier and Ladera Ranch
-summary: A neutral, alphabetical list of Taekwondo schools in Las Vegas, Whittier and Ladera Ranch, including schools with more than one location.
+summary: A neutral, alphabetical list of Taekwondo schools in Las Vegas, Whittier, Ladera Ranch and Torrance, including schools with more than one location.
 updated: 2026-11-01
 status: provisional
 statusNote: This list was compiled in November 2026 from school websites and business directories, and it may be incomplete.
 category: Practice
 aliases: [Las Vegas Taekwondo schools, Whittier Taekwondo schools, Ladera Ranch Taekwondo schools]
-related: [schools/eagle-taekwondo, schools/lone-mountain-taekwondo, schools/one-top-center-world-taekwondo, schools/thompsons-taekwondo, schools/invictus-taekwondo-center, schools/las-vegas-taekwon-do, schools/nixa-martial-arts-institute, schools/taekwondo-usa-whittier, schools/victory-taekwondo-center, schools/kangs-sunrise-taekwondo, articles/taekwondo-schools-in-irvine]
+related: [schools/taekwondo-21, schools/eagle-taekwondo, schools/lone-mountain-taekwondo, schools/one-top-center-world-taekwondo, schools/thompsons-taekwondo, schools/invictus-taekwondo-center, schools/las-vegas-taekwon-do, schools/nixa-martial-arts-institute, schools/taekwondo-usa-whittier, schools/victory-taekwondo-center, schools/kangs-sunrise-taekwondo, articles/taekwondo-schools-in-irvine]
 sources:
   - Eagle Taekwondo, home page | https://eagletkdlv.com/
   - Nixa Martial Arts Institute, home page | https://nixausa.org/
@@ -38,3 +38,7 @@ Eagle Taekwondo was founded in 1986 by [[Bo Young Kim]], and Lone Mountain Taekw
 ## Ladera Ranch
 
 [[Nixa Martial Arts Institute]], at 1501 Corporate Dr, Suite B7, 92694, is the one Taekwondo school found with a Ladera Ranch address. It also has a location in Whittier.[^2]
+
+## Torrance
+
+[[Taekwondo 21]], at 2205 Artesia Blvd, Torrance, 90504, has one location. An earlier directory entry listed it in Irvine, which was incorrect.

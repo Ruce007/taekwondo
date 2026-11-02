@@ -1,6 +1,6 @@
 // HTML templates. Each function returns a string. Nothing here reads files or the network.
 
-import { site, nav, collections, statuses, countryNames } from '../site.config.mjs';
+import { site, nav, collections, statuses, countryNames, regionNames } from '../site.config.mjs';
 import { esc, jsonLd, formatDate } from './util.mjs';
 
 const abs = (p) => `${site.url}${p}`;
@@ -186,6 +186,58 @@ ${r.html}
   });
 }
 
+// Schools directory: country > region (state/province) > city, with a jump menu.
+function schoolsDirectory(sorted, list) {
+  const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const tree = new Map();
+  for (const p of sorted) {
+    const fm = p.fm || {};
+    const cc = fm.country || '';
+    const rc = fm.region || '';
+    const city = fm.city || 'Other';
+    if (!tree.has(cc)) tree.set(cc, new Map());
+    const regions = tree.get(cc);
+    if (!regions.has(rc)) regions.set(rc, new Map());
+    const cities = regions.get(rc);
+    if (!cities.has(city)) cities.set(city, []);
+    cities.get(city).push(p);
+  }
+  const countryLabel = (cc) => countryNames[cc] || cc || 'Other';
+  const regionLabel = (cc, rc) => (regionNames[cc] && regionNames[cc][rc]) || rc || 'Other';
+  const count = (m) => [...m.values()].reduce((n, v) => n + (Array.isArray(v) ? v.length : count(v)), 0);
+  const nav = [...tree.entries()]
+    .sort((a, b) => countryLabel(a[0]).localeCompare(countryLabel(b[0])))
+    .map(([cc, regions]) => {
+      const rs = [...regions.entries()]
+        .sort((a, b) => regionLabel(cc, a[0]).localeCompare(regionLabel(cc, b[0])))
+        .map(([rc, cities]) => {
+          const cs = [...cities.keys()].sort().map((c) => `<a href="#${slug(`${cc}-${rc}-${c}`)}">${esc(c)}</a> (${cities.get(c).length})`).join(', ');
+          return `<li><a href="#${slug(`${cc}-${rc}`)}"><strong>${esc(regionLabel(cc, rc))}</strong></a> (${count(cities)}): ${cs}</li>`;
+        })
+        .join('');
+      return `<li><a href="#${slug(cc)}"><strong>${esc(countryLabel(cc))}</strong></a> (${count(regions)})<ul>${rs}</ul></li>`;
+    })
+    .join('');
+  const jump = `<nav class="toc" aria-label="Browse schools by place"><h2 class="toc-title">Browse by place</h2><ul>${nav}</ul></nav>`;
+  const sections = [...tree.entries()]
+    .sort((a, b) => countryLabel(a[0]).localeCompare(countryLabel(b[0])))
+    .map(([cc, regions]) => {
+      const rs = [...regions.entries()]
+        .sort((a, b) => regionLabel(cc, a[0]).localeCompare(regionLabel(cc, b[0])))
+        .map(([rc, cities]) => {
+          const cs = [...cities.entries()]
+            .sort((a, b) => a[0].localeCompare(b[0]))
+            .map(([c, items]) => `<h4 class="index-city" id="${slug(`${cc}-${rc}-${c}`)}">${esc(c)} <span class="muted">(${items.length})</span></h4>\n${list(items)}`)
+            .join('\n');
+          return `<h3 class="index-region" id="${slug(`${cc}-${rc}`)}">${esc(regionLabel(cc, rc))}</h3>\n${cs}`;
+        })
+        .join('\n');
+      return `<h2 class="index-group" id="${slug(cc)}">${esc(countryLabel(cc))}</h2>\n${rs}`;
+    })
+    .join('\n');
+  return `${jump}\n${sections}`;
+}
+
 export function indexPage(ctx, key, items) {
   const col = collections[key];
   const sorted = [...items].sort((a, b) => (a.order || 0) - (b.order || 0) || a.title.localeCompare(b.title));
@@ -199,12 +251,9 @@ export function indexPage(ctx, key, items) {
       ['Original founders of Taekwondo', sorted.filter(isFounder)],
       ['School founders and teachers', sorted.filter((p) => !isFounder(p))],
     ];
-  } else if (key === 'schools') {
-    const cities = [...new Set(sorted.map((p) => (p.fm && p.fm.city) || ''))].sort();
-    groups = cities.map((c) => [c || 'Other', sorted.filter((p) => ((p.fm && p.fm.city) || '') === c)]);
   }
   const list = (items) => `<ul class="card-list">\n${items.map(card).join('\n')}\n</ul>`;
-  const lis = groups
+  const lis = key === 'schools' ? schoolsDirectory(sorted, list) : groups
     ? groups
         .filter(([, items]) => items.length)
         .map(([name, items]) => `<h2 class="index-group">${esc(name)}</h2>\n${list(items)}`)

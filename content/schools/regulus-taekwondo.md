@@ -18,6 +18,7 @@ infobox:
   - Phone: [(949) 966-2007](tel:+19499662007)
   - Website: [irvinetaekwondo.com](https://irvinetaekwondo.com/)
   - Locations: One
+  - Founders: Master Yoon G. Chang and Master Alfred Rhee
   - Head instructor: Master Alfred Rhee, 5th dan (Kukkiwon)
   - Sparring coach: Master Ji Hyun Kim, 5th dan (Kukkiwon)
   - Programs: Lion Cubs (3.5 to 5), Lion Kings and Queens (6 to 10), Lion Teens and Adults (11 and up)
@@ -34,8 +35,10 @@ Regulus Taekwondo is a Taekwondo school at 1150 Roosevelt, Suite 100, Irvine, Ca
 
 The school says it is led by [[Kukkiwon]]-certified masters and former elite athletes. It runs Lion Cubs (ages 3.5 to 5), Lion Kings and Queens (ages 6 to 10) and Lion Teens and Adults (ages 11 and up), along with invitation-only Red Squad and Demo Team and Leadership Team programs.[^1]
 
-## Instructors
+## Founders and instructors
+
+Regulus was started by Master Yoon G. Chang and Master Alfred Rhee. Master Ji Hyun Kim joined a few years later.
 
 Master Alfred Rhee is head instructor and Leadership Program Director. He holds a 5th dan in Taekwondo from the Kukkiwon and a 4th dan in Hapkido, is a USA Taekwondo certified coach and referee, and was named Instructor of the Year by AMAA Naperville, Illinois, in 2016.[^3]
 
-Master Ji Hyun Kim is the sparring coach and leads the competition program. She holds a Kukkiwon 5th dan and is a USA Taekwondo certified coach and referee. Her listed results include first place at the Seoul Taekwondo Junior Championship and second place at the Korea National Junior Taekwondo Federation Championship.[^4]
+Master Ji Hyun Kim is the sparring coach and leads the competition program. He holds a Kukkiwon 5th dan and is a USA Taekwondo certified coach and referee. His listed results include first place at the Seoul Taekwondo Junior Championship and second place at the Korea National Junior Taekwondo Federation Championship.[^4]
