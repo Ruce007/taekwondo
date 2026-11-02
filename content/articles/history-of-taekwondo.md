@@ -25,9 +25,9 @@ Modern Taekwondo has no single, universally recognized founder. It grew out of s
 
 Older Korean martial practices such as taekkyeon (also spelled taekkyon) existed before modern Taekwondo.[^1] Korea was under Japanese rule until 1945, and several men who later founded kwans had trained in Japanese karate or judo, in Chinese martial arts or in taekkyeon. Examples include [[Lee Won-kuk]], [[Hwang Kee]], [[Ro Byung-jick]] and [[Chun Sang-sup]].[^2][^4][^5]
 
-## The original kwans (1944 to 1955)
+## The kwans (1944 to 1956)
 
-After liberation in 1945, instructors opened schools that blended their different training backgrounds. Founding dates differ between sources, and each kwan page notes the differences.
+After liberation in 1945, instructors opened schools that blended their different training backgrounds. Five kwans, usually called the original five, opened in the mid-1940s: the [[Chung Do Kwan]], [[Song Moo Kwan]], [[Moo Duk Kwan]], [[Ji Do Kwan]] and [[Chang Moo Kwan]]. Four more followed after the Korean War, the Han Moo Kwan, Kang Duk Won, Jung Do Kwan and [[Oh Do Kwan]], making the nine kwans.[^1] Founding dates differ between sources, and each kwan page notes the differences. This site covers the original five and the Oh Do Kwan so far.
 
 | Kwan | Founder | Founded |
 |---|---|---|
@@ -43,7 +43,7 @@ After liberation in 1945, instructors opened schools that blended their differen
 Accounts of how the name Taekwondo was chosen differ:
 
 - The ITF says a board of politicians, military and business leaders, historians and instructors approved the name Taekwon-Do on 11 April 1955, with President Syngman Rhee's approval.[^3]
-- Kwan leaders began discussing a unified art in 1955, with Choi Hong-hi advocating the name, and the nine original kwans agreed on it in 1959.[^1]
+- Kwan leaders began discussing a unified art in 1955, with Choi Hong-hi advocating the name, and the nine kwans agreed on it in 1959.[^1]
 - The name became official under the Korea Taekwondo Association on 5 August 1965.[^4]
 
 Kang Won-sik and Lee Kyong-myong describe a detour. The Korea Taekwondo Association was founded in 1959 and adopted the name Taekwondo, but a unification conference in September 1961 changed it to Taesoodo. A Unification Declaration ceremony followed on 18 March 1965, which Hwang Kee declared invalid the next day, and Choi Hong-hi later changed the name back to Taekwondo.[^10]

@@ -43,7 +43,7 @@ The Encyclopedia of Arkansas reports more than 300,000 members worldwide, with m
 
 Songahm Taekwondo covers forms (poomsae), sparring, one-steps, self-defense, board breaking, weapons and leadership. Students advance through a colored-belt series and a black-belt series with nine ranks each, and the 18 forms performed in sequence are called the Songahm Star.[^3]
 
-## Haeng Ung Lee and the original founders
+## Haeng Ung Lee and the original kwans
 
 The ATA's founder has his own page: [[Haeng Ung Lee]]. He began training in 1953 and earned his first-degree black belt in 1954, and none of the sources found names his teachers or his kwan.[^2][^6][^7] The Encyclopedia of Arkansas, Wikipedia and the ATA's own biography do not link him to the [[Song Moo Kwan]], [[Chung Do Kwan]], [[Moo Duk Kwan]], [[Ji Do Kwan]], [[Chang Moo Kwan]] or [[Oh Do Kwan]], the original kwans behind modern Taekwondo (see [[History of Taekwondo]]). One ATA-affiliated school's history page says General [[Choi Hong-hi]], the founder of the [[International Taekwon-Do Federation]], taught Lee the first Chang-hun forms; that claim has no independent confirmation.
 

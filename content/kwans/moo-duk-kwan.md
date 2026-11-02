@@ -2,6 +2,7 @@
 title: Moo Duk Kwan
 summary: A kwan founded by Hwang Kee in 1945 that developed into Tang Soo Do and later Soo Bahk Do, and stayed independent of Taekwondo.
 updated: 2026-10-31
+generation: original
 status: provisional
 aliases: [Moo Duk Kwon, Soo Bahk Do Moo Duk Kwan, Tang Soo Do Moo Duk Kwan]
 meta: Founded 1945 by Hwang Kee

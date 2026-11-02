@@ -2,6 +2,7 @@
 title: Oh Do Kwan
 summary: A kwan co-founded by Choi Hong-hi and Nam Tae-hi in the mid-1950s, closely tied to the origins of the ITF.
 updated: 2026-10-31
+generation: later
 status: provisional
 aliases: [Oh Do Kwon, Ohdokwan]
 meta: Mid-1950s, Choi Hong-hi and Nam Tae-hi

@@ -2,6 +2,7 @@
 title: Chang Moo Kwan
 summary: A kwan that grew from a YMCA Kwon Bup club started by Yun Byung-in in 1946 and was named by his senior student Lee Nam Suk.
 updated: 2026-10-31
+generation: original
 status: provisional
 aliases: [Chang Mu Kwan, Changmookwan, Chang Moo Kwon]
 meta: Founded 1946 by Yun Byung-in

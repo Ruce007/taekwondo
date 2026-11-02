@@ -41,7 +41,7 @@ export const collections = {
     type: 'person',
     label: 'Person',
     plural: 'People',
-    intro: 'The original founders of Taekwondo, followed by the school founders and teachers who came after them, with documented lineage links where sources allow.',
+    intro: 'The founders of the kwans from which Taekwondo developed, followed by the teachers and school founders who came after them, with documented lineage links where sources allow. No one person is credited as the founder of Taekwondo.',
     description: 'Taekwondo founders, kwan leaders and notable masters, with sourced biographies and lineage links.',
   },
   kwans: {
@@ -51,7 +51,7 @@ export const collections = {
     label: 'Kwan',
     plural: 'Kwans',
     intro:
-      'The original Korean martial arts schools (kwans) from which modern Taekwondo developed, listed alphabetically. Founding dates differ between sources, so no order of age is implied; each page says where the accounts differ.',
+      'The Korean martial arts schools (kwans) from which modern Taekwondo developed: the original five of the mid-1940s, then later kwans, each listed alphabetically. Founding dates differ between sources, so no order of age is implied; each page says where the accounts differ.',
     description: 'The original Korean kwans behind modern Taekwondo: founders, dates and the disagreements between sources.',
   },
   organizations: {

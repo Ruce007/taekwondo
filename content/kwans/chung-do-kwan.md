@@ -2,6 +2,7 @@
 title: Chung Do Kwan
 summary: One of the earliest kwans, founded by Lee Won-kuk in 1944; its students and leaders were central to early Taekwondo.
 updated: 2026-10-31
+generation: original
 status: provisional
 aliases: [Chung Do Kwon, Chungdokwan]
 meta: Founded 1944 by Lee Won-kuk
@@ -27,7 +28,7 @@ Son Duk-sung (born 17 June 1922) became the second head of the kwan around 1950 
 
 ## Role in the name and unification
 
-The Chung Do Kwan was one of the nine original kwans that formed the basis of the Korea Taekwondo Association and the [[Kukkiwon]]. Choi Hong-hi proposed the name Taekwondo in 1955, and the Chung Do Kwan and [[Oh Do Kwan]] adopted it at his direction.[^1] See [[History of Taekwondo]] for the different accounts of the naming.
+The Chung Do Kwan was one of the original five kwans, and one of the nine kwans that formed the basis of the Korea Taekwondo Association and the [[Kukkiwon]]. Choi Hong-hi proposed the name Taekwondo in 1955, and the Chung Do Kwan and [[Oh Do Kwan]] adopted it at his direction.[^1] See [[History of Taekwondo]] for the different accounts of the naming.
 
 ## Today
 

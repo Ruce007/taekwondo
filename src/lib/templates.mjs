@@ -251,10 +251,18 @@ export function indexPage(ctx, key, items) {
   // People: founders get their own group. Schools: grouped by city.
   let groups = null;
   if (key === 'people') {
-    const isFounder = (p) => p.fm && p.fm.role === 'original-founder';
+    const role = (r) => (p) => p.fm && p.fm.role === r;
+    const isKwan = (p) => p.fm && (p.fm.role === 'kwan-founder' || p.fm.role === 'later-kwan-founder');
     groups = [
-      ['Original founders of Taekwondo', sorted.filter(isFounder)],
-      ['School founders and teachers', sorted.filter((p) => !isFounder(p))],
+      ['Founders of the original five kwans', sorted.filter(role('kwan-founder'))],
+      ['Founders of later kwans', sorted.filter(role('later-kwan-founder'))],
+      ['Teachers and school founders', sorted.filter((p) => !isKwan(p))],
+    ];
+  } else if (key === 'kwans') {
+    const gen = (g) => (p) => p.fm && p.fm.generation === g;
+    groups = [
+      ['The original five kwans (mid-1940s)', sorted.filter(gen('original'))],
+      ['Later kwans (1950s)', sorted.filter(gen('later'))],
     ];
   } else if (key === 'articles') {
     groups = articleCategories.map((c) => [c, sorted.filter((p) => p.fm && p.fm.category === c)]);
@@ -342,9 +350,11 @@ ${
         .join('')}</ol></section>`
     : ''
 }
-<section aria-labelledby="kwan-title"><h2 id="kwan-title">The original kwans</h2><p class="muted section-note">Modern Taekwondo grew out of these Korean schools. Their founding dates are disputed, so they are listed alphabetically.</p><ul class="chip-list">${sorted(byKey('kwans'))
+<section aria-labelledby="kwan-title"><h2 id="kwan-title">The original five kwans</h2><p class="muted section-note">Modern Taekwondo grew out of these Korean schools, which opened in the mid-1940s. Their founding dates are disputed, so they are listed alphabetically. Later kwans, such as the Oh Do Kwan, followed in the 1950s.</p><ul class="chip-list">${sorted(byKey('kwans').filter((p) => p.fm && p.fm.generation === 'original'))
     .map((p) => `<li><a href="${p.path}">${esc(p.title)}</a></li>`)
-    .join('')}</ul><p class="muted section-note"><a href="/kwans/">About the kwans</a> &middot; <a href="/people/">Their founders</a> &middot; <a href="/organizations/">Organizations today</a></p></section>
+    .join('')}${sorted(byKey('kwans').filter((p) => p.fm && p.fm.generation === 'later'))
+    .map((p) => `<li><a href="${p.path}">${esc(p.title)} <span class="muted">(later)</span></a></li>`)
+    .join('')}</ul><p class="muted section-note"><a href="/kwans/">About the kwans</a> &middot; <a href="/people/">Kwan founders</a> &middot; <a href="/organizations/">Organizations today</a></p></section>
 <section aria-labelledby="browse-title"><h2 id="browse-title">Browse the library</h2><ul class="card-list card-list--grid">${library
     .map(([k, label]) => `<li><a class="card-link" href="${collections[k].base}/">${esc(collections[k].plural)}</a> <span class="meta">${esc(label)}</span><span class="card-summary">${esc(collections[k].intro)}</span></li>`)
     .join('')}</ul></section>

@@ -2,6 +2,7 @@
 title: Ji Do Kwan
 summary: A kwan that began as a Kong Soo Do club at the Chosun Yun Moo Kwan in 1946 and was restarted as Ji Do Kwan after the Korean War.
 updated: 2026-10-31
+generation: original
 status: provisional
 aliases: [Jidokwan, Ji Do Kwon, Chosun Yun Moo Kwan, Yun Moo Kwan, Yun Mu Kwan]
 meta: Founded 1946 by Chun Sang-sup

@@ -2,6 +2,7 @@
 title: Song Moo Kwan
 summary: A kwan founded by Ro Byung-jick in Kaesong on 20 March 1944, among the first of the post-liberation Korean martial arts schools.
 updated: 2026-10-31
+generation: original
 status: provisional
 aliases: [Songmookwan, Song Moo Kwan Taekwondo]
 meta: Founded 1944 by Ro Byung-jick

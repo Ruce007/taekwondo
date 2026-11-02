@@ -23,6 +23,12 @@ Taekwondo history involves competing accounts, and several organizations have th
 
 Where sources disagree on a date, spelling or attribution, the page presents each account, names its source and avoids choosing a winner without evidence. The site does not name a single "founder" of modern Taekwondo, because the sources do not agree on one.
 
+## Terms
+
+- A **kwan founder** is the person who opened a kwan, the type of school from which Taekwondo developed. No one person is called the founder of Taekwondo.
+- The **original five kwans** are the Chung Do Kwan, Song Moo Kwan, Moo Duk Kwan, Ji Do Kwan and Chang Moo Kwan, which opened in the mid-1940s. Four more kwans opened between 1953 and 1956, making nine in all; the Oh Do Kwan is one of them.
+- A **school founder** is the person who opened a Taekwondo school or organization later, such as a school in today's directory. They are listed apart from kwan founders.
+
 ## Neutrality and conflicts of interest
 
 - Pages use neutral language and avoid promotional wording, including in school listings.
