@@ -1,6 +1,6 @@
 // HTML templates. Each function returns a string. Nothing here reads files or the network.
 
-import { site, nav, collections, statuses, countryNames, regionNames } from '../site.config.mjs';
+import { site, nav, collections, statuses, countryNames, regionNames, articleCategories } from '../site.config.mjs';
 import { esc, jsonLd, formatDate } from './util.mjs';
 
 const abs = (p) => `${site.url}${p}`;
@@ -186,9 +186,10 @@ ${r.html}
   });
 }
 
+const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
 // Schools directory: country > region (state/province) > city, with a jump menu.
-function schoolsDirectory(sorted, list) {
-  const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+function schoolsDirectory(sorted, list, ctx) {
   const tree = new Map();
   for (const p of sorted) {
     const fm = p.fm || {};
@@ -235,7 +236,11 @@ function schoolsDirectory(sorted, list) {
       return `<h2 class="index-group" id="${slug(cc)}">${esc(countryLabel(cc))}</h2>\n${rs}`;
     })
     .join('\n');
-  return `${jump}\n${sections}`;
+  const guides = ((ctx && ctx.pages) || []).filter((p) => p.fm && p.fm.category === 'Directories');
+  const guideLinks = guides.length
+    ? `<p class="note">Area guides with side-by-side tables: ${guides.map((g) => `<a href="${g.path}">${esc(g.title)}</a>`).join(' · ')}</p>`
+    : '';
+  return `${jump}\n${guideLinks}\n${sections}`;
 }
 
 export function indexPage(ctx, key, items) {
@@ -251,9 +256,11 @@ export function indexPage(ctx, key, items) {
       ['Original founders of Taekwondo', sorted.filter(isFounder)],
       ['School founders and teachers', sorted.filter((p) => !isFounder(p))],
     ];
+  } else if (key === 'articles') {
+    groups = articleCategories.map((c) => [c, sorted.filter((p) => p.fm && p.fm.category === c)]);
   }
   const list = (items) => `<ul class="card-list">\n${items.map(card).join('\n')}\n</ul>`;
-  const lis = key === 'schools' ? schoolsDirectory(sorted, list) : groups
+  const lis = key === 'schools' ? schoolsDirectory(sorted, list, ctx) : groups
     ? groups
         .filter(([, items]) => items.length)
         .map(([name, items]) => `<h2 class="index-group">${esc(name)}</h2>\n${list(items)}`)
@@ -290,34 +297,68 @@ ${lis}`;
 }
 
 export function homePage(ctx, { pages, featured }) {
-  const counts = Object.entries(collections)
-    .filter(([k]) => k !== 'pages')
-    .map(([k, c]) => ({ k, c, n: pages.filter((p) => p.key === k).length }));
+  const byKey = (k) => pages.filter((p) => p.key === k);
   const recent = [...pages]
     .filter((p) => p.key !== 'pages')
     .sort((a, b) => b.updated.localeCompare(a.updated) || a.title.localeCompare(b.title))
     .slice(0, 6);
+  const sorted = (list) => [...list].sort((a, b) => a.title.localeCompare(b.title));
+  const card = (p, extra = '') =>
+    `<li><a class="card-link" href="${p.path}">${esc(p.title)}</a>${extra}<span class="card-summary">${esc(p.summary)}</span></li>`;
+
+  // Schools by place, with counts.
+  const schools = byKey('schools');
+  const places = new Map();
+  for (const s of schools) {
+    const fm = s.fm || {};
+    const id = `${fm.country}-${fm.region}-${fm.city}`;
+    if (!places.has(id)) places.set(id, { city: fm.city, region: (regionNames[fm.country] || {})[fm.region] || fm.region, n: 0, id });
+    places.get(id).n += 1;
+  }
+  const placeList = [...places.values()].sort((a, b) => b.n - a.n || a.city.localeCompare(b.city));
+  const cityCount = places.size;
+
+  // How much of the site has been through full review.
+  const content = pages.filter((p) => p.key !== 'pages');
+  const reviewed = content.filter((p) => p.status === 'reviewed').length;
+
+  const library = [
+    ['articles', `${byKey('articles').length} articles`],
+    ['people', `${byKey('people').length} people`],
+    ['kwans', `${byKey('kwans').length} kwans`],
+    ['organizations', `${byKey('organizations').length} organizations`],
+    ['schools', `${schools.length} schools in ${cityCount} ${cityCount === 1 ? 'city' : 'cities'}`],
+  ];
+
   const body = `<section class="hero" aria-labelledby="hero-title">
   <h1 id="hero-title">${esc(site.tagline)}</h1>
   <p class="lede">${esc(site.description)}</p>
+  <p class="hero-actions"><a class="button" href="/wiki/taekwondo/">Start learning</a> <a class="button button--quiet" href="/schools/">Find a school</a></p>
 </section>
 ${
   featured.length
-    ? `<section aria-labelledby="start-title"><h2 id="start-title">Start here</h2><ul class="card-list card-list--grid">${featured
-        .map((p) => `<li><a class="card-link" href="${p.path}">${esc(p.title)}</a><span class="card-summary">${esc(p.summary)}</span></li>`)
-        .join('')}</ul></section>`
+    ? `<section aria-labelledby="start-title"><h2 id="start-title">Start here</h2><p class="muted section-note">A reading path, in order: what Taekwondo is, where it came from, who governs it, then training and competition.</p><ol class="card-list card-list--grid path">${featured
+        .map((p) => card(p))
+        .join('')}</ol></section>`
     : ''
 }
-<section aria-labelledby="browse-title"><h2 id="browse-title">Browse the library</h2><ul class="card-list card-list--grid">${counts
-    .map(
-      ({ k, c, n }) =>
-        `<li><a class="card-link" href="${c.base}/">${esc(c.plural)}</a> <span class="meta">${n} ${n === 1 ? 'entry' : 'entries'}</span><span class="card-summary">${esc(c.intro)}</span></li>`,
-    )
+<section aria-labelledby="kwan-title"><h2 id="kwan-title">The original kwans</h2><p class="muted section-note">Modern Taekwondo grew out of these Korean schools. Their founding dates are disputed, so they are listed alphabetically.</p><ul class="chip-list">${sorted(byKey('kwans'))
+    .map((p) => `<li><a href="${p.path}">${esc(p.title)}</a></li>`)
+    .join('')}</ul><p class="muted section-note"><a href="/kwans/">About the kwans</a> &middot; <a href="/people/">Their founders</a> &middot; <a href="/organizations/">Organizations today</a></p></section>
+<section aria-labelledby="browse-title"><h2 id="browse-title">Browse the library</h2><ul class="card-list card-list--grid">${library
+    .map(([k, label]) => `<li><a class="card-link" href="${collections[k].base}/">${esc(collections[k].plural)}</a> <span class="meta">${esc(label)}</span><span class="card-summary">${esc(collections[k].intro)}</span></li>`)
     .join('')}</ul></section>
+${
+  placeList.length
+    ? `<section aria-labelledby="places-title"><h2 id="places-title">Find a school</h2><p class="muted section-note">The directory is free to browse and grows by place. Each entry cites the school's own website where we could reach it.</p><ul class="chip-list">${placeList
+        .map((c) => `<li><a href="/schools/#${slug(c.id)}">${esc(c.city)}${c.region ? `, ${esc(c.region)}` : ''} <span class="muted">(${c.n})</span></a></li>`)
+        .join('')}</ul><p class="muted section-note"><a href="/schools/">All schools by place</a></p></section>`
+    : ''
+}
 <section aria-labelledby="recent-title"><h2 id="recent-title">Recently updated</h2><ul class="plain-list">${recent
     .map((p) => `<li><a href="${p.path}">${esc(p.title)}</a> <span class="muted">${esc(p.col.label)} &middot; <time datetime="${p.updated}">${esc(formatDate(p.updated))}</time></span></li>`)
     .join('')}</ul></section>
-<section class="notice" aria-labelledby="stage-title"><h2 id="stage-title">An early, curated edition</h2><p>${esc(site.name)} is being rebuilt as a long-term Taekwondo knowledge base and school directory. For now every page is curated by the editors and cites its sources. Core access is free and will stay free. <a href="/about/">Read about the project</a> or <a href="/editorial-policy/">how we handle facts</a>.</p></section>`;
+<section class="notice" aria-labelledby="stage-title"><h2 id="stage-title">How far to trust a page</h2><p>Every page shows its sources and a review status. ${reviewed ? `${reviewed} of ${content.length} pages are marked Reviewed; the rest are` : 'All pages are currently'} Provisional, which means ${reviewed ? 'they have' : 'they have not'} ${reviewed ? 'not ' : ''}had a full primary-source review. Pages move to Reviewed as their facts are confirmed. ${esc(site.name)} is curated by the editors, and core access is free and will stay free. <a href="/editorial-policy/">How we handle facts</a> &middot; <a href="/about/">About the project</a></p></section>`;
   return layout(ctx, {
     home: true,
     title: site.name,

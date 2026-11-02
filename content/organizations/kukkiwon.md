@@ -5,7 +5,6 @@ updated: 2026-10-30
 status: provisional
 aliases: [World Taekwondo Headquarters, Kukkiwon Taekwondo]
 meta: Seoul, named 6 February 1973
-order: 3
 founded: 1973-02-06
 infobox:
   - Location: Seoul, South Korea

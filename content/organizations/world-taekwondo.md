@@ -5,7 +5,6 @@ updated: 2026-10-30
 status: provisional
 aliases: [WT, WTF, World Taekwondo Federation]
 meta: Founded 1973, governs Olympic-style Taekwondo
-order: 1
 founded: 1973-05-28
 infobox:
   - Founded: 28 May 1973, at the Kukkiwon, Seoul (as the World Taekwondo Federation)

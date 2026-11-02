@@ -5,7 +5,6 @@ updated: 2026-10-31
 status: provisional
 aliases: [Jidokwan, Ji Do Kwon, Chosun Yun Moo Kwan, Yun Moo Kwan, Yun Mu Kwan]
 meta: Founded 1946 by Chun Sang-sup
-order: 5
 founded: 1946
 founders: Chun Sang-sup
 infobox:

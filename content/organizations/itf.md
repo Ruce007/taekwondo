@@ -5,7 +5,6 @@ updated: 2026-10-30
 status: provisional
 aliases: [ITF, ITF Taekwon-Do, International Taekwondo Federation]
 meta: Founded 1966 by Choi Hong-hi
-order: 2
 founded: 1966-03-22
 founders: Choi Hong-hi
 infobox:

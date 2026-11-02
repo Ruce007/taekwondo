@@ -5,7 +5,6 @@ updated: 2026-10-31
 status: provisional
 aliases: [Chung Do Kwon, Chungdokwan]
 meta: Founded 1944 by Lee Won-kuk
-order: 1
 founded: 1944
 founders: Lee Won-kuk
 infobox:

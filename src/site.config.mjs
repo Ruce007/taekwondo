@@ -51,7 +51,7 @@ export const collections = {
     label: 'Kwan',
     plural: 'Kwans',
     intro:
-      'The original Korean martial arts schools (kwans) from which modern Taekwondo developed. Founding dates differ between sources; each page says where.',
+      'The original Korean martial arts schools (kwans) from which modern Taekwondo developed, listed alphabetically. Founding dates differ between sources, so no order of age is implied; each page says where the accounts differ.',
     description: 'The original Korean kwans behind modern Taekwondo: founders, dates and the disagreements between sources.',
   },
   organizations: {
@@ -60,7 +60,7 @@ export const collections = {
     type: 'organization',
     label: 'Organization',
     plural: 'Organizations',
-    intro: 'International federations and technical authorities that shape Taekwondo today.',
+    intro: 'Federations, technical authorities and independent organizations that shape Taekwondo today, listed alphabetically. The comparison article explains how they relate.',
     description: 'World Taekwondo, the ITF, the Kukkiwon and other major Taekwondo organizations.',
   },
   schools: {
@@ -104,7 +104,15 @@ export const regionNames = {
   US: { CA: 'California', NV: 'Nevada' },
 };
 
-export const articleCategories = ['Fundamentals', 'History', 'Practice', 'Competition'];
+export const articleCategories = ['Fundamentals', 'History', 'Practice', 'Competition', 'Directories'];
 
 // Pages shown under "Start here" on the home page, in order. Use collection/slug.
-export const featured = ['articles/taekwondo', 'articles/history-of-taekwondo', 'kwans/chung-do-kwan'];
+// A reading path, in order: what it is, where it came from, who runs it, then practice and competition.
+export const featured = [
+  'articles/taekwondo',
+  'articles/history-of-taekwondo',
+  'articles/taekwondo-organizations-compared',
+  'articles/belt-ranks',
+  'articles/techniques-and-forms',
+  'articles/taekwondo-at-the-olympics',
+];

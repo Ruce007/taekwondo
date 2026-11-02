@@ -4,7 +4,7 @@ summary: A neutral, alphabetical list of Taekwondo schools in Las Vegas, Whittie
 updated: 2026-11-01
 status: provisional
 statusNote: This list was compiled in November 2026 from school websites and business directories, and it may be incomplete.
-category: Practice
+category: Directories
 aliases: [Las Vegas Taekwondo schools, Whittier Taekwondo schools, Ladera Ranch Taekwondo schools]
 related: [schools/taekwondo-21, schools/eagle-taekwondo, schools/lone-mountain-taekwondo, schools/one-top-center-world-taekwondo, schools/thompsons-taekwondo, schools/invictus-taekwondo-center, schools/las-vegas-taekwon-do, schools/nixa-martial-arts-institute, schools/taekwondo-usa-whittier, schools/victory-taekwondo-center, schools/kangs-sunrise-taekwondo, articles/taekwondo-schools-in-irvine]
 sources:

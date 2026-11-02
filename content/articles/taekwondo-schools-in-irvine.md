@@ -4,7 +4,7 @@ summary: A neutral, alphabetical list of Taekwondo schools with Irvine addresses
 updated: 2026-11-01
 status: provisional
 statusNote: This list was compiled in October 2026 from school websites and business directories, and it may be incomplete.
-category: Practice
+category: Directories
 aliases: [Irvine Taekwondo schools, Taekwondo in Irvine]
 related: [schools/il-do-taekwondo, schools/elite-fitness-taekwondo, schools/regulus-taekwondo, schools/masters-lee-talium, schools/dynamic-martial-arts, schools/ata-martial-arts-irvine]
 sources:

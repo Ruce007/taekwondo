@@ -5,7 +5,6 @@ updated: 2026-10-31
 status: provisional
 aliases: [Songmookwan, Song Moo Kwan Taekwondo]
 meta: Founded 1944 by Ro Byung-jick
-order: 2
 founded: 1944-03-20
 founders: Ro Byung-jick
 website: https://songmookwan.com/

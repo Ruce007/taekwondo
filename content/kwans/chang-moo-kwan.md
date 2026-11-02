@@ -5,7 +5,6 @@ updated: 2026-10-31
 status: provisional
 aliases: [Chang Mu Kwan, Changmookwan, Chang Moo Kwon]
 meta: Founded 1946 by Yun Byung-in
-order: 4
 founded: 1946
 founders: Yun Byung-in
 infobox:

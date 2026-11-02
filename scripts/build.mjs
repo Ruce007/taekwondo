@@ -89,7 +89,7 @@ async function main() {
   await writeFile(path.join(dist, 'assets', assets.css), css);
   await writeFile(path.join(dist, 'assets', assets.js), js);
 
-  const ctx = { assets, year: new Date().getFullYear() };
+  const ctx = { assets, year: new Date().getFullYear(), pages };
   const put = async (urlPath, html) => {
     const target = urlPath.endsWith('/') ? path.join(dist, urlPath, 'index.html') : path.join(dist, urlPath);
     await mkdir(path.dirname(target), { recursive: true });
