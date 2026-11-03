@@ -9,7 +9,7 @@ export const site = {
     'A curated, sourced Taekwondo reference: history, kwans, founders, organizations and a growing directory of schools.',
   // Shown in the footer. Deliberately an editorial team name, not a person.
   publisher: 'tkd.wiki editors',
-  stage: 'Early foundation: curated edition',
+  stage: 'Curated edition',
 };
 
 // How far a page's facts have been checked. See /editorial-policy/.
@@ -51,7 +51,7 @@ export const collections = {
     label: 'Kwan',
     plural: 'Kwans',
     intro:
-      'The Korean martial arts schools (kwans) from which modern Taekwondo developed: the original five of the mid-1940s, then later kwans, followed by the four later kwans of the 1950s.',
+      'The Korean martial arts schools (kwans) from which modern Taekwondo developed: the original five of the mid-1940s and four later kwans of the 1950s.',
     description: 'The original Korean kwans behind modern Taekwondo: founders, dates and the disagreements between sources.',
   },
   organizations: {
@@ -70,7 +70,7 @@ export const collections = {
     label: 'School',
     plural: 'Schools',
     intro:
-      'A curated directory of Taekwondo schools. Entries are added by the editors from public, citable information.',
+      'A directory of Taekwondo schools by country, state and city, with address, phone and website.',
     description: 'A curated, free directory of Taekwondo schools with sourced information and lineage links.',
   },
   pages: {

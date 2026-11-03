@@ -11,7 +11,7 @@ sources:
   - Eagle Taekwondo, home page | https://eagletkdlv.com/
   - Nixa Martial Arts Institute, home page | https://nixausa.org/
 ---
-Listing is free and does not depend on membership. Each school has its own page with sources. For Irvine, see [[Taekwondo schools in Irvine, California]].
+Each school has its own page with sources. For Irvine, see [[Taekwondo schools in Irvine, California]].
 
 ## Las Vegas
 

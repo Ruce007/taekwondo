@@ -356,7 +356,7 @@ ${
         .join('')}</ol></section>`
     : ''
 }
-<section aria-labelledby="kwan-title"><h2 id="kwan-title">The original five kwans</h2><p class="muted section-note">Modern Taekwondo grew out of these Korean schools, which opened in the mid-1940s. Four later kwans followed in the 1950s.</p><ul class="chip-list">${sorted(byKey('kwans').filter((p) => p.fm && p.fm.generation === 'original'))
+<section aria-labelledby="kwan-title"><h2 id="kwan-title">The nine kwans</h2><p class="muted section-note">Modern Taekwondo grew out of these Korean schools: the original five of the mid-1940s and four later kwans of the 1950s.</p><ul class="chip-list">${sorted(byKey('kwans').filter((p) => p.fm && p.fm.generation === 'original'))
     .map((p) => `<li><a href="${p.path}">${esc(p.title)}</a></li>`)
     .join('')}${sorted(byKey('kwans').filter((p) => p.fm && p.fm.generation === 'later'))
     .map((p) => `<li><a href="${p.path}">${esc(p.title)} <span class="muted">(later)</span></a></li>`)
@@ -366,7 +366,7 @@ ${
     .join('')}</ul></section>
 ${
   placeList.length
-    ? `<section aria-labelledby="places-title"><h2 id="places-title">Find a school</h2><p class="muted section-note">Each entry cites the school's own website where we could reach it.</p><ul class="chip-list">${placeList
+    ? `<section aria-labelledby="places-title"><h2 id="places-title">Find a school</h2><p class="muted section-note">Browse schools by city.</p><ul class="chip-list">${placeList
         .map((c) => `<li><a href="/schools/#${slug(c.id)}">${esc(c.city)}${c.region ? `, ${esc(c.region)}` : ''} <span class="muted">(${c.n})</span></a></li>`)
         .join('')}</ul><p class="muted section-note"><a href="/schools/">All schools by place</a></p></section>`
     : ''

@@ -14,4 +14,4 @@ sources:
   - Kang Duk Won, "History" | https://kangdukwon.org/history/
   - Wikipedia, "Kang Duk Won" | https://en.wikipedia.org/wiki/Kang_Duk_Won
 ---
-Hong Jong-pyo co-founded the [[Kang Duk Won]] with [[Park Chul-hee]] and served as its first kwan jang, or head.[^1][^2] The sources found give no birth or death dates.
+Hong Jong-pyo co-founded the [[Kang Duk Won]] with [[Park Chul-hee]] and served as its first kwan jang, or head.[^1][^2] Birth and death dates are not documented.
