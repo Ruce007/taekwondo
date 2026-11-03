@@ -728,12 +728,13 @@ html { scroll-padding-top: 4.75rem; }
   .theme-switch button, :root .theme-switch button { padding: 0; width: 2.4rem; min-height: 2.4rem; }
   .menu-toggle, :root .menu-toggle { order: 3; display: inline-flex; }
   .header-search { order: 4; flex: 1 1 100%; max-width: none; }
+  .header-search input[type='search'] { padding-block: 0.4rem; }
+  .header-search button { padding-block: 0.4rem; }
   .main-nav ul { flex-direction: column; padding-inline: 0; }
   .main-nav a { padding: 0.85rem 1rem; border-bottom: 0; border-left: 4px solid transparent; }
   .main-nav a[aria-current] { border-left-color: currentColor; background: rgb(255 255 255 / 0.08); }
   .main-nav li + li { border-top: 1px solid rgb(255 255 255 / 0.12); }
-  .js .header-search, .js .main-nav { display: none; }
-  .js .site-header.is-open .header-search { display: flex; }
+  .js .main-nav { display: none; }
   .js .site-header.is-open .main-nav { display: block; }
   .site-header.is-open { max-height: 100dvh; overflow-y: auto; }
   .header-row { padding-bottom: 0.6rem; }
