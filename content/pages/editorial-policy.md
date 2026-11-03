@@ -37,7 +37,7 @@ Where sources disagree on a date, spelling or attribution, the page presents eac
 
 ## Directory listings
 
-School entries are added by the editors from public, citable information. Listing is free. Reviews and member profiles are planned for later and will have their own moderation policy before they open.
+School entries are added by the editors from public, citable information. Reviews and member profiles are planned for later and will have their own moderation policy before they open.
 
 ## Corrections
 

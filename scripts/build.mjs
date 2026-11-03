@@ -84,10 +84,12 @@ async function main() {
 
   const css = await readFile(path.join(root, 'src/styles/main.css'));
   const js = await readFile(path.join(root, 'src/scripts/search.js'));
+  const theme = await readFile(path.join(root, 'src/scripts/theme.js'));
   const hash = (b) => createHash('sha256').update(b).digest('hex').slice(0, 10);
-  const assets = { css: `main.${hash(css)}.css`, js: `search.${hash(js)}.js` };
+  const assets = { css: `main.${hash(css)}.css`, js: `search.${hash(js)}.js`, theme: `theme.${hash(theme)}.js` };
   await writeFile(path.join(dist, 'assets', assets.css), css);
   await writeFile(path.join(dist, 'assets', assets.js), js);
+  await writeFile(path.join(dist, 'assets', assets.theme), theme);
 
   const ctx = { assets, year: new Date().getFullYear(), pages };
   const put = async (urlPath, html) => {

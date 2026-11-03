@@ -38,6 +38,7 @@ export function layout(ctx, o) {
 <meta property="og:description" content="${esc(o.description)}">
 <meta property="og:url" content="${url}">
 <meta name="twitter:card" content="summary">
+<script src="/assets/${ctx.assets.theme}"></script>
 <link rel="stylesheet" href="/assets/${ctx.assets.css}">
 ${ld}
 </head>
@@ -54,6 +55,11 @@ ${ld}
       <input id="site-search" name="q" type="search" placeholder="Search the wiki" autocomplete="off">
       <button type="submit">Search</button>
     </form>
+    <div class="theme-switch" role="group" aria-label="Colour theme">
+      <button type="button" data-theme-choice="light" aria-pressed="false">Light</button>
+      <button type="button" data-theme-choice="dark" aria-pressed="false">Dark</button>
+      <button type="button" data-theme-choice="system" aria-pressed="true">System</button>
+    </div>
   </div>
   <nav class="main-nav" aria-label="Main">
     <ul class="wrap">${navHtml}</ul>
@@ -350,7 +356,7 @@ ${
         .join('')}</ol></section>`
     : ''
 }
-<section aria-labelledby="kwan-title"><h2 id="kwan-title">The original five kwans</h2><p class="muted section-note">Modern Taekwondo grew out of these Korean schools, which opened in the mid-1940s. Their founding dates are disputed, so they are listed alphabetically. Later kwans, such as the Oh Do Kwan, followed in the 1950s.</p><ul class="chip-list">${sorted(byKey('kwans').filter((p) => p.fm && p.fm.generation === 'original'))
+<section aria-labelledby="kwan-title"><h2 id="kwan-title">The original five kwans</h2><p class="muted section-note">Modern Taekwondo grew out of these Korean schools, which opened in the mid-1940s. Four later kwans followed in the 1950s.</p><ul class="chip-list">${sorted(byKey('kwans').filter((p) => p.fm && p.fm.generation === 'original'))
     .map((p) => `<li><a href="${p.path}">${esc(p.title)}</a></li>`)
     .join('')}${sorted(byKey('kwans').filter((p) => p.fm && p.fm.generation === 'later'))
     .map((p) => `<li><a href="${p.path}">${esc(p.title)} <span class="muted">(later)</span></a></li>`)
@@ -360,7 +366,7 @@ ${
     .join('')}</ul></section>
 ${
   placeList.length
-    ? `<section aria-labelledby="places-title"><h2 id="places-title">Find a school</h2><p class="muted section-note">The directory is free to browse and grows by place. Each entry cites the school's own website where we could reach it.</p><ul class="chip-list">${placeList
+    ? `<section aria-labelledby="places-title"><h2 id="places-title">Find a school</h2><p class="muted section-note">Each entry cites the school's own website where we could reach it.</p><ul class="chip-list">${placeList
         .map((c) => `<li><a href="/schools/#${slug(c.id)}">${esc(c.city)}${c.region ? `, ${esc(c.region)}` : ''} <span class="muted">(${c.n})</span></a></li>`)
         .join('')}</ul><p class="muted section-note"><a href="/schools/">All schools by place</a></p></section>`
     : ''

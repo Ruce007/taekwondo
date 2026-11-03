@@ -1,6 +1,6 @@
 ---
 title: Taekwondo schools in Irvine, California
-summary: A neutral, alphabetical list of Taekwondo schools with Irvine addresses, including schools with more than one location.
+summary: A list of Taekwondo schools with Irvine addresses, including schools with more than one location.
 updated: 2026-11-01
 status: provisional
 statusNote: This list was compiled in October 2026 from school websites and business directories, and it may be incomplete.
@@ -15,7 +15,7 @@ sources:
   - Beakid, "Dynamic Martial Arts Taekwondo and Hapkido" | https://beakid.com/ca/irvine/dynamic-martial-arts-taekwondo-and-hapkido-address
   - UCI Campus Recreation, "Taekwondo" club | https://campusrec.uci.edu/club/taekwondo.html
 ---
-Irvine has at least six Taekwondo schools. They are listed alphabetically, and listing is free and does not depend on membership. Each school has its own page with sources.
+Irvine has at least six Taekwondo schools. Each school has its own page with sources.
 
 | School | Address | Locations | Notes |
 |---|---|---|---|

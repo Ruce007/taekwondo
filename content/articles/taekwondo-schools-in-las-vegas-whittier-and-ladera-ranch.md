@@ -1,6 +1,6 @@
 ---
 title: Taekwondo schools in Las Vegas, Whittier and Ladera Ranch
-summary: A neutral, alphabetical list of Taekwondo schools in Las Vegas, Whittier, Ladera Ranch and Torrance, including schools with more than one location.
+summary: A list of Taekwondo schools in Las Vegas, Whittier, Ladera Ranch and Torrance, including schools with more than one location.
 updated: 2026-11-01
 status: provisional
 statusNote: This list was compiled in November 2026 from school websites and business directories, and it may be incomplete.

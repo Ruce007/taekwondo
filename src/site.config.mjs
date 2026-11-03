@@ -51,7 +51,7 @@ export const collections = {
     label: 'Kwan',
     plural: 'Kwans',
     intro:
-      'The Korean martial arts schools (kwans) from which modern Taekwondo developed: the original five of the mid-1940s, then later kwans, each listed alphabetically. Founding dates differ between sources, so no order of age is implied; each page says where the accounts differ.',
+      'The Korean martial arts schools (kwans) from which modern Taekwondo developed: the original five of the mid-1940s, then later kwans, followed by the four later kwans of the 1950s.',
     description: 'The original Korean kwans behind modern Taekwondo: founders, dates and the disagreements between sources.',
   },
   organizations: {
@@ -60,7 +60,7 @@ export const collections = {
     type: 'organization',
     label: 'Organization',
     plural: 'Organizations',
-    intro: 'Federations, technical authorities and independent organizations that shape Taekwondo today, listed alphabetically. The comparison article explains how they relate.',
+    intro: 'Federations, technical authorities and independent organizations that shape Taekwondo today.',
     description: 'World Taekwondo, the ITF, the Kukkiwon and other major Taekwondo organizations.',
   },
   schools: {
@@ -70,7 +70,7 @@ export const collections = {
     label: 'School',
     plural: 'Schools',
     intro:
-      'A curated directory of Taekwondo schools. Entries are added by the editors from public, citable information. Listing is free.',
+      'A curated directory of Taekwondo schools. Entries are added by the editors from public, citable information.',
     description: 'A curated, free directory of Taekwondo schools with sourced information and lineage links.',
   },
   pages: {

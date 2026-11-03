@@ -36,4 +36,4 @@ The Korean organization still exists and issues dan certificates from its headqu
 
 ## Disputed claims
 
-The same source calls the Chung Do Kwan both the "second oldest" kwan established after the occupation and "the first Kwan to open in Korea". It also notes that some claims on the topic are not cited.[^1] This site therefore does not call it the oldest.
+The same source calls the Chung Do Kwan both the "second oldest" kwan established after the occupation and "the first Kwan to open in Korea". It also notes that some claims on the topic are not cited.[^1]
