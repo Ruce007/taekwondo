@@ -45,10 +45,6 @@ Grandmaster Kang leads the school and holds the rank of 9th degree black belt.[^
 
 ## University program
 
-Kang created the first bachelor's degree program in Taekwondo at Concordia University, which the school describes as the first institution to offer such a degree outside Korea.[^2] More detail is on his page.
-
-## University program
-
 Kang created the first bachelor's degree program in Taekwondo at Concordia University, which the school describes as the first institution to offer such a degree outside Korea.[^2] He also taught Taekwondo as the official P.E. class at CREAN Lutheran High School in 2010.[^3] His page has the details.
 
 ## Certification

@@ -15,8 +15,23 @@
     }
   }
   apply(stored());
+  root.classList.add('js');
   document.addEventListener('DOMContentLoaded', function () {
     mark(stored());
+    var header = document.querySelector('.site-header');
+    var toggle = document.querySelector('.menu-toggle');
+    function setMenu(open) {
+      if (!header || !toggle) return;
+      header.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    if (toggle) {
+      toggle.addEventListener('click', function () { setMenu(toggle.getAttribute('aria-expanded') !== 'true'); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { setMenu(false); toggle.focus(); } });
+      var nav = document.getElementById('site-nav');
+      if (nav) nav.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+      window.addEventListener('resize', function () { if (window.innerWidth >= 832) setMenu(false); });
+    }
     var group = document.querySelector('.theme-switch');
     if (!group) return;
     group.addEventListener('click', function (e) {

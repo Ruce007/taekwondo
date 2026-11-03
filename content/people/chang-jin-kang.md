@@ -44,10 +44,6 @@ Listed recognition includes a certificate of special recognition from Congresswo
 
 ## University program
 
-He began teaching Taekwondo classes at Concordia University in 1998 and was named Director and Professor of Taekwondo Education in 2006. In 2007 he directed the first Concordia University Open Taekwondo Tournament and the inauguration of its bachelor's degree program in Taekwondo.[^1] Il-Do describes this as the first bachelor's degree course in Taekwondo outside Korea.[^3] A June 2007 forum discussion mentions a four-year Taekwondo degree at a Concordia University without naming him.[^4]
-
-## University program
-
 He began teaching Taekwondo classes at Concordia University in 1998 and was named Director and Professor of Taekwondo Education in 2006. In 2007 he directed the first Concordia University Open Taekwondo Tournament and the inauguration of its bachelor's degree program in Taekwondo.[^1] The school describes this as the first bachelor's degree course in Taekwondo outside Korea.[^3] A June 2007 forum discussion mentions a four-year Taekwondo degree at a Concordia University but does not name him.[^4]
 
 ## Community work

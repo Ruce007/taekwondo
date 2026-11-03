@@ -56,12 +56,13 @@ ${ld}
       <button type="submit">Search</button>
     </form>
     <div class="theme-switch" role="group" aria-label="Colour theme">
-      <button type="button" data-theme-choice="light" aria-pressed="false">Light</button>
-      <button type="button" data-theme-choice="dark" aria-pressed="false">Dark</button>
-      <button type="button" data-theme-choice="system" aria-pressed="true">System</button>
+      <button type="button" data-theme-choice="light" aria-pressed="false" aria-label="Light theme" title="Light"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="lbl">Light</span></button>
+      <button type="button" data-theme-choice="dark" aria-pressed="false" aria-label="Dark theme" title="Dark"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span class="lbl">Dark</span></button>
+      <button type="button" data-theme-choice="system" aria-pressed="true" aria-label="Match device theme" title="Match device"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="lbl">System</span></button>
     </div>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path class="bars" d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path class="close" d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span class="visually-hidden">Menu</span></button>
   </div>
-  <nav class="main-nav" aria-label="Main">
+  <nav class="main-nav" id="site-nav" aria-label="Main">
     <ul class="wrap">${navHtml}</ul>
   </nav>
 </header>
@@ -351,7 +352,7 @@ export function homePage(ctx, { pages, featured }) {
 </section>
 ${
   featured.length
-    ? `<section aria-labelledby="start-title"><h2 id="start-title">Start here</h2><p class="muted section-note">A reading path, in order: what Taekwondo is, where it came from, who governs it, then training and competition.</p><ol class="card-list card-list--grid path">${featured
+    ? `<section aria-labelledby="start-title"><h2 id="start-title">Start here</h2><p class="muted section-note">Read in this order: what Taekwondo is, where it came from, who governs it, then training and competition.</p><ol class="card-list card-list--grid">${featured
         .map((p) => card(p))
         .join('')}</ol></section>`
     : ''
