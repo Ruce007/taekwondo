@@ -11,10 +11,9 @@ region: NV
 city: Las Vegas
 street: 8995 W Flamingo Rd
 postal: 89147
+addressNote: Summerlin
 phone: +1-702-469-7700
 infobox:
-  - Address: 8995 W Flamingo Rd, Las Vegas, NV 89147 (Summerlin)
-  - Phone: [(702) 469-7700](tel:+17024697700)
   - Locations: Two
   - Centennial Hills: 7485 W Azure Dr, Las Vegas, NV 89130, phone (702) 613-8955
 sources:

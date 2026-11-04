@@ -1,0 +1,177 @@
+/* ---------- header ---------- */
+.site-header {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+.header-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  padding-block: 0.75rem;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: inherit;
+  text-decoration: none;
+}
+.brand:visited {
+  color: inherit;
+}
+.brand-name {
+  font: 700 1.5rem/1 var(--font-head);
+  letter-spacing: 0.01em;
+}
+.logo-slot {
+  flex: none;
+  opacity: 0.85;
+}
+
+.header-search {
+  display: flex;
+  gap: 0.4rem;
+  flex: 1 1 14rem;
+  min-width: 0;
+  max-width: 24rem;
+}
+@media (max-width: 32rem) {
+  .header-search {
+    flex-basis: 100%;
+    max-width: none;
+  }
+}
+input[type='search'] {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+}
+button {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(0.95);
+}
+
+.main-nav {
+  border-top: 1px solid rgb(255 255 255 / 0.18);
+}
+.main-nav ul {
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.25rem;
+}
+.main-nav a {
+  display: block;
+  padding: 0.7rem 0.8rem;
+  color: var(--accent-text);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+}
+.main-nav a:visited {
+  color: var(--accent-text);
+}
+.main-nav a:hover {
+  background: rgb(255 255 255 / 0.1);
+}
+.main-nav a[aria-current] {
+  border-bottom-color: currentColor;
+  font-weight: 700;
+}
+.site-header :focus-visible {
+  outline-color: #ffd29a;
+}
+
+
+/* Theme switch */
+.theme-switch {
+  display: inline-flex;
+  border: 1px solid rgb(255 255 255 / 0.35);
+  border-radius: var(--radius);
+  overflow: hidden;
+  flex: none;
+}
+.theme-switch button {
+  background: transparent;
+  color: var(--accent-text);
+  border: 0;
+  border-radius: 0;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  min-height: 2.25rem;
+}
+.theme-switch button + button {
+  border-left: 1px solid rgb(255 255 255 / 0.35);
+}
+.theme-switch button[aria-pressed='true'] {
+  background: var(--accent-text);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+
+/* ---------- header: sticky at every width, menu button on small screens ---------- */
+html { scroll-padding-top: 4.75rem; }
+.site-header { position: sticky; top: 0; z-index: 20; }
+.menu-toggle {
+  display: none;
+  background: transparent;
+  color: var(--accent-text);
+  border: 1px solid rgb(255 255 255 / 0.35);
+  padding: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+.theme-switch .ico { display: none; }
+.theme-switch button { display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem; }
+.menu-toggle .close { display: none; }
+.site-header.is-open .menu-toggle .close { display: inline; }
+.site-header.is-open .menu-toggle .bars { display: none; }
+
+@media (max-width: 51.99rem) {
+  .header-row { flex-wrap: wrap; gap: 0.5rem 0.6rem; padding-block: 0.5rem; }
+  .brand { flex: 1 1 auto; min-width: 0; }
+  .brand-name { font-size: 1.35rem; }
+  .logo-slot { width: 32px; height: 32px; }
+  .theme-switch { order: 2; }
+  .theme-switch .ico { display: block; }
+  .theme-switch .lbl { display: none; }
+  .theme-switch button { padding: 0; width: 2.4rem; min-height: 2.4rem; }
+  .menu-toggle { order: 3; display: inline-flex; }
+  .header-search { order: 4; flex: 1 1 100%; max-width: none; }
+  .header-search input[type='search'] { padding-block: 0.4rem; }
+  .header-search button { padding-block: 0.4rem; }
+  .main-nav ul { flex-direction: column; padding-inline: 0; }
+  .main-nav a { padding: 0.85rem 1rem; border-bottom: 0; border-left: 4px solid transparent; }
+  .main-nav a[aria-current] { border-left-color: currentColor; background: rgb(255 255 255 / 0.08); }
+  .main-nav li + li { border-top: 1px solid rgb(255 255 255 / 0.12); }
+  .js .main-nav { display: none; }
+  .js .site-header.is-open .main-nav { display: block; }
+  .site-header.is-open { max-height: 100dvh; overflow-y: auto; }
+  .header-row { padding-bottom: 0.6rem; }
+}
+@media (min-width: 52rem) {
+  .menu-toggle { display: none; }
+}
+

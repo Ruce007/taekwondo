@@ -13,8 +13,6 @@ street: 2205 Artesia Blvd
 postal: 90504
 website: https://www.tkd21.com/
 infobox:
-  - Address: 2205 Artesia Blvd, Torrance, CA 90504
-  - Website: [tkd21.com](https://www.tkd21.com/)
   - Locations: One
 sources:
   - Taekwondo 21, contact page | https://www.tkd21.com/

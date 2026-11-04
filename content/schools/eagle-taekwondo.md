@@ -11,13 +11,11 @@ region: NV
 city: Las Vegas
 street: 7750 S. Jones Blvd #105
 postal: 89139
+addressNote: Jones
 phone: +1-702-736-1040
 founded: 1986
 website: https://eagletkdlv.com/
 infobox:
-  - Address: 7750 S. Jones Blvd #105, Las Vegas, NV 89139 (Jones)
-  - Phone: [(702) 736-1040](tel:+17027361040)
-  - Website: [eagletkdlv.com](https://eagletkdlv.com/)
   - Locations: Three: Jones, Tropicana and Summerlin
   - Tropicana: 1801 E. Tropicana Ave #14, Las Vegas, NV 89119
   - Summerlin: 2950 S. Durango Dr. #100, Las Vegas, NV 89117

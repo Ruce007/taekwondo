@@ -9,12 +9,10 @@ meta: Las Vegas, Nevada · est. 2016
 country: US
 region: NV
 city: Las Vegas
-street: 8090 Blue Diamond Rd Ste 150
+street: 8090 Blue Diamond Rd, Ste 150
 postal: 89113
 website: https://invictuslasvegas.com/
 infobox:
-  - Address: 8090 Blue Diamond Rd, Ste 150, Las Vegas, NV 89113
-  - Website: [invictuslasvegas.com](https://invictuslasvegas.com/)
   - Locations: One listed
   - Established: 2016
   - Owner: Glenn "Cody" Smith (Master Cody)

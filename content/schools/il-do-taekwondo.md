@@ -11,13 +11,11 @@ region: CA
 city: Irvine
 street: 14220 Culver Dr #D
 postal: 92604
+addressNote: Heritage Plaza, near Mitsuwa
 phone: +1-949-551-1800
 founded: 1980
 website: https://ildotkd.com/
 infobox:
-  - Address: 14220 Culver Dr #D, Irvine, CA 92604 (Heritage Plaza, near Mitsuwa)
-  - Phone: [(949) 551-1800](tel:+19495511800)
-  - Website: [ildotkd.com](https://ildotkd.com/)
   - Second location: [[Elite Fitness Taekwondo]], 6254 Irvine Blvd, Irvine, CA 92620
   - Established: 1980, Santa Ana; in Irvine since 1991
   - Founder: Grandmaster [[Chang Jin Kang]], 9th degree black belt

@@ -13,8 +13,6 @@ street: 2651 Windmill Pkwy
 postal: 89074
 phone: +1-702-900-1230
 infobox:
-  - Address: 2651 Windmill Pkwy, Henderson, NV 89074
-  - Phone: [(702) 900-1230](tel:+17029001230)
   - Locations: One
   - Head instructor: Grand Master Joseph Bosse, 9th dan (USTF)
   - Programs: Little Tigers (4 to 6), Family (6 and up), Teens and Adults (13 and up), Adults only (18 and up)

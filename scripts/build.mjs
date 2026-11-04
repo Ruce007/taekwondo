@@ -10,6 +10,7 @@ import { fileURLToPath } from 'node:url';
 import { collections, site, featured } from '../src/site.config.mjs';
 import { loadContent } from '../src/lib/content.mjs';
 import { renderMarkdown, inline } from '../src/lib/markdown.mjs';
+import { autoFacts } from '../src/lib/facts.mjs';
 import { entryPage, indexPage, homePage, searchPage, notFoundPage, sitemapXml } from '../src/lib/templates.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -65,7 +66,7 @@ async function main() {
         return hit;
       })
       .filter(Boolean);
-    page.r = { html, headings, infobox, related, backlinks: [] };
+    page.r = { html, headings, infobox: [...autoFacts(page), ...infobox], related, backlinks: [] };
     page.out = out;
   }
   for (const p of pages) for (const target of p.out) target.r.backlinks.push(p);
@@ -82,14 +83,24 @@ async function main() {
   await rm(dist, { recursive: true, force: true });
   await mkdir(path.join(dist, 'assets'), { recursive: true });
 
-  const css = await readFile(path.join(root, 'src/styles/main.css'));
-  const js = await readFile(path.join(root, 'src/scripts/search.js'));
-  const theme = await readFile(path.join(root, 'src/scripts/theme.js'));
+  // Stylesheet: every file in src/styles/, joined in name order. Scripts: every file in src/scripts/.
+  // Each output file gets a content hash in its name so browsers cache it until it changes.
   const hash = (b) => createHash('sha256').update(b).digest('hex').slice(0, 10);
-  const assets = { css: `main.${hash(css)}.css`, js: `search.${hash(js)}.js`, theme: `theme.${hash(theme)}.js` };
+  const styleDir = path.join(root, 'src/styles');
+  const cssParts = [];
+  for (const f of (await readdir(styleDir)).filter((n) => n.endsWith('.css')).sort()) {
+    cssParts.push(await readFile(path.join(styleDir, f), 'utf8'));
+  }
+  const css = Buffer.from(cssParts.join('\n'));
+  const assets = { css: `main.${hash(css)}.css` };
   await writeFile(path.join(dist, 'assets', assets.css), css);
-  await writeFile(path.join(dist, 'assets', assets.js), js);
-  await writeFile(path.join(dist, 'assets', assets.theme), theme);
+  const scriptDir = path.join(root, 'src/scripts');
+  for (const f of (await readdir(scriptDir)).filter((n) => n.endsWith('.js')).sort()) {
+    const body = await readFile(path.join(scriptDir, f));
+    const name = f.slice(0, -3);
+    assets[name] = `${name}.${hash(body)}.js`;
+    await writeFile(path.join(dist, 'assets', assets[name]), body);
+  }
 
   const ctx = { assets, year: new Date().getFullYear(), pages };
   const put = async (urlPath, html) => {

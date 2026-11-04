@@ -9,14 +9,11 @@ meta: Irvine, California · one location
 country: US
 region: CA
 city: Irvine
-street: 1150 Roosevelt Suite 100
+street: 1150 Roosevelt, Suite 100
 postal: 92620
 phone: +1-949-966-2007
 website: https://irvinetaekwondo.com/
 infobox:
-  - Address: 1150 Roosevelt, Suite 100, Irvine, CA 92620
-  - Phone: [(949) 966-2007](tel:+19499662007)
-  - Website: [irvinetaekwondo.com](https://irvinetaekwondo.com/)
   - Locations: One
   - Head instructor: Master Alfred Rhee, 5th dan (Kukkiwon)
   - Poomsae and Demo Team Director: Master Yoon G. Chang, 6th dan (Kukkiwon)

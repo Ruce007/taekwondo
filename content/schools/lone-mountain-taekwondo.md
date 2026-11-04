@@ -9,14 +9,11 @@ meta: Las Vegas, Nevada · est. 1994
 country: US
 region: NV
 city: Las Vegas
-street: 4990 W. Craig Road Suite 8
+street: 4990 W. Craig Road, Suite 8
 postal: 89130
 phone: +1-702-645-1555
 website: https://lone-mountain-taekwondo.gymdesk.com/
 infobox:
-  - Address: 4990 W. Craig Road, Suite 8, Las Vegas, NV 89130
-  - Phone: [(702) 645-1555](tel:+17026451555)
-  - Website: [lone-mountain-taekwondo.gymdesk.com](https://lone-mountain-taekwondo.gymdesk.com/)
   - Locations: One
   - Established: 1994
   - Founder: [[Sue Langdon]], 7th dan

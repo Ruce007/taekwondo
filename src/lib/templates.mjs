@@ -412,7 +412,7 @@ export function searchPage(ctx) {
 <div id="search-status" class="muted" role="status" aria-live="polite"></div>
 <ul id="search-results" class="card-list"></ul>
 <noscript><p>Search needs JavaScript. Without it, browse the <a href="/wiki/">wiki</a>, <a href="/people/">people</a>, <a href="/kwans/">kwans</a>, <a href="/organizations/">organizations</a> or <a href="/schools/">schools</a>.</p></noscript>
-<script src="/assets/${ctx.assets.js}" defer></script>`;
+<script src="/assets/${ctx.assets.search}" defer></script>`;
   return layout(ctx, {
     title: 'Search',
     description: `Search ${site.name} for Taekwondo history, people, kwans, organizations and schools.`,

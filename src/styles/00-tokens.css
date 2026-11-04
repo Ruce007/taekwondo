@@ -1,0 +1,34 @@
+/* Design tokens. Every colour, size and font used by the site is defined here.
+   light-dark() picks the light or dark value automatically from the visitor's
+   setting: Light / Dark (data-theme on <html>) or System (the device default). */
+:root {
+  color-scheme: light dark;
+  --bg: light-dark(#ffffff, #0f1418);
+  --surface: light-dark(#f4f6f8, #171d23);
+  --text: light-dark(#1b1f23, #e7eaed);
+  --muted: light-dark(#4b5563, #aab2bb);
+  --border: light-dark(#d3d9df, #2c353e);
+  --link: light-dark(#0a58a8, #82b6ee);
+  --link-visited: light-dark(#5b3e96, #bba5ea);
+  --accent: light-dark(#12304f, #0b1a2b);
+  --accent-text: light-dark(#ffffff, #e7eaed);
+  --notice-bg: light-dark(#fff6dc, #2a2410);
+  --notice-border: light-dark(#d9b44a, #7a6420);
+  --focus: light-dark(#b4410c, #ffb066);
+  /* buttons */
+  --btn-bg: light-dark(var(--bg), var(--surface));
+  --btn-fg: light-dark(var(--accent), var(--text));
+  --btn-border: light-dark(transparent, var(--border));
+  --cta-bg: light-dark(var(--accent), var(--link));
+  --cta-fg: light-dark(var(--accent-text), #0f1418);
+  --cta-quiet-fg: light-dark(var(--accent), var(--link));
+  /* shape and layout */
+  --radius: 6px;
+  --wrap: 78rem;
+  --measure: 46rem;
+  --header-h: 7.75rem;
+  --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-head: Georgia, 'Times New Roman', Times, serif;
+}
+:root[data-theme='light'] { color-scheme: light; }
+:root[data-theme='dark'] { color-scheme: dark; }

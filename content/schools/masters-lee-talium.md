@@ -9,15 +9,12 @@ meta: Irvine, California · 2 locations
 country: US
 region: CA
 city: Irvine
-street: 3850 Barranca Parkway Suite G
+street: 3850 Barranca Parkway, Suite G
 postal: 92606
 phone: +1-949-654-4411
 website: https://www.masterleestalium.com/
 related: [articles/taekwondo-schools-in-irvine]
 infobox:
-  - Address: 3850 Barranca Parkway, Suite G, Irvine, CA 92606
-  - Phone: [(949) 654-4411](tel:+19496544411)
-  - Website: [masterleestalium.com](https://www.masterleestalium.com/)
   - Locations: Two, in Irvine and Tustin
   - Tustin: 13209 Jamboree Road, Tustin, CA 92782, phone (714) 505-3311
 sources:

@@ -9,14 +9,11 @@ meta: Ladera Ranch, California · two locations
 country: US
 region: CA
 city: Ladera Ranch
-street: 1501 Corporate Dr Suite B7
+street: 1501 Corporate Dr, Suite B7
 postal: 92694
 phone: +1-949-422-8683
 website: https://nixausa.org/
 infobox:
-  - Address: 1501 Corporate Dr, Suite B7, Ladera Ranch, CA 92694
-  - Phone: [(949) 422-8683](tel:+19494228683)
-  - Website: [nixausa.org](https://nixausa.org/)
   - Second location: Whittier, 14828 Whittier Blvd, Whittier, CA 90605, phone (949) 322-5274
   - Owner: [[Yong Jin Park]]
   - Programs: Little Tiger (4 to 5.5), Kids (5.5 and up), Adult, Family, Leadership and Demo Team

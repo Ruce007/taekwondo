@@ -2,10 +2,12 @@
 
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { collections, countryNames, articleCategories, statuses } from '../site.config.mjs';
+import { collections, countryNames, statuses } from '../site.config.mjs';
 import { parseFrontmatter } from './frontmatter.mjs';
 import { asArray } from './util.mjs';
 
+// Front-matter fields every page may use.
+const COMMON_FIELDS = ['title', 'summary', 'updated', 'status', 'statusNote', 'aliases', 'meta', 'infobox', 'related', 'sources', 'order'];
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
@@ -44,12 +46,20 @@ export async function loadContent(root, errors) {
       fm.status = fm.status || 'provisional';
       if (!statuses[fm.status]) fail(`unknown status "${fm.status}" (use: ${Object.keys(statuses).join(', ')})`);
 
-      if (key === 'articles' && !articleCategories.includes(fm.category)) {
-        fail(`"category" must be one of: ${articleCategories.join(', ')}`);
+      // Field rules come from the collection's `fields` in site.config.mjs.
+      const rules = { ...(col.fields || {}) };
+      for (const [field, rule] of Object.entries(rules)) {
+        if (rule.required && !fm[field]) fail(`missing required field "${field}"`);
+        if (rule.values && fm[field] && !rule.values.includes(fm[field])) {
+          fail(`"${field}" must be one of: ${rule.values.join(', ')} (got "${fm[field]}")`);
+        }
       }
-      if (key === 'schools') {
-        if (!countryNames[fm.country]) fail(`"country" must be one of: ${Object.keys(countryNames).join(', ')}`);
-        if (!fm.city) fail('missing required field "city"');
+      const known = new Set([...COMMON_FIELDS, ...Object.keys(rules), ...(col.extraFields || [])]);
+      for (const field of Object.keys(fm)) {
+        if (!known.has(field)) fail(`unknown field "${field}" (check the spelling, or add it to site.config.mjs)`);
+      }
+      if (key === 'schools' && fm.country && !countryNames[fm.country]) {
+        fail(`"country" must be one of: ${Object.keys(countryNames).join(', ')}`);
       }
 
       const sources = asArray(fm.sources).map((raw) => {

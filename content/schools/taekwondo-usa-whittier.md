@@ -14,9 +14,6 @@ postal: 90604
 phone: +1-562-941-4171
 website: https://whittiertkdusa.com/
 infobox:
-  - Address: 15035 Mulberry Dr, Whittier, CA 90604
-  - Phone: [(562) 941-4171](tel:+15629414171)
-  - Website: [whittiertkdusa.com](https://whittiertkdusa.com/)
   - Locations: One listed
   - Established: 1999 or 2001, depending on the listing
 sources:

@@ -11,12 +11,10 @@ region: CA
 city: Irvine
 street: 6254 Irvine Blvd
 postal: 92620
+addressNote: Woodbury Town Center, near Trader Joe's
 phone: +1-949-387-9888
 website: https://eftkd.com/
 infobox:
-  - Address: 6254 Irvine Blvd, Irvine, CA 92620 (Woodbury Town Center, near Trader Joe's)
-  - Phone: [(949) 387-9888](tel:+19493879888)
-  - Website: [eftkd.com](https://eftkd.com/)
   - Part of: [[Il-Do Taekwondo]], the second location
   - Led by: Grandmaster [[Chang Jin Kang]]
   - Certification: [[Kukkiwon]] and [[World Taekwondo]]

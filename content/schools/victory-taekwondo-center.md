@@ -13,8 +13,6 @@ street: 11758 Whittier Blvd
 postal: 90601
 website: https://www.victorytkdcenter.com/
 infobox:
-  - Address: 11758 Whittier Blvd, Whittier, CA 90601
-  - Website: [victorytkdcenter.com](https://www.victorytkdcenter.com/)
   - Locations: One listed
 sources:
   - Directory listing, Victory Taekwondo Center | https://startpage.mapquest.com/us/california/victory-taekwondo-center-634128862

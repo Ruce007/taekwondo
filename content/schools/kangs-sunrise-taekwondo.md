@@ -13,8 +13,6 @@ street: 11809 Whittier Blvd
 postal: 90601
 website: https://kangssunrisetkd.wixsite.com/www-kangssunrisetkd
 infobox:
-  - Address: 11809 Whittier Blvd, Whittier, CA 90601
-  - Website: [kangssunrisetkd.wixsite.com](https://kangssunrisetkd.wixsite.com/www-kangssunrisetkd)
   - Locations: One listed
   - Arts: Taekwondo, Hapkido and kickboxing
 sources:

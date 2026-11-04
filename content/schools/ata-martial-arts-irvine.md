@@ -9,13 +9,11 @@ meta: Irvine, California · ATA school
 country: US
 region: CA
 city: Irvine
-street: 15435 Jeffrey Road Suite 100
+street: 15435 Jeffrey Road, Suite 100
 postal: 92618
 phone: +1-949-552-3602
 related: [organizations/ata-martial-arts, articles/taekwondo-schools-in-irvine]
 infobox:
-  - Address: 15435 Jeffrey Road, Suite 100, Irvine, CA 92618
-  - Phone: [(949) 552-3602](tel:+19495523602)
   - Locations: One
   - Organization: [[ATA Martial Arts]]
   - Style: Songahm Taekwondo

@@ -9,15 +9,12 @@ meta: Irvine, California · est. 2004
 country: US
 region: CA
 city: Irvine
-street: 14805 Jeffrey Rd Suite F
+street: 14805 Jeffrey Rd, Suite F
 postal: 92618
 phone: +1-949-551-2200
 founded: 2004
 website: https://irvinemartialarts.com/
 infobox:
-  - Address: 14805 Jeffrey Rd, Suite F, Irvine, CA 92618
-  - Phone: [(949) 551-2200](tel:+19495512200)
-  - Website: [irvinemartialarts.com](https://irvinemartialarts.com/)
   - Locations: One
   - Established: 2004
   - Arts: Taekwondo and Hapkido

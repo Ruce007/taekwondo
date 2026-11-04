@@ -14,9 +14,6 @@ postal: 89148
 phone: +1-702-357-7051
 website: https://onetopcenterwt.com/
 infobox:
-  - Address: 9055 W Post Rd #A, Las Vegas, NV 89148
-  - Phone: [(702) 357-7051](tel:+17023577051)
-  - Website: [onetopcenterwt.com](https://onetopcenterwt.com/)
   - Locations: One
   - Head instructor: Steban Monroy Diaz
 sources:
