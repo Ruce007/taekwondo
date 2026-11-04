@@ -23,7 +23,9 @@ async function files(dir) {
 
 const found = new Map(); // url -> [files]
 const add = (url, file) => {
-  url = url.replace(/[).,;]+$/, '');
+  url = url.replace(/[.,;]+$/, '');
+  // Drop a closing bracket only when the link has no opening one (so Wikipedia's "Kwan_(martial_arts)" stays whole).
+  while (url.endsWith(')') && (url.match(/\(/g) || []).length < (url.match(/\)/g) || []).length) url = url.slice(0, -1);
   if (!found.has(url)) found.set(url, new Set());
   found.get(url).add(file);
 };
@@ -46,7 +48,7 @@ async function check(url) {
   };
   try {
     let r = await attempt('HEAD');
-    if (r.status === 405 || r.status === 501 || r.status === 403) r = await attempt('GET');
+    if (r.status >= 400) r = await attempt('GET'); // some servers refuse HEAD requests
     return { status: r.status };
   } catch (e) {
     return { error: e.cause?.code || e.name || 'error' };
