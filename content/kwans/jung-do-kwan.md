@@ -4,6 +4,7 @@ summary: A Seoul kwan founded in the mid-1950s by Lee Yong-woo, a former Chung D
 updated: 2026-11-02
 generation: later
 status: provisional
+annexOf: Chung Do Kwan
 aliases: [Jungdokwan, Jeong Do Kwan]
 meta: Mid-1950s, Lee Yong-woo
 founders: Lee Yong-woo

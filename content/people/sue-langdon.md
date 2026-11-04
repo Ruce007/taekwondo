@@ -3,6 +3,7 @@ title: Sue Langdon
 summary: Sue Langdon is a Moo Duk Kwan 7th dan and the founder of Lone Mountain Taekwondo in Las Vegas.
 updated: 2026-11-01
 status: provisional
+kwan: Moo Duk Kwan
 statusNote: Everything on this page comes from the school's own website and has not been independently verified.
 aliases: [Master Langdon, Master Sue Langdon]
 meta: Founder of Lone Mountain Taekwondo

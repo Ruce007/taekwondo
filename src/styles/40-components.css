@@ -152,3 +152,19 @@ nav.toc ul ul { margin-top: .25rem; }
 .index-group a, .index-region a { color: inherit; text-decoration-color: var(--border); }
 .index-group a:visited, .index-region a:visited { color: inherit; }
 #finder-browse[hidden] { display: none; }
+
+/* Lineage links and chart */
+.lineage { max-width: var(--measure); margin-top: 2rem; }
+.lineage h2 { font-size: 1.35rem; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; }
+.lineage dl { margin: 0.5rem 0; }
+.lineage dl > div { display: grid; grid-template-columns: 9rem 1fr; gap: 0.5rem; padding: 0.3rem 0; }
+.lineage dt { font-weight: 700; color: var(--muted); font-size: 0.9rem; }
+.lineage dd { margin: 0; }
+@media (max-width: 30rem) { .lineage dl > div { grid-template-columns: 1fr; gap: 0; } }
+.tree, .tree ul { list-style: none; margin: 0; padding: 0; }
+.tree ul { margin-left: 0.6rem; padding-left: 1.1rem; border-left: 2px solid var(--border); }
+.tree li { margin: 0.35rem 0; position: relative; }
+.tree ul > li::before { content: ''; position: absolute; left: -1.1rem; top: 0.85rem; width: 0.8rem; border-top: 2px solid var(--border); }
+.tree-kwan > a { font: 700 1.1rem var(--font-head); }
+.tree .meta { font-size: 0.85rem; color: var(--muted); }
+.tree-school::after { content: ' · school'; font-size: 0.8rem; color: var(--muted); }

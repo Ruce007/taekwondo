@@ -3,6 +3,7 @@ title: Eagle Taekwondo
 summary: Eagle Taekwondo is a Las Vegas Taekwondo academy founded in 1986 by Grandmaster Bo Young Kim, with three locations.
 updated: 2026-11-01
 status: provisional
+founders: [Bo Young Kim]
 statusNote: Everything on this page comes from the school's own website and has not been independently verified.
 aliases: [Eagle Tae Kwon Do Academy, Eagle TKD, Eagle Taekwondo Las Vegas]
 meta: Las Vegas, Nevada · est. 1986 · three locations

@@ -3,6 +3,8 @@ title: Il-Do Taekwondo
 summary: Il-Do Taekwondo is a Taekwondo school with two Irvine locations, founded by Chang Jin Kang in Santa Ana in 1980, with a Song Moo Kwan lineage.
 updated: 2026-11-01
 status: provisional
+kwan: Song Moo Kwan
+founders: [Chang Jin Kang]
 statusNote: Everything on this page comes from the school's own websites and has not been independently verified.
 aliases: [Il-Do TKD, Ildo Taekwondo, IL-DO Taekwondo Martial Arts]
 meta: Irvine, California · est. 1980 · two locations

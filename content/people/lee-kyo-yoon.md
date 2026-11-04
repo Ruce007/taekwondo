@@ -4,6 +4,7 @@ summary: Lee Kyo-yoon (1930 to 2017) founded the Han Moo Kwan in Seoul after tra
 updated: 2026-11-02
 role: later-kwan-founder
 status: provisional
+teachers: [Chun Sang-sup]
 aliases: [Kyo Yoon Lee, Lee Kyo Yoon]
 meta: Founder of Han Moo Kwan, 1930 to 2017
 infobox:

@@ -4,6 +4,7 @@ summary: A Seoul kwan founded in the 1950s by Hong Jong-pyo and Park Chul-hee, f
 updated: 2026-11-02
 generation: later
 status: provisional
+annexOf: Chang Moo Kwan
 aliases: [Kang Duk Kwan, Kangdukwon]
 meta: 1950s, Hong Jong-pyo and Park Chul-hee
 founders: Hong Jong-pyo, Park Chul-hee

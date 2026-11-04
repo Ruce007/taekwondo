@@ -4,6 +4,7 @@ summary: A Seoul kwan founded by Lee Kyo-yoon in the mid-1950s, descended from t
 updated: 2026-11-02
 generation: later
 status: provisional
+annexOf: Ji Do Kwan
 aliases: [Hanmookwan, Han Mu Kwan, Hanmoo Kwan]
 meta: Mid-1950s, Lee Kyo-yoon
 founders: Lee Kyo-yoon

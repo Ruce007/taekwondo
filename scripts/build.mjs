@@ -11,9 +11,10 @@ import { collections, site, featured } from '../src/site.config.mjs';
 import { loadContent } from '../src/lib/content.mjs';
 import { renderMarkdown, inline } from '../src/lib/markdown.mjs';
 import { autoFacts } from '../src/lib/facts.mjs';
-import { entryPage, indexPage, homePage, searchPage, notFoundPage, placePage, sitemapXml } from '../src/lib/templates.mjs';
+import { entryPage, indexPage, homePage, searchPage, notFoundPage, placePage, lineagePage, sitemapXml } from '../src/lib/templates.mjs';
 import { buildPlaces, finderIndex } from '../src/lib/places.mjs';
 import { lintText } from '../src/lib/lint.mjs';
+import { buildLineage, lineageBlock } from '../src/lib/lineage.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -40,7 +41,8 @@ async function main() {
   }
 
   // ---- 2. render every page ---------------------------------------------------------------
-  const reserved = ['see-also', 'sources', 'what-links-here', 'toc-title', 'infobox-title'];
+  const reserved = ['see-also', 'sources', 'what-links-here', 'toc-title', 'infobox-title', 'lineage-title'];
+  const L = buildLineage(pages, (t) => lookup.get(t.toLowerCase()) || null, errors);
   for (const page of pages) {
     const out = new Set();
     const ctx = {
@@ -79,7 +81,7 @@ async function main() {
     for (const hit of lintText(prose)) {
       (hit.level === 'error' ? errors : warnings).push(`${page.file}: "${hit.snippet}": ${hit.message}`);
     }
-    page.r = { html, headings, infobox: [...autoFacts(page), ...infobox], related, backlinks: [] };
+    page.r = { html, headings, infobox: [...autoFacts(page), ...infobox], related, backlinks: [], lineage: lineageBlock(page, L) };
     page.out = out;
   }
   for (const p of pages) for (const target of p.out) target.r.backlinks.push(p);
@@ -125,9 +127,10 @@ async function main() {
   const featuredPages = featured.map((k) => lookup.get(k.toLowerCase())).filter(Boolean);
   await put('/', homePage(ctx, { pages, featured: featuredPages }));
   await put('/search/', searchPage(ctx));
+  await put('/lineage/', lineagePage(ctx, L));
   await put('/404.html', notFoundPage(ctx));
 
-  const indexes = [];
+  const indexes = [{ path: '/lineage/', lastmod: pages.map((i) => i.updated).sort().at(-1) }];
   for (const key of Object.keys(collections)) {
     if (key === 'pages') continue;
     const items = pages.filter((p) => p.key === key);

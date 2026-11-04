@@ -54,7 +54,7 @@ export const collections = {
         { label: 'Teachers and school founders', rest: true },
       ],
     },
-    fields: { role: { values: ['kwan-founder', 'later-kwan-founder'] }, born: {}, died: {} },
+    fields: { role: { values: ['kwan-founder', 'later-kwan-founder'] }, born: {}, died: {}, teachers: {}, kwan: {} },
   },
   kwans: {
     dir: 'kwans',
@@ -72,7 +72,7 @@ export const collections = {
         { label: 'Later kwans (1950s)', short: 'Four later kwans · 1950s', values: ['later'] },
       ],
     },
-    fields: { generation: { required: true, values: ['original', 'later'] }, founded: {}, founders: {}, website: {} },
+    fields: { generation: { required: true, values: ['original', 'later'] }, founded: {}, founders: {}, website: {}, annexOf: {} },
   },
   organizations: {
     dir: 'organizations',
@@ -104,6 +104,8 @@ export const collections = {
       website: {},
       founded: {},
       addressNote: {},
+      kwan: {},
+      founders: {},
     },
   },
   pages: {

@@ -4,6 +4,7 @@ import { site, nav, collections, statuses, countryNames, regionNames, ads } from
 import { card, cardList, chipList, groupPages, notice, infobox as infoboxHtml, hasToc, tocBar, tocSide, adSlot, fundingNote } from './components.mjs';
 import { esc, jsonLd, formatDate } from './util.mjs';
 import { buildPlaces, countryLabel, regionLabel } from './places.mjs';
+import { lineageTree } from './lineage.mjs';
 
 const abs = (p) => `${site.url}${p}`;
 
@@ -172,6 +173,7 @@ export function entryPage(ctx, page, r) {
   <div class="prose">
 ${prose}
   </div>
+  ${r.lineage || ''}
   ${related}
   ${sources}
   ${back}
@@ -334,6 +336,7 @@ export function indexPage(ctx, key, items) {
   <p class="kicker">Index</p>
   <h1>${esc(col.plural)}</h1>
   <p class="lede">${esc(col.intro)}</p>
+  ${key === 'kwans' ? '<p class="note"><a href="/lineage/">See how the kwans connect: lineage chart</a></p>' : ''}
 </header>
 ${lis}`;
   return layout(ctx, {
@@ -459,6 +462,24 @@ export function searchPage(ctx) {
     description: `Search ${site.name} for Taekwondo history, people, kwans, organizations and schools.`,
     path: '/search/',
     noindex: true,
+    body,
+  });
+}
+
+export function lineagePage(ctx, L) {
+  const body = `${breadcrumb([{ name: 'Home', path: '/' }, { name: 'Kwans', path: '/kwans/' }, { name: 'Lineage chart', path: '/lineage/' }])}
+<header class="entry-header">
+  <p class="kicker">Chart</p>
+  <h1>Lineage of the kwans</h1>
+  <p class="lede">Which kwans grew out of others, and the founders, students and schools connected to each.</p>
+</header>
+${lineageTree(L)}`;
+  return layout(ctx, {
+    title: 'Lineage of the kwans',
+    description: 'A chart of how the Korean kwans connect: annexes, founders, students and the schools descended from each.',
+    path: '/lineage/',
+    section: 'kwans',
+    jsonld: [breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Kwans', path: '/kwans/' }, { name: 'Lineage chart', path: '/lineage/' }])],
     body,
   });
 }

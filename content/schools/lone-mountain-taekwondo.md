@@ -3,6 +3,8 @@ title: Lone Mountain Taekwondo
 summary: Lone Mountain Taekwondo is a Las Vegas school founded in 1994 by Sue Langdon, a Moo Duk Kwan 7th dan, teaching to Kukkiwon standards.
 updated: 2026-11-01
 status: provisional
+kwan: Moo Duk Kwan
+founders: [Sue Langdon]
 statusNote: Everything on this page comes from the school's own website and has not been independently verified.
 aliases: [Lone Mountain TKD, Master Langdon's Taekwondo]
 meta: Las Vegas, Nevada · est. 1994

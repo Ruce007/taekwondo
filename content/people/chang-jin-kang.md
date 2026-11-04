@@ -3,6 +3,8 @@ title: Chang Jin Kang
 summary: Chang Jin Kang is a Taekwondo grandmaster and the founder of Il-Do Taekwondo in Orange County, California.
 updated: 2026-10-31
 status: provisional
+teachers: [Ro Byung-jick]
+kwan: Song Moo Kwan
 statusNote: Everything on this page comes from Il-Do Taekwondo's own website and has not been independently verified.
 aliases: [Grandmaster Chang Jin Kang, Grandmaster Kang, GM Chang Jin Kang]
 meta: Founder of Il-Do Taekwondo, 9th degree black belt

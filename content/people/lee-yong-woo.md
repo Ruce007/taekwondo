@@ -4,6 +4,7 @@ summary: Lee Yong-woo (died 2006) founded the Jung Do Kwan in Seoul after traini
 updated: 2026-11-02
 role: later-kwan-founder
 status: provisional
+kwan: Chung Do Kwan
 aliases: [Yong Woo Lee, Young Woo Lee]
 meta: Founder of Jung Do Kwan, died 2006
 infobox:
