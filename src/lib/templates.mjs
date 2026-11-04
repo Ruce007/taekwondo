@@ -1,6 +1,7 @@
 // HTML templates. Each function returns a string. Nothing here reads files or the network.
 
-import { site, nav, collections, statuses, countryNames, regionNames, articleCategories } from '../site.config.mjs';
+import { site, nav, collections, statuses, countryNames, regionNames, ads } from '../site.config.mjs';
+import { card, cardList, chipList, groupPages, notice, infobox as infoboxHtml, hasToc, tocBar, tocSide, adSlot, fundingNote } from './components.mjs';
 import { esc, jsonLd, formatDate } from './util.mjs';
 
 const abs = (p) => `${site.url}${p}`;
@@ -42,7 +43,7 @@ export function layout(ctx, o) {
 <link rel="stylesheet" href="/assets/${ctx.assets.css}">
 ${ld}
 </head>
-<body>
+<body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-row">
@@ -89,7 +90,7 @@ ${o.body}
       </ul>
     </nav>
   </div>
-  <div class="wrap footer-base"><p>&copy; ${ctx.year} ${esc(site.publisher)}. Core access is free.</p></div>
+  <div class="wrap footer-base">${fundingNote()}<p>&copy; ${ctx.year} ${esc(site.publisher)}. Core access is free.</p></div>
 </footer>
 </body>
 </html>
@@ -114,33 +115,16 @@ function crumbsFor(page) {
   return items;
 }
 
-function toc(headings) {
-  if (headings.filter((h) => h.level === 2).length < 3) return '';
-  // Group each ## heading with the ### headings that follow it.
-  const groups = [];
-  for (const h of headings) {
-    if (h.level === 2) groups.push({ h, kids: [] });
-    else if (h.level === 3 && groups.length) groups[groups.length - 1].kids.push(h);
-  }
-  const link = (h) => `<a href="#${h.id}">${esc(h.text)}</a>`;
-  const items = groups
-    .map((g) => `<li>${link(g.h)}${g.kids.length ? `<ol>${g.kids.map((k) => `<li>${link(k)}</li>`).join('')}</ol>` : ''}</li>`)
-    .join('');
-  return `<nav class="toc" aria-labelledby="toc-title"><h2 id="toc-title" class="toc-title">Contents</h2><ol>${items}</ol></nav>`;
-}
-
 export function entryPage(ctx, page, r) {
   const st = statuses[page.status];
   const statusNote = (page.fm && page.fm.statusNote) || st.note;
+  const isPage = page.key === 'pages';
   const banner =
-    page.status !== 'reviewed' && statusNote
-      ? `<aside class="notice" aria-label="Review status"><p><strong>${esc(st.label)}.</strong> ${esc(statusNote)} <a href="/editorial-policy/">How we review</a>.</p></aside>`
+    !isPage && page.status !== 'reviewed' && statusNote
+      ? notice(st.label, statusNote, '<a href="/editorial-policy/">How we review</a>.')
       : '';
-  const infobox = r.infobox.length
-    ? `<aside class="infobox" aria-labelledby="infobox-title"><h2 id="infobox-title">Quick facts</h2><dl>${r.infobox
-        .map((row) => `<div><dt>${esc(row.label)}</dt><dd>${row.html}</dd></div>`)
-        .join('')}</dl></aside>`
-    : '';
+  const facts = infoboxHtml(r.infobox);
+  const toc = hasToc(r.headings);
   const related = r.related.length
     ? `<section class="related" aria-labelledby="see-also"><h2 id="see-also">See also</h2><ul>${r.related
         .map((p) => `<li><a href="${p.path}">${esc(p.title)}</a> <span class="muted">${esc(p.col.label)}</span></li>`)
@@ -159,29 +143,43 @@ export function entryPage(ctx, page, r) {
         .map((p) => `<li><a href="${p.path}">${esc(p.title)}</a></li>`)
         .join('')}</ul></section>`
     : '';
-  const kicker = page.key === 'pages' ? '' : `<p class="kicker">${esc(page.col.label)}${page.fm.category ? ` · ${esc(page.fm.category)}` : ''}</p>`;
+  const kicker = isPage ? '' : `<p class="kicker">${esc(page.col.label)}${page.fm.category ? ` · ${esc(page.fm.category)}` : ''}</p>`;
+  // Optional second ad unit inside long articles, placed before the Nth section heading.
+  let prose = r.html;
+  const inline = adSlot('article');
+  if (inline) {
+    const at = collections.articles && prose.split('<h2 ').length > 4 ? nthIndex(prose, '<h2 ', adsAfter()) : -1;
+    if (at > 0) prose = `${prose.slice(0, at)}${inline}${prose.slice(at)}`;
+  }
+  const railAd = adSlot('rail');
+  const rail = facts || railAd ? `<aside class="rail${railAd ? ' rail--ad' : ''}" aria-label="Page facts"><div class="rail-stack">${facts}${railAd}</div></aside>` : '';
   const body = `${breadcrumb(crumbsFor(page))}
-<article class="entry">
+<article class="entry${toc ? ' has-toc' : ''}${rail ? ' has-rail' : ''}">
+  <div class="entry-head">
   <header class="entry-header">
     ${kicker}
     <h1>${esc(page.title)}</h1>
     <p class="lede">${esc(page.summary)}</p>
   </header>
-  ${page.key === 'pages' ? '' : banner}
-  <div class="entry-body">
-    ${infobox}
-    ${toc(r.headings)}
-    <div class="prose">
-${r.html}
-    </div>
+  ${banner}
+  ${toc ? '<button type="button" class="toc-show" hidden>Show contents</button>' : ''}
+  </div>
+  ${toc ? tocSide(r.headings) : ''}
+  ${rail}
+  ${toc ? tocBar(r.headings) : ''}
+  <div class="entry-main">
+  <div class="prose">
+${prose}
   </div>
   ${related}
   ${sources}
   ${back}
   <footer class="entry-footer">
-    <p>Last reviewed <time datetime="${page.updated}">${esc(formatDate(page.updated))}</time>${page.key === 'pages' ? '' : ` &middot; Status: ${esc(st.label)}`} &middot; <a href="/editorial-policy/">Editorial policy</a></p>
+    <p>Last reviewed <time datetime="${page.updated}">${esc(formatDate(page.updated))}</time>${isPage ? '' : ` &middot; Status: ${esc(st.label)}`} &middot; <a href="/editorial-policy/">Editorial policy</a></p>
   </footer>
-</article>`;
+  </div>
+</article>
+<script src="/assets/${ctx.assets.toc}" defer></script>`;
   return layout(ctx, {
     title: page.title,
     description: page.summary,
@@ -191,6 +189,19 @@ ${r.html}
     jsonld: structuredData(page),
     body,
   });
+}
+
+function adsAfter() {
+  return (ads.slots.article && ads.slots.article.afterSection) || 3;
+}
+// Index of the nth occurrence (1-based) of `needle`, or -1.
+function nthIndex(str, needle, n) {
+  let at = -1;
+  for (let i = 0; i < n; i++) {
+    at = str.indexOf(needle, at + 1);
+    if (at === -1) return -1;
+  }
+  return at;
 }
 
 const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -253,33 +264,10 @@ function schoolsDirectory(sorted, list, ctx) {
 export function indexPage(ctx, key, items) {
   const col = collections[key];
   const sorted = [...items].sort((a, b) => (a.order || 0) - (b.order || 0) || a.title.localeCompare(b.title));
-  const card = (p) =>
-    `<li><a class="card-link" href="${p.path}">${esc(p.title)}</a>${p.meta ? ` <span class="meta">${esc(p.meta)}</span>` : ''}<span class="card-summary">${esc(p.summary)}</span></li>`;
-  // People: founders get their own group. Schools: grouped by city.
-  let groups = null;
-  if (key === 'people') {
-    const role = (r) => (p) => p.fm && p.fm.role === r;
-    const isKwan = (p) => p.fm && (p.fm.role === 'kwan-founder' || p.fm.role === 'later-kwan-founder');
-    groups = [
-      ['Founders of the original five kwans', sorted.filter(role('kwan-founder'))],
-      ['Founders of later kwans', sorted.filter(role('later-kwan-founder'))],
-      ['Teachers and school founders', sorted.filter((p) => !isKwan(p))],
-    ];
-  } else if (key === 'kwans') {
-    const gen = (g) => (p) => p.fm && p.fm.generation === g;
-    groups = [
-      ['The original five kwans (mid-1940s)', sorted.filter(gen('original'))],
-      ['Later kwans (1950s)', sorted.filter(gen('later'))],
-    ];
-  } else if (key === 'articles') {
-    groups = articleCategories.map((c) => [c, sorted.filter((p) => p.fm && p.fm.category === c)]);
-  }
-  const list = (items) => `<ul class="card-list">\n${items.map(card).join('\n')}\n</ul>`;
+  const groups = groupPages(col, sorted);
+  const list = (items) => cardList(items);
   const lis = key === 'schools' ? schoolsDirectory(sorted, list, ctx) : groups
-    ? groups
-        .filter(([, items]) => items.length)
-        .map(([name, items]) => `<h2 class="index-group">${esc(name)}</h2>\n${list(items)}`)
-        .join('\n')
+    ? groups.map(({ item, pages }) => `<h2 class="index-group">${esc(item.label)}</h2>\n${list(pages)}`).join('\n')
     : list(sorted);
   const body = `${breadcrumb([{ name: 'Home', path: '/' }, { name: col.plural, path: `${col.base}/` }])}
 <header class="entry-header">
@@ -318,9 +306,6 @@ export function homePage(ctx, { pages, featured }) {
     .sort((a, b) => b.updated.localeCompare(a.updated) || a.title.localeCompare(b.title))
     .slice(0, 6);
   const sorted = (list) => [...list].sort((a, b) => a.title.localeCompare(b.title));
-  const card = (p, extra = '') =>
-    `<li><a class="card-link" href="${p.path}">${esc(p.title)}</a>${extra}<span class="card-summary">${esc(p.summary)}</span></li>`;
-
   // Schools by place, with counts.
   const schools = byKey('schools');
   const places = new Map();
@@ -345,6 +330,10 @@ export function homePage(ctx, { pages, featured }) {
     ['schools', `${schools.length} schools in ${cityCount} ${cityCount === 1 ? 'city' : 'cities'}`],
   ];
 
+  const kwanGroups = (groupPages(collections.kwans, sorted(byKey('kwans'))) || [])
+    .map(({ item, pages }) => `<div class="chip-group"><p class="chip-label">${esc(item.short || item.label)}</p>${chipList(pages.map((p) => ({ href: p.path, html: esc(p.title) })))}</div>`)
+    .join('');
+
   const body = `<section class="hero" aria-labelledby="hero-title">
   <h1 id="hero-title">${esc(site.tagline)}</h1>
   <p class="lede">${esc(site.description)}</p>
@@ -357,11 +346,7 @@ ${
         .join('')}</ol></section>`
     : ''
 }
-<section aria-labelledby="kwan-title"><h2 id="kwan-title">The nine kwans</h2><p class="muted section-note">Modern Taekwondo grew out of these Korean schools: the original five of the mid-1940s and four later kwans of the 1950s.</p><ul class="chip-list">${sorted(byKey('kwans').filter((p) => p.fm && p.fm.generation === 'original'))
-    .map((p) => `<li><a href="${p.path}">${esc(p.title)}</a></li>`)
-    .join('')}${sorted(byKey('kwans').filter((p) => p.fm && p.fm.generation === 'later'))
-    .map((p) => `<li><a href="${p.path}">${esc(p.title)} <span class="muted">(later)</span></a></li>`)
-    .join('')}</ul><p class="muted section-note"><a href="/kwans/">About the kwans</a> &middot; <a href="/people/">Kwan founders</a> &middot; <a href="/organizations/">Organizations today</a></p></section>
+<section aria-labelledby="kwan-title"><h2 id="kwan-title">The nine kwans</h2><p class="muted section-note">Modern Taekwondo grew out of these Korean schools: the original five of the mid-1940s and four later kwans of the 1950s.</p>${kwanGroups}<p class="muted section-note"><a href="/kwans/">About the kwans</a> &middot; <a href="/people/">Kwan founders</a> &middot; <a href="/organizations/">Organizations today</a></p></section>
 <section aria-labelledby="browse-title"><h2 id="browse-title">Browse the library</h2><ul class="card-list card-list--grid">${library
     .map(([k, label]) => `<li><a class="card-link" href="${collections[k].base}/">${esc(collections[k].plural)}</a> <span class="meta">${esc(label)}</span><span class="card-summary">${esc(collections[k].intro)}</span></li>`)
     .join('')}</ul></section>

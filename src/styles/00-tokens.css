@@ -27,8 +27,8 @@
   --wrap: 78rem;
   --measure: 46rem;
   --header-h: 7.75rem;
-  --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-head: Georgia, 'Times New Roman', Times, serif;
+  --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+  --font-head: Georgia, 'Times New Roman', Times, 'Noto Serif KR', serif;
 }
 :root[data-theme='light'] { color-scheme: light; }
 :root[data-theme='dark'] { color-scheme: dark; }

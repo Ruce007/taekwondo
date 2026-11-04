@@ -129,7 +129,8 @@ button:hover {
 
 
 /* ---------- header: sticky at every width, menu button on small screens ---------- */
-html { scroll-padding-top: 4.75rem; }
+html { scroll-padding-top: 7.25rem; }
+@media (min-width: 52rem) { html { scroll-padding-top: calc(var(--header-h) + 1rem); } }
 .site-header { position: sticky; top: 0; z-index: 20; }
 .menu-toggle {
   display: none;
