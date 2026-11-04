@@ -1,0 +1,15 @@
+# Builds the site on every change. A page with a missing field, a broken link or a writing-rule
+# error stops the build, so the problem shows here before it reaches tkd.wiki.
+name: Check site
+on:
+  push:
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - run: npm run build

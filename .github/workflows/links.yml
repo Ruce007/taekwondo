@@ -1,0 +1,16 @@
+# Every Monday, checks that each outside link (sources and school websites) still works.
+# A failed run sends GitHub's usual notification email. Run it by hand from the Actions tab too.
+name: Check outside links
+on:
+  schedule:
+    - cron: '17 15 * * 1'
+  workflow_dispatch:
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - run: npm run check:links
