@@ -139,3 +139,16 @@ nav.toc ul ul { margin-top: .25rem; }
 .chip-group { margin: 0.75rem 0; }
 .chip-label { margin: 0 0 0.25rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
 .chip-group .chip-list { margin: 0.25rem 0 0; }
+
+/* School finder */
+.finder { margin: 1rem 0 1.25rem; max-width: 40rem; }
+.finder-label { display: block; font: 700 1.05rem var(--font-head); margin-bottom: 0.35rem; }
+.finder-row { display: flex; gap: 0.5rem; }
+.finder-row input[type='search'] { padding: 0.7rem 0.9rem; font-size: 1.05rem; }
+.finder-row button { background: var(--accent); color: var(--accent-text); padding-inline: 1.25rem; }
+.finder-status { margin: 0.5rem 0; }
+.finder-status:empty, .finder-results:empty { display: none; }
+.place-block { margin: 0 0 0.75rem; }
+.index-group a, .index-region a { color: inherit; text-decoration-color: var(--border); }
+.index-group a:visited, .index-region a:visited { color: inherit; }
+#finder-browse[hidden] { display: none; }

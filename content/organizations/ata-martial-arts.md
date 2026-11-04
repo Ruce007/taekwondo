@@ -45,7 +45,7 @@ Songahm Taekwondo covers forms (poomsae), sparring, one-steps, self-defense, boa
 
 ## Haeng Ung Lee and the original kwans
 
-The ATA's founder has his own page: [[Haeng Ung Lee]]. He began training in 1953 and earned his first-degree black belt in 1954, and none of the sources found names his teachers or his kwan.[^2][^6][^7] The Encyclopedia of Arkansas, Wikipedia and the ATA's own biography do not link him to the [[Song Moo Kwan]], [[Chung Do Kwan]], [[Moo Duk Kwan]], [[Ji Do Kwan]], [[Chang Moo Kwan]] or [[Oh Do Kwan]], the original kwans behind modern Taekwondo (see [[History of Taekwondo]]). One ATA-affiliated school's history page says General [[Choi Hong-hi]], the founder of the [[International Taekwon-Do Federation]], taught Lee the first Chang-hun forms; that claim has no independent confirmation.
+The ATA's founder has his own page: [[Haeng Ung Lee]]. He began training in 1953 and earned his first-degree black belt in 1954, and no published source names his teachers or his kwan.[^2][^6][^7] The Encyclopedia of Arkansas, Wikipedia and the ATA's own biography do not link him to the [[Song Moo Kwan]], [[Chung Do Kwan]], [[Moo Duk Kwan]], [[Ji Do Kwan]], [[Chang Moo Kwan]] or [[Oh Do Kwan]], the original kwans behind modern Taekwondo (see [[History of Taekwondo]]). One ATA-affiliated school's history page says General [[Choi Hong-hi]], the founder of the [[International Taekwon-Do Federation]], taught Lee the first Chang-hun forms; that claim has no independent confirmation.
 
 ## Why the ATA stayed separate
 

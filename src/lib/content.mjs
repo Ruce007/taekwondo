@@ -7,7 +7,7 @@ import { parseFrontmatter } from './frontmatter.mjs';
 import { asArray } from './util.mjs';
 
 // Front-matter fields every page may use.
-const COMMON_FIELDS = ['title', 'summary', 'updated', 'status', 'statusNote', 'aliases', 'meta', 'infobox', 'related', 'sources', 'order'];
+const COMMON_FIELDS = ['title', 'summary', 'updated', 'status', 'statusNote', 'aliases', 'meta', 'infobox', 'related', 'sources', 'order', 'redirectFrom'];
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
@@ -83,6 +83,7 @@ export async function loadContent(root, errors) {
         status: fm.status,
         aliases: asArray(fm.aliases),
         related: asArray(fm.related),
+        redirectFrom: asArray(fm.redirectFrom),
         infobox: asArray(fm.infobox),
         meta: fm.meta || '',
         order: fm.order ? Number(fm.order) : 0,

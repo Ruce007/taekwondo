@@ -24,7 +24,7 @@ Choi Hong-hi was born in 1918 and died on 15 June 2002 in Pyongyang.[^1][^4] The
 
 ## Naming Taekwon-Do
 
-His organization named the art Taekwon-Do on 11 April 1955.[^1] The ITF says he conceived the term in the autumn and winter of 1954.[^4] The ITF calls him "the Father of Taekwon-Do" and says he convened the 1955 board that approved the name.[^2] Other sources give different dates and a different distribution of credit (see [[History of Taekwondo]]), so this site treats the title as the ITF's own description.
+His organization named the art Taekwon-Do on 11 April 1955.[^1] The ITF says he conceived the term in the autumn and winter of 1954.[^4] The ITF calls him "the Father of Taekwon-Do" and says he convened the 1955 board that approved the name.[^2] Other sources give different dates and a different distribution of credit (see [[History of Taekwondo]]). The title "Father of Taekwon-Do" is the ITF's own description.
 
 ## Exile
 

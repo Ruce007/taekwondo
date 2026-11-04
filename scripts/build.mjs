@@ -11,7 +11,9 @@ import { collections, site, featured } from '../src/site.config.mjs';
 import { loadContent } from '../src/lib/content.mjs';
 import { renderMarkdown, inline } from '../src/lib/markdown.mjs';
 import { autoFacts } from '../src/lib/facts.mjs';
-import { entryPage, indexPage, homePage, searchPage, notFoundPage, sitemapXml } from '../src/lib/templates.mjs';
+import { entryPage, indexPage, homePage, searchPage, notFoundPage, placePage, sitemapXml } from '../src/lib/templates.mjs';
+import { buildPlaces, finderIndex } from '../src/lib/places.mjs';
+import { lintText } from '../src/lib/lint.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -66,6 +68,17 @@ async function main() {
         return hit;
       })
       .filter(Boolean);
+    // Editorial checks: repeated section headings, and the writing rules in src/lib/lint.mjs.
+    const seen = new Set();
+    for (const h of headings) {
+      const k = `${h.level}:${h.text.toLowerCase()}`;
+      if (seen.has(k)) errors.push(`${page.file}: the section "${h.text}" appears twice; merge the two`);
+      seen.add(k);
+    }
+    const prose = [page.title, page.summary, page.fm.statusNote || '', page.infobox.join('\n'), page.body].join('\n');
+    for (const hit of lintText(prose)) {
+      (hit.level === 'error' ? errors : warnings).push(`${page.file}: "${hit.snippet}": ${hit.message}`);
+    }
     page.r = { html, headings, infobox: [...autoFacts(page), ...infobox], related, backlinks: [] };
     page.out = out;
   }
@@ -122,6 +135,28 @@ async function main() {
     indexes.push({ path: `${collections[key].base}/`, lastmod: items.map((i) => i.updated).sort().at(-1) || '2026-01-01' });
   }
   for (const p of pages) await put(p.path, entryPage(ctx, p, p.r));
+
+  // Generated place pages: /schools/us/, /schools/us/ca/, /schools/us/ca/irvine/
+  const schoolPages = pages.filter((p) => p.key === 'schools');
+  const places = buildPlaces(schoolPages);
+  const taken = new Set(pages.map((p) => p.path));
+  for (const node of places.all) {
+    if (taken.has(node.path)) errors.push(`place page ${node.path} clashes with a page of the same address; rename that page`);
+    await put(node.path, placePage(ctx, node));
+    indexes.push({ path: node.path, lastmod: node.schools.map((s) => s.updated).sort().at(-1) });
+  }
+  await put('/schools-index.json', JSON.stringify(finderIndex(schoolPages)));
+
+  // Redirects for renamed pages: list the old address in the page's `redirectFrom` field.
+  const redirects = [];
+  for (const p of pages) {
+    for (const from of p.redirectFrom) {
+      if (!from.startsWith('/')) errors.push(`${p.file}: redirectFrom "${from}" must start with /`);
+      else if (taken.has(from)) errors.push(`${p.file}: redirectFrom "${from}" is the address of a live page`);
+      else redirects.push(`${from} ${p.path} 301`);
+    }
+  }
+  if (redirects.length) await writeFile(path.join(dist, '_redirects'), `${redirects.join('\n')}\n`);
 
   const latest = pages.map((p) => p.updated).sort().at(-1);
   await put('/sitemap.xml', sitemapXml(pages, { latest, indexes }));

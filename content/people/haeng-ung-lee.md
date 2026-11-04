@@ -12,7 +12,7 @@ infobox:
   - Lived: 20 July 1936 to 5 October 2000
   - Born: Manchuria; raised and trained in Korea
   - Known for: Founding the [[ATA Martial Arts]] (1969) and creating Songahm Taekwondo (1983)
-  - Training: Began 1953; first-degree black belt 1954; teachers not named in the sources found
+  - Training: Began 1953; first-degree black belt 1954; teachers not named in any published source
   - Rank: 9th dan from the ATA Master's Council (1990); 10th dan posthumously
 related: [organizations/ata-martial-arts, organizations/kukkiwon, organizations/world-taekwondo, organizations/itf]
 sources:
@@ -33,7 +33,7 @@ Reed sponsored Lee's move to the United States in 1962, and they opened a school
 
 ## Lineage
 
-None of the sources found names Lee's teachers or his kwan, and none connects him to the original kwans described in [[History of Taekwondo]]. One ATA-affiliated school's history page claims that [[Choi Hong-hi]] taught him the first Chang-hun forms in 1968; no independent source confirms it. The [[Kukkiwon]] and Korean sources found do not mention his rank, and his 9th dan came from the ATA's own council. Lee described Songahm as a response to flaws in the Japanese-influenced Taekwondo commonly taught in the United States.[^1]
+No published source names Lee's teachers or his kwan, and none connects him to the original kwans described in [[History of Taekwondo]]. One ATA-affiliated school's history page claims that [[Choi Hong-hi]] taught him the first Chang-hun forms in 1968; no independent source confirms it. The [[Kukkiwon]] and Korean sources do not mention his rank, and his 9th dan came from the ATA's own council. Lee described Songahm as a response to flaws in the Japanese-influenced Taekwondo commonly taught in the United States.[^1]
 
 ## Honors reported by the ATA
 

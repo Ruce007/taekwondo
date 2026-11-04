@@ -3,6 +3,7 @@
 import { site, nav, collections, statuses, countryNames, regionNames, ads } from '../site.config.mjs';
 import { card, cardList, chipList, groupPages, notice, infobox as infoboxHtml, hasToc, tocBar, tocSide, adSlot, fundingNote } from './components.mjs';
 import { esc, jsonLd, formatDate } from './util.mjs';
+import { buildPlaces, countryLabel, regionLabel } from './places.mjs';
 
 const abs = (p) => `${site.url}${p}`;
 
@@ -206,59 +207,118 @@ function nthIndex(str, needle, n) {
 
 const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-// Schools directory: country > region (state/province) > city, with a jump menu.
-function schoolsDirectory(sorted, list, ctx) {
-  const tree = new Map();
-  for (const p of sorted) {
-    const fm = p.fm || {};
-    const cc = fm.country || '';
-    const rc = fm.region || '';
-    const city = fm.city || 'Other';
-    if (!tree.has(cc)) tree.set(cc, new Map());
-    const regions = tree.get(cc);
-    if (!regions.has(rc)) regions.set(rc, new Map());
-    const cities = regions.get(rc);
-    if (!cities.has(city)) cities.set(city, []);
-    cities.get(city).push(p);
-  }
-  const countryLabel = (cc) => countryNames[cc] || cc || 'Other';
-  const regionLabel = (cc, rc) => (regionNames[cc] && regionNames[cc][rc]) || rc || 'Other';
-  const count = (m) => [...m.values()].reduce((n, v) => n + (Array.isArray(v) ? v.length : count(v)), 0);
-  const nav = [...tree.entries()]
-    .sort((a, b) => countryLabel(a[0]).localeCompare(countryLabel(b[0])))
-    .map(([cc, regions]) => {
-      const rs = [...regions.entries()]
-        .sort((a, b) => regionLabel(cc, a[0]).localeCompare(regionLabel(cc, b[0])))
-        .map(([rc, cities]) => {
-          const cs = [...cities.keys()].sort().map((c) => `<a href="#${slug(`${cc}-${rc}-${c}`)}">${esc(c)}</a> (${cities.get(c).length})`).join(', ');
-          return `<li><a href="#${slug(`${cc}-${rc}`)}"><strong>${esc(regionLabel(cc, rc))}</strong></a> (${count(cities)}): ${cs}</li>`;
+// The school finder form. On /schools/ a script filters as you type; elsewhere it opens /schools/?q=...
+export function finderForm(id = 'finder-q', hideLabel = false) {
+  return `<form class="finder" role="search" action="/schools/" method="get">
+  <label class="finder-label${hideLabel ? ' visually-hidden' : ''}" for="${id}">Find a school</label>
+  <div class="finder-row">
+    <input id="${id}" name="q" type="search" placeholder="City, state, ZIP or school name" autocomplete="off" enterkeyhint="search">
+    <button type="submit">Search</button>
+  </div>
+</form>`;
+}
+
+const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+const CITY_PREVIEW = 12;
+
+// Schools directory: a finder, then every place as a link to its own page.
+function schoolsDirectory(sorted, ctx) {
+  const { countries } = buildPlaces(sorted);
+  const browse = countries
+    .map((co) => {
+      const regions = co.regionList
+        .map((r) => {
+          const shown = r.cityList.slice(0, CITY_PREVIEW);
+          const more = r.cityList.length - shown.length;
+          const chips = shown.map((c) => `<li><a href="${c.path}">${esc(c.name)} <span class="muted">(${c.schools.length})</span></a></li>`).join('');
+          return `<div class="place-block"><h3 class="index-region"><a href="${r.path}">${esc(r.name)}</a> <span class="muted">(${r.schools.length})</span></h3><ul class="chip-list">${chips}${more > 0 ? `<li><a href="${r.path}">All ${r.cityList.length} cities</a></li>` : ''}</ul></div>`;
         })
         .join('');
-      return `<li><a href="#${slug(cc)}"><strong>${esc(countryLabel(cc))}</strong></a> (${count(regions)})<ul>${rs}</ul></li>`;
+      return `<h2 class="index-group"><a href="${co.path}">${esc(co.name)}</a> <span class="muted">(${co.schools.length})</span></h2>${regions}`;
     })
     .join('');
-  const jump = `<nav class="toc" aria-label="Browse schools by place"><h2 class="toc-title">Browse by place</h2><ul>${nav}</ul></nav>`;
-  const sections = [...tree.entries()]
-    .sort((a, b) => countryLabel(a[0]).localeCompare(countryLabel(b[0])))
-    .map(([cc, regions]) => {
-      const rs = [...regions.entries()]
-        .sort((a, b) => regionLabel(cc, a[0]).localeCompare(regionLabel(cc, b[0])))
-        .map(([rc, cities]) => {
-          const cs = [...cities.entries()]
-            .sort((a, b) => a[0].localeCompare(b[0]))
-            .map(([c, items]) => `<h4 class="index-city" id="${slug(`${cc}-${rc}-${c}`)}">${esc(c)} <span class="muted">(${items.length})</span></h4>\n${list(items)}`)
-            .join('\n');
-          return `<h3 class="index-region" id="${slug(`${cc}-${rc}`)}">${esc(regionLabel(cc, rc))}</h3>\n${cs}`;
-        })
-        .join('\n');
-      return `<h2 class="index-group" id="${slug(cc)}">${esc(countryLabel(cc))}</h2>\n${rs}`;
-    })
-    .join('\n');
   const guides = ((ctx && ctx.pages) || []).filter((p) => p.fm && p.fm.category === 'Directories');
   const guideLinks = guides.length
     ? `<p class="note">Area guides with side-by-side tables: ${guides.map((g) => `<a href="${g.path}">${esc(g.title)}</a>`).join(' · ')}</p>`
     : '';
-  return `${jump}\n${guideLinks}\n${sections}`;
+  return `${finderForm('finder-q')}
+<div id="finder-status" class="finder-status muted" role="status" aria-live="polite"></div>
+<ul id="finder-results" class="card-list finder-results"></ul>
+<noscript><p class="muted">Searching needs JavaScript. Browse by place below instead.</p></noscript>
+<div id="finder-browse">
+<h2 class="visually-hidden">Browse by place</h2>
+${browse}
+${guideLinks}
+</div>
+<script src="/assets/${ctx.assets.schools}" defer></script>`;
+}
+
+// One generated page per country, region and city.
+export function placePage(ctx, node) {
+  const crumbs = [{ name: 'Home', path: '/' }, { name: 'Schools', path: '/schools/' }];
+  if (node.kind !== 'country') crumbs.push({ name: node.country.name, path: node.country.path });
+  if (node.kind === 'city') crumbs.push({ name: node.region.name, path: node.region.path });
+  crumbs.push({ name: node.name, path: node.path });
+
+  const n = node.schools.length;
+  const schoolWord = plural(n, 'school', 'schools');
+  let title, lede, description, content, kicker;
+  if (node.kind === 'city') {
+    const where = `${node.name}, ${node.region.name}`;
+    title = `Taekwondo schools in ${where}`;
+    kicker = 'Schools · City';
+    lede = `${schoolWord} listed in ${where}, with address, phone number and website for each.`;
+    const names = node.schools.slice(0, 3).map((p) => p.title).join(', ');
+    description = `Taekwondo schools in ${where}: address, phone and website for ${schoolWord} including ${names}.`;
+    const guides = ctx.pages.filter((p) => p.fm && p.fm.category === 'Directories' && p.title.toLowerCase().includes(node.name.toLowerCase()));
+    const guideLinks = guides.length ? `<p class="note">Side-by-side comparison: ${guides.map((g) => `<a href="${g.path}">${esc(g.title)}</a>`).join(' · ')}</p>` : '';
+    const others = node.region.cityList.filter((c) => c !== node);
+    const nearby = others.length
+      ? `<h2 class="index-group">Other cities in ${esc(node.region.name)}</h2>${chipList(others.map((c) => ({ href: c.path, html: `${esc(c.name)} <span class="muted">(${c.schools.length})</span>` })))}`
+      : '';
+    content = `${cardList([...node.schools].sort((a, b) => a.title.localeCompare(b.title)))}${guideLinks}${nearby}`;
+  } else if (node.kind === 'region') {
+    title = `Taekwondo schools in ${node.name}, ${node.country.name}`;
+    kicker = 'Schools · Region';
+    lede = `${schoolWord} in ${plural(node.cityList.length, 'city', 'cities')}.`;
+    description = `Taekwondo schools in ${node.name}, ${node.country.name}: ${schoolWord} across ${plural(node.cityList.length, 'city', 'cities')}, including ${node.cityList.slice(0, 3).map((c) => c.name).join(', ')}.`;
+    content = cardList(node.cityList.map((c) => ({ path: c.path, title: c.name, meta: plural(c.schools.length, 'school', 'schools'), summary: c.schools.map((p) => p.title).slice(0, 4).join(', ') + (c.schools.length > 4 ? ' and more' : '') })));
+  } else {
+    title = `Taekwondo schools in ${node.name}`;
+    kicker = 'Schools · Country';
+    lede = `${schoolWord} in ${plural(node.regionList.length, 'region', 'regions')}.`;
+    description = `Taekwondo schools in ${node.name}: ${schoolWord} across ${plural(node.regionList.length, 'region', 'regions')}, including ${node.regionList.slice(0, 3).map((r) => r.name).join(', ')}.`;
+    content = cardList(node.regionList.map((r) => ({ path: r.path, title: r.name, meta: plural(r.schools.length, 'school', 'schools'), summary: r.cityList.map((c) => c.name).slice(0, 6).join(', ') + (r.cityList.length > 6 ? ' and more' : '') })));
+  }
+  const body = `${breadcrumb(crumbs)}
+<header class="entry-header">
+  <p class="kicker">${esc(kicker)}</p>
+  <h1>${esc(title)}</h1>
+  <p class="lede">${esc(lede)}</p>
+</header>
+${finderForm('finder-q')}
+${content}`;
+  return layout(ctx, {
+    title,
+    description,
+    path: node.path,
+    section: 'schools',
+    jsonld: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: `${title} | ${site.name}`,
+        description,
+        url: abs(node.path),
+        mainEntity: {
+          '@type': 'ItemList',
+          itemListElement: node.schools.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(p.path), name: p.title })),
+        },
+      },
+      breadcrumbLd(crumbs),
+    ],
+    body,
+  });
 }
 
 export function indexPage(ctx, key, items) {
@@ -266,7 +326,7 @@ export function indexPage(ctx, key, items) {
   const sorted = [...items].sort((a, b) => (a.order || 0) - (b.order || 0) || a.title.localeCompare(b.title));
   const groups = groupPages(col, sorted);
   const list = (items) => cardList(items);
-  const lis = key === 'schools' ? schoolsDirectory(sorted, list, ctx) : groups
+  const lis = key === 'schools' ? schoolsDirectory(sorted, ctx) : groups
     ? groups.map(({ item, pages }) => `<h2 class="index-group">${esc(item.label)}</h2>\n${list(pages)}`).join('\n')
     : list(sorted);
   const body = `${breadcrumb([{ name: 'Home', path: '/' }, { name: col.plural, path: `${col.base}/` }])}
@@ -308,15 +368,11 @@ export function homePage(ctx, { pages, featured }) {
   const sorted = (list) => [...list].sort((a, b) => a.title.localeCompare(b.title));
   // Schools by place, with counts.
   const schools = byKey('schools');
-  const places = new Map();
-  for (const s of schools) {
-    const fm = s.fm || {};
-    const id = `${fm.country}-${fm.region}-${fm.city}`;
-    if (!places.has(id)) places.set(id, { city: fm.city, region: (regionNames[fm.country] || {})[fm.region] || fm.region, n: 0, id });
-    places.get(id).n += 1;
-  }
-  const placeList = [...places.values()].sort((a, b) => b.n - a.n || a.city.localeCompare(b.city));
-  const cityCount = places.size;
+  const placeList = buildPlaces(schools)
+    .all.filter((n) => n.kind === 'city')
+    .map((c) => ({ city: c.name, region: c.region.name, n: c.schools.length, path: c.path }))
+    .sort((x, y) => y.n - x.n || x.city.localeCompare(y.city));
+  const cityCount = placeList.length;
 
   // How much of the site has been through full review.
   const content = pages.filter((p) => p.key !== 'pages');
@@ -352,8 +408,8 @@ ${
     .join('')}</ul></section>
 ${
   placeList.length
-    ? `<section aria-labelledby="places-title"><h2 id="places-title">Find a school</h2><p class="muted section-note">Browse schools by city.</p><ul class="chip-list">${placeList
-        .map((c) => `<li><a href="/schools/#${slug(c.id)}">${esc(c.city)}${c.region ? `, ${esc(c.region)}` : ''} <span class="muted">(${c.n})</span></a></li>`)
+    ? `<section aria-labelledby="places-title"><h2 id="places-title">Find a school</h2>${finderForm('home-finder', true)}<ul class="chip-list">${placeList
+        .map((c) => `<li><a href="${c.path}">${esc(c.city)}${c.region ? `, ${esc(c.region)}` : ''} <span class="muted">(${c.n})</span></a></li>`)
         .join('')}</ul><p class="muted section-note"><a href="/schools/">All schools by place</a></p></section>`
     : ''
 }
