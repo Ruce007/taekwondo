@@ -29,14 +29,24 @@ Older Korean martial practices such as taekkyeon (also spelled taekkyon) existed
 
 After liberation in 1945, instructors opened schools that blended their different training backgrounds. Five kwans, usually called the original five, opened in the mid-1940s: the [[Chung Do Kwan]], [[Song Moo Kwan]], [[Moo Duk Kwan]], [[Ji Do Kwan]] and [[Chang Moo Kwan]]. Four more followed after the Korean War: the [[Han Moo Kwan]], [[Kang Duk Won]], [[Jung Do Kwan]] and [[Oh Do Kwan]], making the nine kwans.[^1] Founding dates differ between sources.
 
+### The original five (mid-1940s)
+
 | Kwan | Founder | Founded |
 |---|---|---|
-| [[Chung Do Kwan]] | [[Lee Won-kuk]] | 1944 (disputed)[^2] |
 | [[Song Moo Kwan]] | [[Ro Byung-jick]] | 20 March 1944, Kaesong (1946 in some histories)[^2] |
+| [[Chung Do Kwan]] | [[Lee Won-kuk]] | 1944 (disputed)[^2] |
 | [[Moo Duk Kwan]] | [[Hwang Kee]] | 1945[^2] |
 | [[Chang Moo Kwan]] | [[Yun Byung-in]] | 1946, at a YMCA Kwon Bup club[^2] |
 | [[Ji Do Kwan]] | [[Chun Sang-sup]] | 1946, as a Kong Soo Do club (3 March or 3 May)[^2] |
-| [[Oh Do Kwan]] | [[Choi Hong-hi]] and [[Nam Tae-hi]] | Mid-1950s[^2] |
+
+### The later four (1950s)
+
+| Kwan | Founder | Founded | Origin |
+|---|---|---|---|
+| [[Han Moo Kwan]] | [[Lee Kyo-yoon]] | August 1954 or August 1956[^2][^10] | Annex of the [[Ji Do Kwan]] in most histories |
+| [[Kang Duk Won]] | [[Hong Jong-pyo]] and [[Park Chul-hee]] | 1953, 1954 or 1956[^2][^10] | Annex of the [[Chang Moo Kwan]] in most histories |
+| [[Jung Do Kwan]] | [[Lee Yong-woo]] | 1954 or 1956[^2][^10] | Annex of the [[Chung Do Kwan]] |
+| [[Oh Do Kwan]] | [[Choi Hong-hi]] and [[Nam Tae-hi]] | Mid-1950s (1955 in some accounts)[^2] | Founded within the Korean army |
 
 ## Choosing a name (1955 to 1965)
 
@@ -68,8 +78,9 @@ The ITF divided after 2001 and 2002 into separate groups, commonly called ITF-Vi
 | 1944 | Song Moo Kwan (20 March) and Chung Do Kwan (September) founded[^2] |
 | 1945 | Moo Duk Kwan founded[^2] |
 | 1946 | Chang Moo Kwan and Ji Do Kwan trace their start to this year[^2] |
+| 1953 to 1956 | The later four kwans open: Han Moo Kwan, Kang Duk Won, Jung Do Kwan and Oh Do Kwan; sources differ on the exact years[^2][^10] |
 | 1955 | 11 April: the name Taekwon-Do approved (ITF account)[^3] |
-| 1959 | The nine original kwans agree on the name[^1] |
+| 1959 | The Korea Taekwondo Association is founded and the kwans agree on the name Taekwondo (Kang and Lee name six kwans at the founding meeting)[^1][^10] |
 | 1961 | A unification conference renames the art Taesoodo, 14 September[^10] |
 | 1965 | Name made official under the Korea Taekwondo Association, 5 August[^4] |
 | 1966 | ITF founded, 22 March[^7] |
