@@ -40,7 +40,11 @@ export function layout(ctx, o) {
 <meta property="og:title" content="${esc(o.home ? fullTitle : o.title)}">
 <meta property="og:description" content="${esc(o.description)}">
 <meta property="og:url" content="${url}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="${site.url}/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="${esc(site.name)}: ${esc(site.tagline)}">
+<meta name="twitter:card" content="summary_large_image">
 <script src="/assets/${ctx.assets.theme}"></script>
 <link rel="stylesheet" href="/assets/${ctx.assets.css}">
 ${ld}
