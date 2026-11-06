@@ -132,7 +132,7 @@ function table(rows, ctx) {
       .trim()
       .replace(/^\|/, '')
       .replace(/\|$/, '')
-      .split('|')
+      .split(/\|(?![^\[]*\]\])/) // a | inside [[link|label]] does not split the cell
       .map((c) => c.trim());
   const head = cells(rows[0]);
   const body = rows.slice(2).map(cells);
