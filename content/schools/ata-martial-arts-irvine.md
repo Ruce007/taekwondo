@@ -14,9 +14,9 @@ postal: 92618
 phone: +1-949-552-3602
 related: [organizations/ata-martial-arts, articles/taekwondo-schools-in-irvine]
 infobox:
-  - Locations: One
-  - Organization: [[ATA Martial Arts]]
-  - Style: Songahm Taekwondo
+  - "Locations: One"
+  - "Organization: [[ATA Martial Arts]]"
+  - "Style: Songahm Taekwondo"
 sources:
   - City of Irvine, "ATA Martial Arts" | https://cityofirvine.gov/node/866
   - Beakid, "OC ATA Family Martial Arts" | https://beakid.com/ca/irvine/oc-ata-family-martial-arts-address

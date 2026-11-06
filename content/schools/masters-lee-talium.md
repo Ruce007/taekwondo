@@ -15,8 +15,8 @@ phone: +1-949-654-4411
 website: https://www.masterleestalium.com/
 related: [articles/taekwondo-schools-in-irvine]
 infobox:
-  - Locations: Two, in Irvine and Tustin
-  - Tustin: 13209 Jamboree Road, Tustin, CA 92782, phone (714) 505-3311
+  - "Locations: Two, in Irvine and Tustin"
+  - "Tustin: 13209 Jamboree Road, Tustin, CA 92782, phone (714) 505-3311"
 sources:
   - MapQuest, "Master Lee's Talium" | https://phoenix.aws.mapquest.com/us/california/master-lees-talium-24054467
 ---

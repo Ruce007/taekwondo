@@ -8,8 +8,8 @@ aliases: [Oh Do Kwon, Ohdokwan]
 meta: Mid-1950s, Choi Hong-hi and Nam Tae-hi
 founders: [Choi Hong-hi, Nam Tae-hi]
 infobox:
-  - Founders: [[Choi Hong-hi]] and [[Nam Tae-hi]]
-  - Founded: Mid-1950s (1955 in some accounts)
+  - "Founders: [[Choi Hong-hi]] and [[Nam Tae-hi]]"
+  - "Founded: Mid-1950s (1955 in some accounts)"
 related: [people/choi-hong-hi, people/nam-tae-hi, organizations/itf, kwans/chung-do-kwan, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Kwan (martial arts)" | https://en.wikipedia.org/wiki/Kwan_(martial_arts)
@@ -18,7 +18,7 @@ sources:
   - Wikipedia, "Choi Hong Hi" | https://en.wikipedia.org/wiki/Choi_Hong_Hi
   - Kang Won-sik and Lee Kyong-myong, A Modern History of Taekwondo (excerpt) | https://www.kidokwan.org/?p=4237
   - International Taekwon-Do Federation, "Pioneers" | https://itftkd.sport/history/pioneers/
-  - Na Chae-man and Lee Young-hun, 공시적 관점에서 본 태권도시범: 광복이후부터 1960년대, JCCT 4(1), 2018 | https://koreascience.kr/article/JAKO201810256456035.pdf
+  - "Na Chae-man and Lee Young-hun, 공시적 관점에서 본 태권도시범: 광복이후부터 1960년대, JCCT 4(1), 2018 | https://koreascience.kr/article/JAKO201810256456035.pdf"
 ---
 The Oh Do Kwan was co-founded by [[Choi Hong-hi]] and [[Nam Tae-hi]].[^2] Sources place the founding in the mid-1950s, with one giving 1955.[^1][^2] A 2018 Korean-language paper gives 1954 and places it at Yongdae-ri, the first dojang inside the Korean military.[^7] Kang Won-sik and Lee Kyong-myong locate its origin at the 3rd Army base at Yong Dae Ri and say only that it grew rapidly from 1955.[^5] The ITF describes it as a military gym created after a demonstration for President Syngman Rhee.[^6]
 

@@ -13,9 +13,9 @@ street: 2651 Windmill Pkwy
 postal: 89074
 phone: +1-702-900-1230
 infobox:
-  - Locations: One
-  - Head instructor: Grand Master Joseph Bosse, 9th dan (USTF)
-  - Programs: Little Tigers (4 to 6), Family (6 and up), Teens and Adults (13 and up), Adults only (18 and up)
+  - "Locations: One"
+  - "Head instructor: Grand Master Joseph Bosse, 9th dan (USTF)"
+  - "Programs: Little Tigers (4 to 6), Family (6 and up), Teens and Adults (13 and up), Adults only (18 and up)"
 sources:
   - Las Vegas Taekwon-Do, about page | https://teal-puma-f6gg.squarespace.com/about
 ---

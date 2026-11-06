@@ -14,11 +14,11 @@ postal: 92620
 phone: +1-949-966-2007
 website: https://irvinetaekwondo.com/
 infobox:
-  - Locations: One
-  - Head instructor: Master Alfred Rhee, 5th dan (Kukkiwon)
-  - Poomsae and Demo Team Director: Master Yoon G. Chang, 6th dan (Kukkiwon)
-  - Sparring coach: Master Ji Hyun Kim, 5th dan (Kukkiwon)
-  - Programs: Lion Cubs (3.5 to 5), Lion Kings and Queens (6 to 10), Lion Teens and Adults (11 and up)
+  - "Locations: One"
+  - "Head instructor: Master Alfred Rhee, 5th dan (Kukkiwon)"
+  - "Poomsae and Demo Team Director: Master Yoon G. Chang, 6th dan (Kukkiwon)"
+  - "Sparring coach: Master Ji Hyun Kim, 5th dan (Kukkiwon)"
+  - "Programs: Lion Cubs (3.5 to 5), Lion Kings and Queens (6 to 10), Lion Teens and Adults (11 and up)"
 related: [organizations/kukkiwon, organizations/usa-taekwondo]
 sources:
   - Regulus Taekwondo, about page | https://website-70-regulus-tkd-ca.pages.dev/about

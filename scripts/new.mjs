@@ -33,7 +33,7 @@ const extra = {
 }[key];
 
 const text = `---
-title: ${name}
+title: ${/: | #/.test(name) ? JSON.stringify(name) : name}
 summary: TODO one sentence of 40 to 160 characters saying what this page is
 updated: ${today}
 status: provisional

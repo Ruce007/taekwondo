@@ -7,9 +7,9 @@ status: provisional
 aliases: [Chul Hee Park, Park Cheol-hui]
 meta: Co-founder of Kang Duk Won, 1932 to 2016
 infobox:
-  - Lived: 1932 to April 2016
-  - Known for: Co-founding the [[Kang Duk Won]]
-  - Role: Second kwan jang (head) of the Kang Duk Won
+  - "Lived: 1932 to April 2016"
+  - "Known for: Co-founding the [[Kang Duk Won]]"
+  - "Role: Second kwan jang (head) of the Kang Duk Won"
 related: [kwans/kang-duk-won, people/hong-jong-pyo]
 sources:
   - Kang Duk Won, "History" | https://kangdukwon.org/history/

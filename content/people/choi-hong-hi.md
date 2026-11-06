@@ -9,10 +9,10 @@ meta: Founder of the ITF, 1918 to 2002
 born: 1918
 died: 2002-06-15
 infobox:
-  - Born: 1918, Hwadae, Korea (now Myongchon County, North Korea); 9 November lunar, 22 December Western
-  - Died: 15 June 2002, Pyongyang, North Korea
-  - Known for: Co-founding the [[Oh Do Kwan]]; founding the [[International Taekwon-Do Federation]]
-  - Military: Commissioned in the Korean army in January 1946
+  - "Born: 1918, Hwadae, Korea (now Myongchon County, North Korea); 9 November lunar, 22 December Western"
+  - "Died: 15 June 2002, Pyongyang, North Korea"
+  - "Known for: Co-founding the [[Oh Do Kwan]]; founding the [[International Taekwon-Do Federation]]"
+  - "Military: Commissioned in the Korean army in January 1946"
 related: [kwans/oh-do-kwan, organizations/itf, people/nam-tae-hi, articles/history-of-taekwondo, articles/etymology]
 sources:
   - Wikipedia, "Choi Hong Hi" | https://en.wikipedia.org/wiki/Choi_Hong_Hi

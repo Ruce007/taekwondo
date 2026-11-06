@@ -10,9 +10,9 @@ founded: 1945
 founders: [Hwang Kee]
 website: https://worldmoodukkwan.com/
 infobox:
-  - Founder: [[Hwang Kee]]
-  - Founded: 1945 (9 November 1945, per the organization)
-  - Arts: Tang Soo Do, later Soo Bahk Do
+  - "Founder: [[Hwang Kee]]"
+  - "Founded: 1945 (9 November 1945, per the organization)"
+  - "Arts: Tang Soo Do, later Soo Bahk Do"
 related: [people/hwang-kee, kwans/chung-do-kwan, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Moo Duk Kwan" | https://en.wikipedia.org/wiki/Moo_Duk_Kwan

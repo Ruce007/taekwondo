@@ -6,9 +6,9 @@ status: provisional
 translator: 초벌 번역, 원어민 검수 전
 aliases: [태권도 뜻, 태권도의 의미, 태수도]
 infobox:
-  - 한글: 태권도
-  - 한자: 跆拳道
-  - 흔한 풀이: 발과 주먹의 길
+  - "한글: 태권도"
+  - "한자: 跆拳道"
+  - "흔한 풀이: 발과 주먹의 길"
 related: [articles/taekwondo, articles/history-of-taekwondo, people/choi-hong-hi]
 sources:
   - Wikipedia, "Taekwondo" | https://en.wikipedia.org/wiki/Taekwondo

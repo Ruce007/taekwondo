@@ -15,8 +15,8 @@ sources:
   - Wikipedia, "International Taekwon-Do Federation" | https://en.wikipedia.org/wiki/International_Taekwon-Do_Federation
   - Wikipedia, "Kukkiwon" | https://en.wikipedia.org/wiki/Kukkiwon
   - Wikipedia, "Choi Hong Hi" | https://en.wikipedia.org/wiki/Choi_Hong_Hi
-  - Further reading: Kang Won-sik and Lee Kyong-myong, A Modern History of Taekwondo (Seoul: Bokyung Moonhwasa, March 1999, ISBN 89-358-0124-0) | https://www.kidokwan.org/?p=4237
-  - Udo Moenig, Taekwondo: From a Martial Art to a Martial Sport (Routledge, 2015) | https://www.routledge.com/Taekwondo-From-a-Martial-Art-to-a-Martial-Sport-1st-Edition/Moenig/p/book/9781138839830
+  - "Further reading: Kang Won-sik and Lee Kyong-myong, A Modern History of Taekwondo (Seoul: Bokyung Moonhwasa, March 1999, ISBN 89-358-0124-0) | https://www.kidokwan.org/?p=4237"
+  - "Udo Moenig, Taekwondo: From a Martial Art to a Martial Sport (Routledge, 2015) | https://www.routledge.com/Taekwondo-From-a-Martial-Art-to-a-Martial-Sport-1st-Edition/Moenig/p/book/9781138839830"
 ---
 تکواندوی نوین بنیان‌گذار واحدی ندارد که همگان او را به رسمیت بشناسند. این هنر از چند مدرسه کره‌ای به نام کوان پدید آمد و بعدها به سازمان‌های بین‌المللی جداگانه تقسیم شد. تاریخ‌ها و نقش‌ها در بعضی جاها محل اختلاف است و این مقاله در جاهایی که اهمیت دارد این را می‌گوید.
 

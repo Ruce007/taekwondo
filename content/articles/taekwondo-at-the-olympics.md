@@ -6,10 +6,10 @@ status: provisional
 category: Competition
 aliases: [Olympic Taekwondo, Taekwondo Olympics]
 infobox:
-  - Demonstration sport: 1988 and 1992
-  - Medal sport since: 2000 (Sydney)
-  - Rule set: World Taekwondo
-  - Events: 8 (4 men's, 4 women's)
+  - "Demonstration sport: 1988 and 1992"
+  - "Medal sport since: 2000 (Sydney)"
+  - "Rule set: World Taekwondo"
+  - "Events: 8 (4 men's, 4 women's)"
 related: [articles/taekwondo, articles/history-of-taekwondo, organizations/world-taekwondo, articles/sparring-and-protective-equipment]
 sources:
   - Wikipedia, "Taekwondo at the Summer Olympics" | https://en.wikipedia.org/wiki/Taekwondo_at_the_Summer_Olympics

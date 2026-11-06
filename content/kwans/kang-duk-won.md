@@ -9,10 +9,10 @@ aliases: [Kang Duk Kwan, Kangdukwon]
 meta: 1950s, Hong Jong-pyo and Park Chul-hee
 founders: [Hong Jong-pyo, Park Chul-hee]
 infobox:
-  - Founders: [[Hong Jong-pyo]] and [[Park Chul-hee]]
-  - Founded: 1953, 1954 or 1956, depending on the source
-  - Place: Shin Sul Dong, Seoul, South Korea
-  - Lineage: YMCA Kwon Bup Bu; an annex of the [[Chang Moo Kwan]] in most histories
+  - "Founders: [[Hong Jong-pyo]] and [[Park Chul-hee]]"
+  - "Founded: 1953, 1954 or 1956, depending on the source"
+  - "Place: Shin Sul Dong, Seoul, South Korea"
+  - "Lineage: YMCA Kwon Bup Bu; an annex of the [[Chang Moo Kwan]] in most histories"
 related: [people/hong-jong-pyo, people/park-chul-hee, kwans/chang-moo-kwan, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Kang Duk Won" | https://en.wikipedia.org/wiki/Kang_Duk_Won

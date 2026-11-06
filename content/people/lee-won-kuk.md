@@ -7,10 +7,10 @@ status: provisional
 aliases: [Won Kuk Lee, Lee Won Kuk, Won-kuk Lee]
 meta: Founder of Chung Do Kwan
 infobox:
-  - Known for: Founding the [[Chung Do Kwan]]
-  - Born: 13 April 1907, Seoul
-  - Training: Law and karate at Chuo University, Tokyo (fourth dan)
-  - Notable students: Son Duk-sung, Uhm Woon-kyu, Yong Taek Chung
+  - "Known for: Founding the [[Chung Do Kwan]]"
+  - "Born: 13 April 1907, Seoul"
+  - "Training: Law and karate at Chuo University, Tokyo (fourth dan)"
+  - "Notable students: Son Duk-sung, Uhm Woon-kyu, Yong Taek Chung"
 related: [kwans/chung-do-kwan, articles/history-of-taekwondo, people/hwang-kee]
 sources:
   - Wikipedia, "Chung Do Kwan" | https://en.wikipedia.org/wiki/Chung_Do_Kwan

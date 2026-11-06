@@ -7,9 +7,9 @@ statusNote: Everything on this page comes from the school's own website and has 
 aliases: [Master Yong Jin Park, Master Park]
 meta: Owner of Nixa Martial Arts Institute
 infobox:
-  - Title: Master
-  - School: [[Nixa Martial Arts Institute]], Ladera Ranch, California
-  - Credentials: World Taekwondo international referee, poomsae and sparring
+  - "Title: Master"
+  - "School: [[Nixa Martial Arts Institute]], Ladera Ranch, California"
+  - "Credentials: World Taekwondo international referee, poomsae and sparring"
 related: [schools/nixa-martial-arts-institute, organizations/world-taekwondo]
 sources:
   - Nixa Martial Arts Institute, about page | https://nixausa.org/about/

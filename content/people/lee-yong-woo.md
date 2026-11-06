@@ -8,9 +8,9 @@ kwan: Chung Do Kwan
 aliases: [Yong Woo Lee, Young Woo Lee]
 meta: Founder of Jung Do Kwan, died 2006
 infobox:
-  - Died: August 2006, Seoul
-  - Known for: Founding the [[Jung Do Kwan]]
-  - Trained at: [[Chung Do Kwan]]
+  - "Died: August 2006, Seoul"
+  - "Known for: Founding the [[Jung Do Kwan]]"
+  - "Trained at: [[Chung Do Kwan]]"
 related: [kwans/jung-do-kwan, kwans/chung-do-kwan]
 sources:
   - Wikipedia, "Jung Do Kwan" | https://en.wikipedia.org/wiki/Jung_Do_Kwan

@@ -1,6 +1,6 @@
 ---
 title: The Taekwondo uniform
-summary: The Taekwondo uniform (dobok): its name and parts, collar styles in World Taekwondo and the ITF, and what the white colour is said to mean.
+summary: "The Taekwondo uniform (dobok): its name and parts, collar styles in World Taekwondo and the ITF, and what the white colour is said to mean."
 updated: 2026-11-05
 status: provisional
 category: Practice
@@ -8,10 +8,10 @@ aliases: [Dobok, Taekwondo uniform, Taekwondo gi, Dobok meaning]
 related: [articles/the-taekwondo-belt, articles/belt-ranks, articles/taekwondo-organizations-compared]
 sources:
   - Wikipedia, "Dobok" | https://en.wikipedia.org/wiki/Dobok
-  - Doug Cook, "The Taekwondo Uniform - Dobok", Totally Taekwondo Times #57 (2013), reposted in the Chosun Taekwondo Journal | https://chosuntkd.blogspot.com/2014/01/the-taekwondo-uniform-dobok-by-master.html
+  - "Doug Cook, \"The Taekwondo Uniform - Dobok\", Totally Taekwondo Times #57 (2013), reposted in the Chosun Taekwondo Journal | https://chosuntkd.blogspot.com/2014/01/the-taekwondo-uniform-dobok-by-master.html"
   - World Taekwondo, Guidelines of Identifications (2022) | https://www.worldtaekwondo.org/att_file_up/partners_suppliers/2022/2022_WT_Guidelines_of_Identifications.pdf
   - Tae Kwon Do Nation, "Why is a Taekwondo uniform white?" | https://www.taekwondonation.com/why-is-a-taekwondo-uniform-white/
-  - Yeseung Lee, "The white-clad people: The white hanbok and Korean nationalism", Cultural Dynamics (2022) | https://westminsterresearch.westminster.ac.uk/download/7db7292d63ef5928c8831eb416a138448e7afb9cd3ca303a98c0f074cafed06a/2034091/Lee.%20The%20white-clad%20people.%202022.pdf
+  - "Yeseung Lee, \"The white-clad people: The white hanbok and Korean nationalism\", Cultural Dynamics (2022) | https://westminsterresearch.westminster.ac.uk/download/7db7292d63ef5928c8831eb416a138448e7afb9cd3ca303a98c0f074cafed06a/2034091/Lee.%20The%20white-clad%20people.%202022.pdf"
   - International Taekwon-Do Federation, "Belt colour meanings" | https://www.itftaekwondo.com/belt-colour-meanings/
 ---
 The **dobok** (도복) is the uniform worn for Taekwondo training and competition. *Do* means "way" and *bok* means "clothing".[^1] It has three parts: a jacket, trousers and a [[The Taekwondo belt|belt]]. Dobok come in many colours, though white and black are the most common.[^1]

@@ -14,8 +14,8 @@ postal: 90604
 phone: +1-562-941-4171
 website: https://whittiertkdusa.com/
 infobox:
-  - Locations: One listed
-  - Established: 1999 or 2001, depending on the listing
+  - "Locations: One listed"
+  - "Established: 1999 or 2001, depending on the listing"
 sources:
   - Directory listing, Taekwondo USA | https://startpage.mapquest.com/us/california/taekwondo-usa-10929542
   - Directory listing, Tae Kwon Do USA | https://cars.superpages.com/whittier-ca/bpp/tae-kwon-do-usa-30393476

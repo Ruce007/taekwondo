@@ -9,9 +9,9 @@ meta: Founder of Song Moo Kwan, 1919 to 2015
 born: 1919-07-03
 died: 2015-09-09
 infobox:
-  - Lived: 3 July 1919 to 9 September 2015
-  - Known for: Founding the [[Song Moo Kwan]]
-  - Training: Shotokan karate under Gichin Funakoshi (as reported)
+  - "Lived: 3 July 1919 to 9 September 2015"
+  - "Known for: Founding the [[Song Moo Kwan]]"
+  - "Training: Shotokan karate under Gichin Funakoshi (as reported)"
 related: [kwans/song-moo-kwan, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Song Moo Kwan" | https://en.wikipedia.org/wiki/Song_Moo_Kwan

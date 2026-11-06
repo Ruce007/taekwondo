@@ -16,11 +16,11 @@ postal: 89130
 phone: +1-702-645-1555
 website: https://lone-mountain-taekwondo.gymdesk.com/
 infobox:
-  - Locations: One
-  - Established: 1994
-  - Founder: [[Sue Langdon]], 7th dan
-  - Lineage: [[Moo Duk Kwan]]
-  - Standards: [[Kukkiwon]]
+  - "Locations: One"
+  - "Established: 1994"
+  - "Founder: [[Sue Langdon]], 7th dan"
+  - "Lineage: [[Moo Duk Kwan]]"
+  - "Standards: [[Kukkiwon]]"
 sources:
   - Lone Mountain Taekwondo, home page | https://lone-mountain-taekwondo.gymdesk.com/
   - Lone Mountain Taekwondo, instructor biography | https://lone-mountain-taekwondo.gymdesk.com/instructors/bio/id/3787

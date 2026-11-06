@@ -6,9 +6,9 @@ status: provisional
 translator: ترجمه اولیه، پیش از بازبینی فارسی‌زبان بومی
 aliases: [معنی تکواندو, تهه سو دو]
 infobox:
-  - هانگول (کره‌ای): 태권도
-  - هانجا (نویسه‌های چینی): 跆拳道
-  - برگردان رایج: راه پا و مشت
+  - "هانگول (کره‌ای): 태권도"
+  - "هانجا (نویسه‌های چینی): 跆拳道"
+  - "برگردان رایج: راه پا و مشت"
 related: [articles/taekwondo, articles/history-of-taekwondo, people/choi-hong-hi]
 sources:
   - Wikipedia, "Taekwondo" | https://en.wikipedia.org/wiki/Taekwondo

@@ -9,13 +9,13 @@ meta: Las Vegas, Nevada
 country: US
 region: NV
 city: Las Vegas
-street: 9055 W Post Rd #A
+street: "9055 W Post Rd #A"
 postal: 89148
 phone: +1-702-357-7051
 website: https://onetopcenterwt.com/
 infobox:
-  - Locations: One
-  - Head instructor: Steban Monroy Diaz
+  - "Locations: One"
+  - "Head instructor: Steban Monroy Diaz"
 sources:
   - Directory listing, One Top Center World Taekwondo (Kukkiwon) | https://gyms.revgear.com/nevada/las-vegas/onetop-center-world-taekwondo-kukkiwon
   - Fox 5 Vegas, "Las Vegas school trains with international athletes ahead of U.S. Open Taekwondo Championship" (6 March 2026) | https://www.fox5vegas.com/2026/03/06/las-vegas-school-trains-with-international-athletes-us-open-taekwondo-championship/

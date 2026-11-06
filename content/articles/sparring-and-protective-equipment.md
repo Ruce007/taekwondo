@@ -7,7 +7,7 @@ category: Competition
 aliases: [Taekwondo safety, Hogu, Protective gear, Kyorugi, Taekwondo scoring]
 related: [articles/taekwondo, articles/techniques-and-forms, articles/taekwondo-at-the-olympics, organizations/world-taekwondo]
 sources:
-  - Olympics.com, "Know your sport: Taekwondo rules, scoring and equipment" | https://olympics.com/en/featured-news/know-your-sport-taekwondo-rules-scoring-equipment
+  - "Olympics.com, \"Know your sport: Taekwondo rules, scoring and equipment\" | https://olympics.com/en/featured-news/know-your-sport-taekwondo-rules-scoring-equipment"
   - Wikipedia, "World Taekwondo" | https://en.wikipedia.org/wiki/World_Taekwondo
 ---
 Sparring is called *kyorugi*. The rules below are those of Olympic-style competition under World Taekwondo. Scoring values have changed over time, so check the current World Taekwondo competition rules before relying on a number.

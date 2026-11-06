@@ -10,12 +10,12 @@ founded: 1969
 website: https://atamartialarts.com/
 related: [organizations/world-taekwondo, organizations/kukkiwon, organizations/itf, organizations/usa-taekwondo, schools/ata-martial-arts-irvine, articles/taekwondo-organizations-compared]
 infobox:
-  - Founder: Haeng Ung Lee
-  - Founded: 1969, Omaha, Nebraska
-  - Headquarters: Little Rock, Arkansas (since 1977)
-  - Curriculum: Songahm Taekwondo
-  - Size: Over 300,000 members; about 1,100 licensed locations in 2024
-  - Website: atamartialarts.com
+  - "Founder: Haeng Ung Lee"
+  - "Founded: 1969, Omaha, Nebraska"
+  - "Headquarters: Little Rock, Arkansas (since 1977)"
+  - "Curriculum: Songahm Taekwondo"
+  - "Size: Over 300,000 members; about 1,100 licensed locations in 2024"
+  - "Website: atamartialarts.com"
 sources:
   - Aaron D. Horton, "American Taekwondo Association," Encyclopedia of Arkansas | https://encyclopediaofarkansas.net/entries/american-taekwondo-association-4798/
   - Aaron D. Horton, "Lee, Haeng Ung," Encyclopedia of Arkansas | https://encyclopediaofarkansas.net/entries/haeng-ung-lee-4318/

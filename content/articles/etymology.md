@@ -6,9 +6,9 @@ status: provisional
 category: Fundamentals
 aliases: [Taekwondo meaning, Meaning of Taekwondo, Tae Soo Do]
 infobox:
-  - Hangul (Korean): 태권도
-  - Hanja (Chinese characters): 跆拳道
-  - Common gloss: The way of the foot and the fist
+  - "Hangul (Korean): 태권도"
+  - "Hanja (Chinese characters): 跆拳道"
+  - "Common gloss: The way of the foot and the fist"
 related: [articles/taekwondo, articles/history-of-taekwondo, people/choi-hong-hi]
 sources:
   - Wikipedia, "Taekwondo" | https://en.wikipedia.org/wiki/Taekwondo

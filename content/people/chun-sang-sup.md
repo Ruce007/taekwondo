@@ -7,8 +7,8 @@ status: provisional
 aliases: [Chun Sang Sup, Sang Sup Chun, Jeon Sang-sup]
 meta: Founder of the club that became Ji Do Kwan
 infobox:
-  - Known for: Founding the Kong Soo Do club that became the [[Ji Do Kwan]]
-  - Training: Shotokan karate under Gichin Funakoshi at Takushoku University, Japan
+  - "Known for: Founding the Kong Soo Do club that became the [[Ji Do Kwan]]"
+  - "Training: Shotokan karate under Gichin Funakoshi at Takushoku University, Japan"
 related: [kwans/ji-do-kwan, people/yun-byung-in, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Kwan (martial arts)" | https://en.wikipedia.org/wiki/Kwan_(martial_arts)

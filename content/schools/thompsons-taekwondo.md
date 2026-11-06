@@ -14,8 +14,8 @@ postal: 89147
 addressNote: Summerlin
 phone: +1-702-469-7700
 infobox:
-  - Locations: Two
-  - Centennial Hills: 7485 W Azure Dr, Las Vegas, NV 89130, phone (702) 613-8955
+  - "Locations: Two"
+  - "Centennial Hills: 7485 W Azure Dr, Las Vegas, NV 89130, phone (702) 613-8955"
 sources:
   - Wellhub listing, Thompson's Taekwondo Summerlin | https://wellhub.com/en-us/search/partners/thompsons-taekwondo-summerlin
   - Wellhub listing, Thompson's Taekwondo Centennial Hills | https://wellhub.com/en-us/search/partners/thompsons-taekwondo-centennial-hills/

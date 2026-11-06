@@ -11,18 +11,18 @@ meta: Irvine, California · est. 1980 · two locations
 country: US
 region: CA
 city: Irvine
-street: 14220 Culver Dr #D
+street: "14220 Culver Dr #D"
 postal: 92604
 addressNote: Heritage Plaza, near Mitsuwa
 phone: +1-949-551-1800
 founded: 1980
 website: https://ildotkd.com/
 infobox:
-  - Second location: [[Elite Fitness Taekwondo]], 6254 Irvine Blvd, Irvine, CA 92620
-  - Established: 1980, Santa Ana; in Irvine since 1991
-  - Founder: Grandmaster [[Chang Jin Kang]], 9th degree black belt
-  - Lineage: [[Song Moo Kwan]], through [[Ro Byung-jick]]
-  - Certification: [[Kukkiwon]] and [[World Taekwondo]]
+  - "Second location: [[Elite Fitness Taekwondo]], 6254 Irvine Blvd, Irvine, CA 92620"
+  - "Established: 1980, Santa Ana; in Irvine since 1991"
+  - "Founder: Grandmaster [[Chang Jin Kang]], 9th degree black belt"
+  - "Lineage: [[Song Moo Kwan]], through [[Ro Byung-jick]]"
+  - "Certification: [[Kukkiwon]] and [[World Taekwondo]]"
 related: [people/chang-jin-kang, schools/elite-fitness-taekwondo, kwans/song-moo-kwan, people/ro-byung-jick, organizations/kukkiwon, organizations/world-taekwondo]
 sources:
   - Il-Do Taekwondo, home page | https://ildotkd.com/

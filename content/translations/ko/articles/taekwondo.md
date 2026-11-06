@@ -5,12 +5,12 @@ updated: 2026-11-05
 status: provisional
 translator: 초벌 번역, 원어민 검수 전
 infobox:
-  - 기원: 한국
-  - 근대: 1945년 이후, 관(館)의 설립과 함께
-  - 중심: 타격, 특히 발차기
-  - 올림픽 지위: 2000년부터 정식 메달 종목
-  - 국제 단체: [[World Taekwondo|월드태권도]], [[International Taekwon-Do Federation|국제태권도연맹(ITF)]]
-  - 기술 중심지(월드태권도 계열): [[Kukkiwon|국기원]]
+  - "기원: 한국"
+  - "근대: 1945년 이후, 관(館)의 설립과 함께"
+  - "중심: 타격, 특히 발차기"
+  - "올림픽 지위: 2000년부터 정식 메달 종목"
+  - "국제 단체: [[World Taekwondo|월드태권도]], [[International Taekwon-Do Federation|국제태권도연맹(ITF)]]"
+  - "기술 중심지(월드태권도 계열): [[Kukkiwon|국기원]]"
 related: [articles/etymology, articles/history-of-taekwondo, articles/belt-ranks]
 sources:
   - Wikipedia, "Taekwondo" | https://en.wikipedia.org/wiki/Taekwondo

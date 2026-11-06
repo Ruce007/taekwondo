@@ -11,7 +11,7 @@ sources:
   - Wikipedia, "Black belt" | https://en.wikipedia.org/wiki/Black_belt
   - International Taekwon-Do Federation, "Belt colour meanings" | https://www.itftaekwondo.com/belt-colour-meanings/
   - Wikipedia, "Dobok" | https://en.wikipedia.org/wiki/Dobok
-  - Martial Journal, "History of rank: the color-coded truth about belts" | https://martialjournal.com/history-of-rank-the-color-coded-truth-about-belts
+  - "Martial Journal, \"History of rank: the color-coded truth about belts\" | https://martialjournal.com/history-of-rank-the-color-coded-truth-about-belts"
   - USC Digital Folklore Archives, belt-washing belief (informant interview, 2021) | https://folklore.usc.edu/?p=56150
   - Il Practical Karate, "Heresy and hygiene" (2014) | https://ilpracticalkarate.com/2014/09/heresy-and-hygiene.html
   - Tae Kwon Do Nation, "How to tie a Tae Kwon Do belt" | https://www.taekwondonation.com/how-to-tie-a-tae-kwon-do-belt/

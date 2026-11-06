@@ -8,10 +8,10 @@ meta: U.S. national governing body
 website: https://www.usatkd.org/
 related: [organizations/world-taekwondo, organizations/kukkiwon, organizations/ata-martial-arts, articles/taekwondo-organizations-compared, articles/taekwondo-at-the-olympics]
 infobox:
-  - Role: National governing body for Taekwondo in the United States
-  - Recognized by: U.S. Olympic and Paralympic Committee; World Taekwondo
-  - Partner: [[Kukkiwon]] (primary U.S. partner since May 2024)
-  - Website: usatkd.org
+  - "Role: National governing body for Taekwondo in the United States"
+  - "Recognized by: U.S. Olympic and Paralympic Committee; World Taekwondo"
+  - "Partner: [[Kukkiwon]] (primary U.S. partner since May 2024)"
+  - "Website: usatkd.org"
 sources:
   - USA Taekwondo, "USA Taekwondo strikes historic partnership with Kukkiwon," 9 May 2024 | https://www.usatkd.org/news/2024/may/09/elevating-taekwondo-excellence-usatkd-strikes-partnership-with-kukkiwon
   - USA Taekwondo, "USA Taekwondo best MNA in governance," 30 September 2024 | https://www.usatkd.org/news/2024/september/30/usa-taekwondo-best-mna-in-governance

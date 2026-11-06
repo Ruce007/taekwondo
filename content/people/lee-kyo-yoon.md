@@ -8,9 +8,9 @@ teachers: [Chun Sang-sup]
 aliases: [Kyo Yoon Lee, Lee Kyo Yoon]
 meta: Founder of Han Moo Kwan, 1930 to 2017
 infobox:
-  - Lived: 1930 to 2017
-  - Known for: Founding the [[Han Moo Kwan]]
-  - Trained under: [[Chun Sang-sup]]
+  - "Lived: 1930 to 2017"
+  - "Known for: Founding the [[Han Moo Kwan]]"
+  - "Trained under: [[Chun Sang-sup]]"
 related: [kwans/han-moo-kwan, people/chun-sang-sup]
 sources:
   - World Han Moo Kwan, "Kyo Yoon Lee" | https://www.worldhanmookwan.org/history/kyo-yoon-lee/

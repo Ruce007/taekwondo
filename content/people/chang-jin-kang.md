@@ -9,12 +9,12 @@ statusNote: Everything on this page comes from Il-Do Taekwondo's own website and
 aliases: [Grandmaster Chang Jin Kang, Grandmaster Kang, GM Chang Jin Kang]
 meta: Founder of Il-Do Taekwondo, 9th degree black belt
 infobox:
-  - Rank: 9th degree black belt
-  - Known for: Founding [[Il-Do Taekwondo]] in 1980
-  - Training: [[Song Moo Kwan]], from 1958
-  - Military service: Korean Army, 1967 to 1971 (captain)
-  - Organizations: President, World Martial Arts Master's Federation (2003)
-  - Schools: [[Il-Do Taekwondo]] and [[Elite Fitness Taekwondo]], Irvine, California
+  - "Rank: 9th degree black belt"
+  - "Known for: Founding [[Il-Do Taekwondo]] in 1980"
+  - "Training: [[Song Moo Kwan]], from 1958"
+  - "Military service: Korean Army, 1967 to 1971 (captain)"
+  - "Organizations: President, World Martial Arts Master's Federation (2003)"
+  - "Schools: [[Il-Do Taekwondo]] and [[Elite Fitness Taekwondo]], Irvine, California"
 related: [schools/il-do-taekwondo, schools/elite-fitness-taekwondo, kwans/song-moo-kwan, people/ro-byung-jick, organizations/kukkiwon]
 sources:
   - Il-Do Taekwondo, "About Grandmaster Chang Jin Kang" | https://ildotkd.com/about-grand-master

@@ -8,11 +8,11 @@ statusNote: Everything on this page comes from the school's own website and has 
 aliases: [Master Langdon, Master Sue Langdon]
 meta: Founder of Lone Mountain Taekwondo
 infobox:
-  - Rank: 7th dan, Moo Duk Kwan
-  - School: [[Lone Mountain Taekwondo]], Las Vegas, Nevada
-  - Began training: 1986
-  - First-degree black belt: 1991
-  - Opened her school: 1994
+  - "Rank: 7th dan, Moo Duk Kwan"
+  - "School: [[Lone Mountain Taekwondo]], Las Vegas, Nevada"
+  - "Began training: 1986"
+  - "First-degree black belt: 1991"
+  - "Opened her school: 1994"
 related: [schools/lone-mountain-taekwondo, kwans/moo-duk-kwan]
 sources:
   - Lone Mountain Taekwondo, instructor biography | https://lone-mountain-taekwondo.gymdesk.com/instructors/bio/id/3787

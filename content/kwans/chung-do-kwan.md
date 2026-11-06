@@ -9,9 +9,9 @@ meta: Founded 1944 by Lee Won-kuk
 founded: 1944
 founders: [Lee Won-kuk]
 infobox:
-  - Founder: [[Lee Won-kuk]]
-  - Founded: 1944 (accounts differ)
-  - Headquarters: Seoul, South Korea
+  - "Founder: [[Lee Won-kuk]]"
+  - "Founded: 1944 (accounts differ)"
+  - "Headquarters: Seoul, South Korea"
 related: [people/lee-won-kuk, kwans/song-moo-kwan, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Chung Do Kwan" | https://en.wikipedia.org/wiki/Chung_Do_Kwan

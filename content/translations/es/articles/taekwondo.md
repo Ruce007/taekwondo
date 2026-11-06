@@ -5,12 +5,12 @@ updated: 2026-11-05
 status: provisional
 translator: Traducción inicial, pendiente de revisión por hablante nativo
 infobox:
-  - Origen: Corea
-  - Era moderna: Después de 1945, con la fundación de los kwans
-  - Enfoque principal: Golpeo, sobre todo patadas
-  - Estatus olímpico: Deporte con medallas oficiales desde 2000
-  - Organismos internacionales: [[World Taekwondo]] y la [[International Taekwon-Do Federation|Federación Internacional de Taekwon-Do (ITF)]]
-  - Centro técnico (estilo World Taekwondo): [[Kukkiwon]]
+  - "Origen: Corea"
+  - "Era moderna: Después de 1945, con la fundación de los kwans"
+  - "Enfoque principal: Golpeo, sobre todo patadas"
+  - "Estatus olímpico: Deporte con medallas oficiales desde 2000"
+  - "Organismos internacionales: [[World Taekwondo]] y la [[International Taekwon-Do Federation|Federación Internacional de Taekwon-Do (ITF)]]"
+  - "Centro técnico (estilo World Taekwondo): [[Kukkiwon]]"
 related: [articles/etymology, articles/history-of-taekwondo, articles/belt-ranks]
 sources:
   - Wikipedia, "Taekwondo" | https://en.wikipedia.org/wiki/Taekwondo

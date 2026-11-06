@@ -9,10 +9,10 @@ aliases: [Hanmookwan, Han Mu Kwan, Hanmoo Kwan]
 meta: Mid-1950s, Lee Kyo-yoon
 founders: [Lee Kyo-yoon]
 infobox:
-  - Founder: [[Lee Kyo-yoon]]
-  - Founded: August 1954 or August 1956, depending on the source
-  - Place: Seoul, South Korea
-  - Lineage: Chosun Yun Moo Kwan; an annex of the [[Ji Do Kwan]] in most histories
+  - "Founder: [[Lee Kyo-yoon]]"
+  - "Founded: August 1954 or August 1956, depending on the source"
+  - "Place: Seoul, South Korea"
+  - "Lineage: Chosun Yun Moo Kwan; an annex of the [[Ji Do Kwan]] in most histories"
 related: [people/lee-kyo-yoon, kwans/ji-do-kwan, people/chun-sang-sup, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Han Moo Kwan" | https://en.wikipedia.org/wiki/Han_Moo_Kwan

@@ -7,8 +7,8 @@ status: provisional
 aliases: [Jong Pyo Hong, Hong Jeong-pyo]
 meta: Co-founder of Kang Duk Won
 infobox:
-  - Known for: Co-founding the [[Kang Duk Won]]
-  - Role: First kwan jang (head) of the Kang Duk Won
+  - "Known for: Co-founding the [[Kang Duk Won]]"
+  - "Role: First kwan jang (head) of the Kang Duk Won"
 related: [kwans/kang-duk-won, people/park-chul-hee]
 sources:
   - Kang Duk Won, "History" | https://kangdukwon.org/history/

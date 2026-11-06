@@ -28,12 +28,15 @@ export function parseFrontmatter(raw, file = 'file') {
       const items = [];
       i++;
       while (i < lines.length && /^\s+-\s+/.test(lines[i])) {
-        items.push(scalar(lines[i].replace(/^\s+-\s+/, '')));
+        const item = lines[i].replace(/^\s+-\s+/, '');
+        checkPlain(item.trim(), file, `list item under "${key}"`);
+        items.push(scalar(item));
         i++;
       }
       data[key] = items;
       continue;
     }
+    checkPlain(rest.trim(), file, `"${key}"`);
     data[key] = value(rest);
     i++;
   }
@@ -48,6 +51,15 @@ function value(v) {
       .filter((x) => x !== '');
   }
   return scalar(v);
+}
+
+// Plain (unquoted) text that standard YAML cannot read. The form editor uses a strict YAML reader, so
+// every file must stay valid for it: put such text in double quotes.
+function checkPlain(v, file, where) {
+  if (/^["']/.test(v) || (v.startsWith('[') && !v.startsWith('[[') && v.endsWith(']'))) return;
+  if (/: | #|:$/.test(v) || /^[\[{&*!|>%@`]/.test(v)) {
+    throw new Error(`${file}: ${where} contains ": " or starts with a special character; wrap it in double quotes: "${v.slice(0, 50)}..."`);
+  }
 }
 
 function scalar(v) {

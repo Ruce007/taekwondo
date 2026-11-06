@@ -1,6 +1,6 @@
 ---
 title: Belt ranks and grades
-summary: Taekwondo ranks: ten gup grades counted down, nine dan grades counted up, and why colours and requirements differ between schools.
+summary: "Taekwondo ranks: ten gup grades counted down, nine dan grades counted up, and why colours and requirements differ between schools."
 updated: 2026-11-05
 status: provisional
 category: Practice

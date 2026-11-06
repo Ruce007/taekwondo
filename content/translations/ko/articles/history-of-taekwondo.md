@@ -15,8 +15,8 @@ sources:
   - Wikipedia, "International Taekwon-Do Federation" | https://en.wikipedia.org/wiki/International_Taekwon-Do_Federation
   - Wikipedia, "Kukkiwon" | https://en.wikipedia.org/wiki/Kukkiwon
   - Wikipedia, "Choi Hong Hi" | https://en.wikipedia.org/wiki/Choi_Hong_Hi
-  - Further reading: Kang Won-sik and Lee Kyong-myong, A Modern History of Taekwondo (Seoul: Bokyung Moonhwasa, March 1999, ISBN 89-358-0124-0) | https://www.kidokwan.org/?p=4237
-  - Udo Moenig, Taekwondo: From a Martial Art to a Martial Sport (Routledge, 2015) | https://www.routledge.com/Taekwondo-From-a-Martial-Art-to-a-Martial-Sport-1st-Edition/Moenig/p/book/9781138839830
+  - "Further reading: Kang Won-sik and Lee Kyong-myong, A Modern History of Taekwondo (Seoul: Bokyung Moonhwasa, March 1999, ISBN 89-358-0124-0) | https://www.kidokwan.org/?p=4237"
+  - "Udo Moenig, Taekwondo: From a Martial Art to a Martial Sport (Routledge, 2015) | https://www.routledge.com/Taekwondo-From-a-Martial-Art-to-a-Martial-Sport-1st-Edition/Moenig/p/book/9781138839830"
 ---
 근대 태권도에는 모두가 인정하는 단일한 창시자가 없습니다. 태권도는 관(館)이라 불린 여러 한국 도장에서 자라났고, 이후 별개의 국제 단체들로 갈라졌습니다. 연대와 공로에 대해서는 이견이 있는 부분이 있으며, 이 문서는 중요한 곳에서 그 점을 밝힙니다.
 

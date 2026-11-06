@@ -9,10 +9,10 @@ meta: Founder of Eagle Taekwondo, 1956 to 2008
 born: 1956-01-11
 died: 2008-04-30
 infobox:
-  - Lived: 11 January 1956 to 30 April 2008
-  - Born: Seoul, South Korea
-  - Rank: 8th dan, Kukkiwon
-  - Known for: Founding "[[Eagle Taekwondo]]" in Las Vegas, 1986
+  - "Lived: 11 January 1956 to 30 April 2008"
+  - "Born: Seoul, South Korea"
+  - "Rank: 8th dan, Kukkiwon"
+  - "Known for: Founding \"[[Eagle Taekwondo]]\" in Las Vegas, 1986"
 related: [schools/eagle-taekwondo, organizations/kukkiwon]
 sources:
   - Eagle Taekwondo, about us | https://eagletkdlv.com/about-us/

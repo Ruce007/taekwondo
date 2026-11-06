@@ -12,9 +12,9 @@ city: Las Vegas
 street: 8090 Blue Diamond Rd, Ste 150
 postal: 89113
 infobox:
-  - Locations: One listed
-  - Established: 2016
-  - Owner: Glenn "Cody" Smith (Master Cody)
+  - "Locations: One listed"
+  - "Established: 2016"
+  - "Owner: Glenn \"Cody\" Smith (Master Cody)"
 sources:
   - Directory listing, Invictus Taekwondo Center | https://mapquest.com/us/nevada/invictus-taekwondo-center-654908939
   - CityLifestyle, "Empowering Youth Through Martial Arts" | https://citylifestyle.com/articles/empowering-youth-through-martial-arts

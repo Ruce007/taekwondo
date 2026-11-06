@@ -14,9 +14,9 @@ postal: 92694
 phone: +1-949-422-8683
 website: https://nixausa.org/
 infobox:
-  - Second location: Whittier, 14828 Whittier Blvd, Whittier, CA 90605, phone (949) 322-5274
-  - Owner: [[Yong Jin Park]]
-  - Programs: Little Tiger (4 to 5.5), Kids (5.5 and up), Adult, Family, Leadership and Demo Team
+  - "Second location: Whittier, 14828 Whittier Blvd, Whittier, CA 90605, phone (949) 322-5274"
+  - "Owner: [[Yong Jin Park]]"
+  - "Programs: Little Tiger (4 to 5.5), Kids (5.5 and up), Adult, Family, Leadership and Demo Team"
 related: [people/yong-jin-park]
 sources:
   - Nixa Martial Arts Institute, home page | https://nixausa.org/

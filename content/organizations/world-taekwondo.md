@@ -7,11 +7,11 @@ aliases: [WT, WTF, World Taekwondo Federation]
 meta: Founded 1973, governs Olympic-style Taekwondo
 founded: 1973-05-28
 infobox:
-  - Founded: 28 May 1973, at the Kukkiwon, Seoul (as the World Taekwondo Federation)
-  - Renamed: June 2017
-  - IOC recognition: 17 July 1980
-  - Members: 215 national member associations (2026)
-  - Headquarters: Seoul and Lausanne are both listed
+  - "Founded: 28 May 1973, at the Kukkiwon, Seoul (as the World Taekwondo Federation)"
+  - "Renamed: June 2017"
+  - "IOC recognition: 17 July 1980"
+  - "Members: 215 national member associations (2026)"
+  - "Headquarters: Seoul and Lausanne are both listed"
 related: [articles/taekwondo-organizations-compared, organizations/usa-taekwondo, organizations/ata-martial-arts, organizations/kukkiwon, organizations/itf, articles/taekwondo-at-the-olympics, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "World Taekwondo" | https://en.wikipedia.org/wiki/World_Taekwondo

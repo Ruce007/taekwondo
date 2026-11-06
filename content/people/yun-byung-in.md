@@ -7,9 +7,9 @@ status: provisional
 aliases: [Yoon Byung-in, Yoon Byung In, Yun Byung In]
 meta: Founder of the club that became Chang Moo Kwan
 infobox:
-  - Known for: Founding the club that became the [[Chang Moo Kwan]]
-  - Training: Shudokan karate under Kanken Toyama; said to have studied ch'uan-fa in Manchuria
-  - Fate: Disputed (see below)
+  - "Known for: Founding the club that became the [[Chang Moo Kwan]]"
+  - "Training: Shudokan karate under Kanken Toyama; said to have studied ch'uan-fa in Manchuria"
+  - "Fate: Disputed (see below)"
 related: [kwans/chang-moo-kwan, kwans/ji-do-kwan, people/chun-sang-sup]
 sources:
   - Wikipedia, "Kwan (martial arts)" | https://en.wikipedia.org/wiki/Kwan_(martial_arts)

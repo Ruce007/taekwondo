@@ -15,10 +15,10 @@ addressNote: Woodbury Town Center, near Trader Joe's
 phone: +1-949-387-9888
 website: https://eftkd.com/
 infobox:
-  - Part of: [[Il-Do Taekwondo]], the second location
-  - Led by: Grandmaster [[Chang Jin Kang]]
-  - Certification: [[Kukkiwon]] and [[World Taekwondo]]
-  - Programs: Family, Cubs (3 to 4), Tigers (5 to 12), Adult and Teen
+  - "Part of: [[Il-Do Taekwondo]], the second location"
+  - "Led by: Grandmaster [[Chang Jin Kang]]"
+  - "Certification: [[Kukkiwon]] and [[World Taekwondo]]"
+  - "Programs: Family, Cubs (3 to 4), Tigers (5 to 12), Adult and Teen"
 related: [schools/il-do-taekwondo, people/chang-jin-kang, organizations/kukkiwon]
 sources:
   - Il-Do Taekwondo, home page | https://ildotkd.com/

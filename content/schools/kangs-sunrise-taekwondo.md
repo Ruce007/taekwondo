@@ -13,8 +13,8 @@ street: 11809 Whittier Blvd
 postal: 90601
 website: https://kangssunrisetkd.wixsite.com/www-kangssunrisetkd
 infobox:
-  - Locations: One listed
-  - Arts: Taekwondo, Hapkido and kickboxing
+  - "Locations: One listed"
+  - "Arts: Taekwondo, Hapkido and kickboxing"
 sources:
   - Directory listing, Kang's Sunrise Taekwondo | https://startpage.mapquest.com/us/california/kangs-sunrise-taekwondo-278005084
 ---

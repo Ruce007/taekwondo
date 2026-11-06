@@ -9,10 +9,10 @@ meta: Founded 1946 by Chun Sang-sup
 founded: 1946
 founders: [Chun Sang-sup]
 infobox:
-  - Founder: [[Chun Sang-sup]]
-  - Founded: 1946 (3 March or 3 May), as a Kong Soo Do club
-  - Origin: Kwon Bup section of the Chosun Yun Moo Kwan, a judo school
-  - First headmaster: Yun Kwae-byung
+  - "Founder: [[Chun Sang-sup]]"
+  - "Founded: 1946 (3 March or 3 May), as a Kong Soo Do club"
+  - "Origin: Kwon Bup section of the Chosun Yun Moo Kwan, a judo school"
+  - "First headmaster: Yun Kwae-byung"
 related: [people/chun-sang-sup, people/yun-byung-in, kwans/chang-moo-kwan, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Kwan (martial arts)" | https://en.wikipedia.org/wiki/Kwan_(martial_arts)

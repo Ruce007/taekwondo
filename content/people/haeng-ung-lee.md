@@ -9,11 +9,11 @@ meta: Founder of the ATA, 1936 to 2000
 born: 1936-07-20
 died: 2000-10-05
 infobox:
-  - Lived: 20 July 1936 to 5 October 2000
-  - Born: Manchuria; raised and trained in Korea
-  - Known for: Founding the [[ATA Martial Arts]] (1969) and creating Songahm Taekwondo (1983)
-  - Training: Began 1953; first-degree black belt 1954; teachers not named in any published source
-  - Rank: 9th dan from the ATA Master's Council (1990); 10th dan posthumously
+  - "Lived: 20 July 1936 to 5 October 2000"
+  - "Born: Manchuria; raised and trained in Korea"
+  - "Known for: Founding the [[ATA Martial Arts]] (1969) and creating Songahm Taekwondo (1983)"
+  - "Training: Began 1953; first-degree black belt 1954; teachers not named in any published source"
+  - "Rank: 9th dan from the ATA Master's Council (1990); 10th dan posthumously"
 related: [organizations/ata-martial-arts, organizations/kukkiwon, organizations/world-taekwondo, organizations/itf]
 sources:
   - Aaron D. Horton, "Lee, Haeng Ung," Encyclopedia of Arkansas | https://encyclopediaofarkansas.net/entries/haeng-ung-lee-4318/

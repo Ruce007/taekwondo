@@ -6,9 +6,9 @@ status: provisional
 translator: Traducción inicial, pendiente de revisión por hablante nativo
 aliases: [Significado de Taekwondo, Tae Soo Do]
 infobox:
-  - Hangul (coreano): 태권도
-  - Hanja (caracteres chinos): 跆拳道
-  - Traducción habitual: El camino del pie y el puño
+  - "Hangul (coreano): 태권도"
+  - "Hanja (caracteres chinos): 跆拳道"
+  - "Traducción habitual: El camino del pie y el puño"
 related: [articles/taekwondo, articles/history-of-taekwondo, people/choi-hong-hi]
 sources:
   - Wikipedia, "Taekwondo" | https://en.wikipedia.org/wiki/Taekwondo

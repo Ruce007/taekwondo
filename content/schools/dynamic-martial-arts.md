@@ -15,10 +15,10 @@ phone: +1-949-551-2200
 founded: 2004
 website: https://irvinemartialarts.com/
 infobox:
-  - Locations: One
-  - Established: 2004
-  - Arts: Taekwondo and Hapkido
-  - Service area: Irvine, Lake Forest and Tustin
+  - "Locations: One"
+  - "Established: 2004"
+  - "Arts: Taekwondo and Hapkido"
+  - "Service area: Irvine, Lake Forest and Tustin"
 related: []
 sources:
   - Dynamic Martial Arts, Irvine location page | https://irvinemartialarts.com/location/irvine-ca/

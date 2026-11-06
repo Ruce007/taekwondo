@@ -10,18 +10,18 @@ meta: Las Vegas, Nevada · est. 1986 · three locations
 country: US
 region: NV
 city: Las Vegas
-street: 7750 S. Jones Blvd #105
+street: "7750 S. Jones Blvd #105"
 postal: 89139
 addressNote: Jones
 phone: +1-702-736-1040
 founded: 1986
 website: https://eagletkdlv.com/
 infobox:
-  - Locations: Three: Jones, Tropicana and Summerlin
-  - Tropicana: 1801 E. Tropicana Ave #14, Las Vegas, NV 89119
-  - Summerlin: 2950 S. Durango Dr. #100, Las Vegas, NV 89117
-  - Established: 1986
-  - Founder: [[Bo Young Kim]], 8th dan (Kukkiwon)
+  - "Locations: Three: Jones, Tropicana and Summerlin"
+  - "Tropicana: 1801 E. Tropicana Ave #14, Las Vegas, NV 89119"
+  - "Summerlin: 2950 S. Durango Dr. #100, Las Vegas, NV 89117"
+  - "Established: 1986"
+  - "Founder: [[Bo Young Kim]], 8th dan (Kukkiwon)"
 related: [people/bo-young-kim, organizations/kukkiwon]
 sources:
   - Eagle Taekwondo, home page | https://eagletkdlv.com/

@@ -9,9 +9,9 @@ meta: Founded 1946 by Yun Byung-in
 founded: 1946
 founders: [Yun Byung-in]
 infobox:
-  - Founder: [[Yun Byung-in]]
-  - Founded: 1946, as a YMCA Kwon Bup club
-  - Named by: Lee Nam Suk, senior student
+  - "Founder: [[Yun Byung-in]]"
+  - "Founded: 1946, as a YMCA Kwon Bup club"
+  - "Named by: Lee Nam Suk, senior student"
 related: [people/yun-byung-in, kwans/ji-do-kwan, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Kwan (martial arts)" | https://en.wikipedia.org/wiki/Kwan_(martial_arts)

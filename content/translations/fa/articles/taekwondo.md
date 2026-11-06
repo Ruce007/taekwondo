@@ -5,12 +5,12 @@ updated: 2026-11-05
 status: provisional
 translator: ترجمه اولیه، پیش از بازبینی فارسی‌زبان بومی
 infobox:
-  - خاستگاه: کره
-  - دوران نوین: پس از ۱۹۴۵، با تأسیس کوان‌ها
-  - تمرکز اصلی: ضربه‌زنی، به‌ویژه ضربه با پا
-  - جایگاه المپیکی: رشته رسمی مدال‌دار از ۲۰۰۰
-  - نهادهای بین‌المللی: [[World Taekwondo|تکواندوی جهانی]] و [[International Taekwon-Do Federation|فدراسیون بین‌المللی تکوان‌دو (ITF)]]
-  - مرکز فنی (سبک تکواندوی جهانی): [[Kukkiwon|کوکیوون]]
+  - "خاستگاه: کره"
+  - "دوران نوین: پس از ۱۹۴۵، با تأسیس کوان‌ها"
+  - "تمرکز اصلی: ضربه‌زنی، به‌ویژه ضربه با پا"
+  - "جایگاه المپیکی: رشته رسمی مدال‌دار از ۲۰۰۰"
+  - "نهادهای بین‌المللی: [[World Taekwondo|تکواندوی جهانی]] و [[International Taekwon-Do Federation|فدراسیون بین‌المللی تکوان‌دو (ITF)]]"
+  - "مرکز فنی (سبک تکواندوی جهانی): [[Kukkiwon|کوکیوون]]"
 related: [articles/etymology, articles/history-of-taekwondo, articles/belt-ranks]
 sources:
   - Wikipedia, "Taekwondo" | https://en.wikipedia.org/wiki/Taekwondo

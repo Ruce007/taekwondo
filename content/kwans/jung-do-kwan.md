@@ -9,10 +9,10 @@ aliases: [Jungdokwan, Jeong Do Kwan]
 meta: Mid-1950s, Lee Yong-woo
 founders: [Lee Yong-woo]
 infobox:
-  - Founder: [[Lee Yong-woo]]
-  - Founded: 1954 or 1956, depending on the source
-  - Place: Seoul, South Korea
-  - Lineage: An annex of the [[Chung Do Kwan]]
+  - "Founder: [[Lee Yong-woo]]"
+  - "Founded: 1954 or 1956, depending on the source"
+  - "Place: Seoul, South Korea"
+  - "Lineage: An annex of the [[Chung Do Kwan]]"
 related: [people/lee-yong-woo, kwans/chung-do-kwan, articles/history-of-taekwondo]
 sources:
   - Wikipedia, "Jung Do Kwan" | https://en.wikipedia.org/wiki/Jung_Do_Kwan
