@@ -15,3 +15,6 @@ export function t(key, vars = {}) {
   if (raw === undefined) throw new Error(`missing interface string "${key}" in src/i18n/ui.mjs`);
   return raw.replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? '');
 }
+
+// A string in a specific language, regardless of the page's own language (used to offer a page in its own words).
+export const uiFor = (code, key) => ui[code]?.[key] ?? ui[defaultLocale][key];

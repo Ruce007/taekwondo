@@ -3,6 +3,7 @@
 // Strings marked `{date}` get the date inserted.
 export const ui = {
   en: {
+    langOffer: 'View this page in English',
     translationLabel: 'Translation',
     moreFacts: 'Show {n} more facts', moreFact: 'Show {n} more fact',
     tagline: 'Taekwondo history, lineages, masters and schools',
@@ -20,6 +21,7 @@ export const ui = {
     provisionalNote: 'This page draws mainly on encyclopedic and organizational sources and has not yet had a full primary-source review.',
   },
   ko: {
+    langOffer: '이 페이지를 한국어로 보기',
     translationLabel: '번역',
     moreFacts: '정보 {n}개 더 보기',
     tagline: '태권도의 역사, 계보, 사범과 도장',
@@ -37,6 +39,7 @@ export const ui = {
     provisionalNote: '이 문서는 주로 백과사전과 단체 자료에 근거하며, 아직 1차 자료에 대한 전체 검토를 거치지 않았습니다.',
   },
   es: {
+    langOffer: 'Ver esta página en español',
     translationLabel: 'Traducción',
     moreFacts: 'Mostrar {n} datos más',
     tagline: 'Historia, linajes, maestros y escuelas de Taekwondo',
@@ -54,6 +57,7 @@ export const ui = {
     provisionalNote: 'Esta página se basa sobre todo en fuentes enciclopédicas y de organizaciones y aún no ha tenido una revisión completa de fuentes primarias.',
   },
   'zh-Hans': {
+    langOffer: '以简体中文查看此页面',
     translationLabel: '翻译',
     moreFacts: '显示另外 {n} 项',
     tagline: '跆拳道的历史、传承、宗师与道馆',
@@ -71,6 +75,7 @@ export const ui = {
     provisionalNote: '本页主要依据百科全书和组织类资料，尚未经过完整的一手资料审阅。',
   },
   'zh-Hant': {
+    langOffer: '以繁體中文檢視此頁面',
     translationLabel: '翻譯',
     moreFacts: '顯示另外 {n} 項',
     tagline: '跆拳道的歷史、傳承、宗師與道館',
@@ -88,6 +93,7 @@ export const ui = {
     provisionalNote: '本頁主要依據百科全書和組織類資料，尚未經過完整的一手資料審閱。',
   },
   ja: {
+    langOffer: 'このページを日本語で表示',
     translationLabel: '翻訳',
     moreFacts: 'さらに {n} 件を表示',
     tagline: 'テコンドーの歴史、系譜、師範、道場',
@@ -105,6 +111,7 @@ export const ui = {
     provisionalNote: 'このページは主に百科事典や団体の資料に基づいており、一次資料による完全な確認はまだ行われていません。',
   },
   de: {
+    langOffer: 'Diese Seite auf Deutsch ansehen',
     translationLabel: 'Übersetzung',
     moreFacts: '{n} weitere Fakten anzeigen',
     tagline: 'Geschichte, Linien, Meister und Schulen des Taekwondo',
@@ -122,6 +129,7 @@ export const ui = {
     provisionalNote: 'Diese Seite stützt sich hauptsächlich auf enzyklopädische und organisationseigene Quellen und wurde noch nicht vollständig anhand von Primärquellen geprüft.',
   },
   fa: {
+    langOffer: 'مشاهده این صفحه به فارسی',
     translationLabel: 'ترجمه',
     moreFacts: 'نمایش {n} مورد دیگر',
     tagline: 'تاریخ، سلسله‌مراتب، استادان و مدارس تکواندو',
@@ -139,6 +147,7 @@ export const ui = {
     provisionalNote: 'این صفحه عمدتاً بر منابع دانشنامه‌ای و سازمانی استوار است و هنوز بازبینی کامل با منابع دست اول انجام نشده است.',
   },
   pt: {
+    langOffer: 'Ver esta página em português',
     translationLabel: 'Tradução',
     moreFacts: 'Mostrar mais {n} dados',
     tagline: 'História, linhagens, mestres e escolas de Taekwondo',
@@ -156,6 +165,7 @@ export const ui = {
     provisionalNote: 'Esta página baseia-se principalmente em fontes enciclopédicas e de organizações e ainda não passou por uma revisão completa de fontes primárias.',
   },
   tr: {
+    langOffer: 'Bu sayfayı Türkçe görüntüle',
     translationLabel: 'Çeviri',
     moreFacts: '{n} bilgi daha göster',
     tagline: 'Taekwondo tarihi, soy hatları, ustalar ve okullar',

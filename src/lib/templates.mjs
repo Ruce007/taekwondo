@@ -5,7 +5,7 @@ import { card, cardList, chipList, groupPages, notice, infobox as infoboxHtml, h
 import { esc, jsonLd, formatDate } from './util.mjs';
 import { buildPlaces, countryLabel, regionLabel } from './places.mjs';
 import { lineageTree } from './lineage.mjs';
-import { t, getLocale } from '../i18n/index.mjs';
+import { t, getLocale, uiFor } from '../i18n/index.mjs';
 import { locales, defaultLocale } from '../i18n/locales.mjs';
 import { flagSvg } from '../i18n/flags.mjs';
 
@@ -53,6 +53,7 @@ ${alternateLinks(o.alternates)}<meta property="og:site_name" content="${esc(site
 <meta property="og:image:alt" content="${esc(site.name)}: ${esc(site.tagline)}">
 <meta name="twitter:card" content="summary_large_image">
 <script src="/assets/${ctx.assets.theme}"></script>
+${(ctx.published || []).length > 1 ? `<script src="/assets/${ctx.assets.lang}" defer></script>` : ''}
 <link rel="stylesheet" href="/assets/${ctx.assets.css}">
 ${ld}
 </head>
@@ -126,11 +127,13 @@ function alternateLinks(alts) {
 function langChoices(ctx, alts) {
   return (ctx.published || [defaultLocale]).map((code) => ({
     code,
+    exact: Boolean(alts?.some((a) => a.locale === code)),
     path: alts?.find((a) => a.locale === code)?.path || (code === defaultLocale ? '/' : `/${code}/`),
   }));
 }
+const offerText = (code) => uiFor(code, 'langOffer');
 const langItem = (c, current) =>
-  `<a href="${c.path}" hreflang="${c.code}" lang="${c.code}"${c.code === current ? ' aria-current="true"' : ''}>${flagSvg(c.code)}<span>${esc(locales[c.code].name)}</span></a>`;
+  `<a href="${c.path}" hreflang="${c.code}" lang="${c.code}" data-lang="${c.code}"${c.exact ? ' data-exact="1"' : ''} data-offer="${esc(offerText(c.code))}" data-hide="${esc(uiFor(c.code, 'hide'))}"${c.code === current ? ' aria-current="true"' : ''}>${flagSvg(c.code)}<span>${esc(locales[c.code].name)}</span></a>`;
 
 // Header menu: current flag and name; opens a list of languages.
 function langMenu(ctx, alts, current) {
