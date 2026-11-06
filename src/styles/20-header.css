@@ -176,3 +176,68 @@ html { scroll-padding-top: 7.25rem; }
   .menu-toggle { display: none; }
 }
 
+
+
+/* ---------- language menu: flag + name, drops down from the header ---------- */
+.flag { flex: none; display: block; border-radius: 3px; box-shadow: 0 0 0 1px rgb(0 0 0 / 0.18); }
+.lang-menu { position: relative; flex: none; }
+.lang-menu summary {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.4rem;
+  padding: 0 0.7rem;
+  border: 1px solid rgb(255 255 255 / 0.35);
+  border-radius: var(--radius);
+  color: var(--accent-text);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  user-select: none;
+}
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary:hover, .lang-menu[open] summary { background: rgb(255 255 255 / 0.1); }
+.lang-menu .chev { opacity: 0.8; transition: transform 0.15s; }
+.lang-menu[open] .chev { transform: rotate(180deg); }
+.lang-menu ul {
+  position: absolute;
+  inset-inline-end: 0;
+  top: calc(100% + 0.4rem);
+  z-index: 30;
+  min-width: 11.5rem;
+  margin: 0;
+  padding: 0.35rem;
+  list-style: none;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 2px);
+  box-shadow: 0 10px 28px rgb(0 0 0 / 0.22);
+}
+.lang-menu li a, .lang-switch li a {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: var(--radius);
+  color: inherit;
+  text-decoration: none;
+}
+.lang-menu li a:hover { background: var(--surface, rgb(127 127 127 / 0.12)); }
+.lang-menu li a[aria-current], .lang-switch li a[aria-current] { font-weight: 700; }
+.lang-switch ul { list-style: none; margin: 0; padding: 0; }
+.lang-switch li a { padding-inline: 0; }
+@media (max-width: 51.99rem) {
+  .lang-menu { order: 2; }
+  .lang-menu .lang-current { display: none; }
+  .lang-menu summary { padding: 0 0.6rem; gap: 0.4rem; }
+}
+@media (max-width: 51.99rem) {
+  .header-row { gap: 0.5rem 0.4rem; }
+  .brand { gap: 0.45rem; }
+  .brand-name { font-size: 1.2rem; }
+  .theme-switch button { width: 2.15rem; }
+  .lang-menu .chev { display: none; }
+  .lang-menu summary { padding: 0 0.5rem; }
+}

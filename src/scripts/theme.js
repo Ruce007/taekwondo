@@ -32,6 +32,11 @@
       if (nav) nav.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
       window.addEventListener('resize', function () { if (window.innerWidth >= 832) setMenu(false); });
     }
+    var lang = document.querySelector('.lang-menu');
+    if (lang) {
+      document.addEventListener('click', function (e) { if (lang.open && !lang.contains(e.target)) lang.open = false; });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lang.open) { lang.open = false; lang.querySelector('summary').focus(); } });
+    }
     var group = document.querySelector('.theme-switch');
     if (!group) return;
     group.addEventListener('click', function (e) {

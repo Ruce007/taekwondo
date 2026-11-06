@@ -174,7 +174,7 @@ async function main() {
     await writeFile(path.join(dist, 'assets', assets[name]), body);
   }
 
-  const ctx = { assets, year: new Date().getFullYear(), pages };
+  const ctx = { assets, year: new Date().getFullYear(), pages, published: [defaultLocale, ...new Set(translations.filter((x) => x.en).map((x) => x.locale))] };
   const put = async (urlPath, html) => {
     const target = urlPath.endsWith('/') ? path.join(dist, urlPath, 'index.html') : path.join(dist, urlPath);
     await mkdir(path.dirname(target), { recursive: true });

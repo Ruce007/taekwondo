@@ -7,6 +7,7 @@ import { buildPlaces, countryLabel, regionLabel } from './places.mjs';
 import { lineageTree } from './lineage.mjs';
 import { t, getLocale } from '../i18n/index.mjs';
 import { locales, defaultLocale } from '../i18n/locales.mjs';
+import { flagSvg } from '../i18n/flags.mjs';
 
 const abs = (p) => `${site.url}${p}`;
 
@@ -68,6 +69,7 @@ ${ld}
       <input id="site-search" name="q" type="search" placeholder="${esc(t('searchPlaceholder'))}" autocomplete="off">
       <button type="submit">${esc(t('searchBtn'))}</button>
     </form>
+    ${langMenu(ctx, o.alternates, loc)}
     <div class="theme-switch" role="group" aria-label="${esc(t('themeGroup'))}">
       <button type="button" data-theme-choice="light" aria-pressed="false" aria-label="${esc(t('themeLight'))}" title="${esc(t('themeLight'))}"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="lbl">${esc(t('themeLight'))}</span></button>
       <button type="button" data-theme-choice="dark" aria-pressed="false" aria-label="${esc(t('themeDark'))}" title="${esc(t('themeDark'))}"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span class="lbl">${esc(t('themeDark'))}</span></button>
@@ -88,7 +90,7 @@ ${o.body}
       <p class="footer-title">${esc(site.name)}</p>
       <p>${esc(tagline)}.</p>
       ${loc === defaultLocale ? `<p class="muted">${esc(site.stage)}.</p>` : ''}
-      ${langSwitch(o.alternates, loc)}
+      ${langSwitch(ctx, o.alternates, loc)}
     </div>
     <nav aria-label="${esc(t('browse'))}">
       <p class="footer-title">${esc(t('browse'))}</p>
@@ -119,13 +121,29 @@ function alternateLinks(alts) {
   return all.map((a) => `<link rel="alternate" hreflang="${a.locale}" href="${abs(a.path)}">`).join('\n') + '\n';
 }
 
-// Language menu: lists the languages this page is available in. Hidden when there is only one.
-function langSwitch(alts, current) {
-  if (!alts || alts.length < 2) return '';
-  const items = alts
-    .map((a) => `<li><a href="${a.path}" hreflang="${a.locale}" lang="${a.locale}"${a.locale === current ? ' aria-current="true"' : ''}>${esc(locales[a.locale].name)}</a></li>`)
-    .join('');
-  return `<nav class="lang-switch" aria-label="${esc(t('language'))}"><p class="footer-title">${esc(t('language'))}</p><ul>${items}</ul></nav>`;
+// Languages offered: English plus every language that has at least one translated page.
+// Each links to this page in that language when it exists, otherwise to that language's start page.
+function langChoices(ctx, alts) {
+  return (ctx.published || [defaultLocale]).map((code) => ({
+    code,
+    path: alts?.find((a) => a.locale === code)?.path || (code === defaultLocale ? '/' : `/${code}/`),
+  }));
+}
+const langItem = (c, current) =>
+  `<a href="${c.path}" hreflang="${c.code}" lang="${c.code}"${c.code === current ? ' aria-current="true"' : ''}>${flagSvg(c.code)}<span>${esc(locales[c.code].name)}</span></a>`;
+
+// Header menu: current flag and name; opens a list of languages.
+function langMenu(ctx, alts, current) {
+  const list = langChoices(ctx, alts);
+  if (list.length < 2) return '';
+  return `<details class="lang-menu"><summary aria-label="${esc(t('language'))}">${flagSvg(current)}<span class="lang-current">${esc(locales[current].name)}</span><svg class="chev" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><ul>${list.map((c) => `<li>${langItem(c, current)}</li>`).join('')}</ul></details>`;
+}
+
+// Footer list of the same languages (also gives search engines plain links to every version).
+function langSwitch(ctx, alts, current) {
+  const list = langChoices(ctx, alts);
+  if (list.length < 2) return '';
+  return `<nav class="lang-switch" aria-label="${esc(t('language'))}"><p class="footer-title">${esc(t('language'))}</p><ul>${list.map((c) => `<li>${langItem(c, current)}</li>`).join('')}</ul></nav>`;
 }
 
 function breadcrumb(items) {
