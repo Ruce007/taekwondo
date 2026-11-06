@@ -93,12 +93,12 @@ export const collections = {
     intro:
       'A directory of Taekwondo schools by country, state and city, with address, phone and website.',
     description: 'A curated, free directory of Taekwondo schools with sourced information and lineage links.',
-    // Required for the directory and the place search. phone and website are shown when present.
+    // Required for the directory and the place search. street, phone and website are shown when present (leave out any that is unconfirmed).
     fields: {
       country: { required: true },
       region: { required: true },
       city: { required: true },
-      street: { required: true },
+      street: {},
       postal: { required: true },
       phone: {},
       website: {},

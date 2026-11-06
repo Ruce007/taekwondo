@@ -352,7 +352,6 @@ content:
         required: true
       - name: street
         type: string
-        required: true
         description: "Street address including suite."
       - name: postal
         type: string

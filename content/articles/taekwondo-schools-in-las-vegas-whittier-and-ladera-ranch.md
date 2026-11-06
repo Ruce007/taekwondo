@@ -30,7 +30,7 @@ Eagle Taekwondo was founded in 1986 by [[Bo Young Kim]], and Lone Mountain Taekw
 
 | School | Address | Locations |
 |---|---|---|
-| [[Kang's Sunrise Taekwondo]] | 11809 Whittier Blvd, 90601 | 1 |
+| [[Kang's Sunrise Taekwondo]] | Whittier Blvd, 90601 | 1 |
 | [[Nixa Martial Arts Institute]] | 14828 Whittier Blvd, 90605 | 2: Ladera Ranch and Whittier |
 | [[Taekwondo USA]] | 15035 Mulberry Dr, 90604 | 1 |
 | [[Victory Taekwondo Center]] | 11758 Whittier Blvd, 90601 | 1 |
