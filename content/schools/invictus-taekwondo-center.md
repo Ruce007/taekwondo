@@ -3,7 +3,7 @@ title: Invictus Taekwondo Center
 summary: Invictus Taekwondo Center, also known as MAC Las Vegas Taekwondo, is a Las Vegas school founded in 2016 and teaching Kukkiwon-based Taekwondo.
 updated: 2026-11-01
 status: provisional
-statusNote: Everything on this page comes from business directory listings and has not been checked against the school's own website. The founding details come from a local magazine article, and the school's own website has not yet been reviewed.
+statusNote: The school's own website is no longer online, so this page relies on business directory listings. The founding details come from a local magazine article.
 aliases: [MAC Las Vegas Taekwondo, Invictus TKD]
 meta: Las Vegas, Nevada · est. 2016
 country: US
@@ -11,7 +11,6 @@ region: NV
 city: Las Vegas
 street: 8090 Blue Diamond Rd, Ste 150
 postal: 89113
-website: https://invictuslasvegas.com/
 infobox:
   - Locations: One listed
   - Established: 2016

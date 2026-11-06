@@ -20,4 +20,4 @@ sources:
   - Wellhub listing, Thompson's Taekwondo Summerlin | https://wellhub.com/en-us/search/partners/thompsons-taekwondo-summerlin
   - Wellhub listing, Thompson's Taekwondo Centennial Hills | https://wellhub.com/en-us/search/partners/thompsons-taekwondo-centennial-hills/
 ---
-Thompson's Taekwondo has two locations in Las Vegas: Summerlin, at 8995 W Flamingo Rd, Las Vegas, Nevada 89147, and Centennial Hills, at 7485 W Azure Dr, Las Vegas, Nevada 89130.[^1][^2] Directory listings also use the names "Moo Duk Kwan Thompson's Taekwondo" and "Master Thompson's Taekwondo", and describe kickboxing and martial arts classes.[^1][^2]
+Thompson's Taekwondo has two locations in Las Vegas: Summerlin, at 8995 W Flamingo Rd, Las Vegas, Nevada 89147, and Centennial Hills, at 7485 W Azure Dr, Las Vegas, Nevada 89130.[^1][^2] Directory listings also use the names "[[Moo Duk Kwan]] Thompson's Taekwondo" and "Master Thompson's Taekwondo", and describe kickboxing and martial arts classes.[^1][^2]

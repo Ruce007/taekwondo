@@ -26,7 +26,7 @@ Grandmaster Chang Jin Kang is the founder and head of [[Il-Do Taekwondo]], a Tae
 
 ## Early training and competition
 
-He entered the [[Song Moo Kwan]], described as one of the most prestigious Taekwondo studios in Seoul, in 1958.[^1] He trained directly under [[Ro Byung-jick]], the founder of the Song Moo Kwan.[^2] In 1963 he won the Taekwondo championships at the Korean National Sports Festival, and in 1966 he scored the highest grade in the National Taekwondo Promotion Test.[^1]
+He entered the [[Song Moo Kwan]], described as one of the most prestigious Taekwondo studios in Seoul, in 1958.[^1] He trained directly under [[Ro Byung-jick]], the founder of the [[Song Moo Kwan]].[^2] In 1963 he won the Taekwondo championships at the Korean National Sports Festival, and in 1966 he scored the highest grade in the National Taekwondo Promotion Test.[^1]
 
 ## Military service
 

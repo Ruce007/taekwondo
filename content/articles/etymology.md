@@ -32,7 +32,7 @@ An earlier name, Tae Soo Do (태수도), was written 跆手道 in hanja, with �
 
 The names that came before Taekwondo were also formed from Chinese characters: Tang Soo Do is 唐手道, the Korean reading of the characters for karate, and Tae Soo Do is 跆手道.[^1] The change to Taekwondo was a one-character substitution, 手 ("hand") becoming 拳 ("fist"), which Choi advocated.[^1]
 
-Whether the 1955 records themselves used hanja is disputed. Choi's own accounts date the naming to 11 April 1955.[^1] The researcher Lee Kyung-myung dates the first recorded adoption of the name to an advisers' meeting of the Chung Do Kwan on 19 December 1955. In his account the minutes are written mostly in Hangul, and the name entered in them is a two-syllable form, 태拳 (the Hangul 태 followed by the hanja 拳), not the full three-syllable 태권도. He also disputes Choi's statement that Rhee wrote the name in Chinese characters, saying the president's calligraphy was in Hangul.[^2] The kwan leaders agreed on the name taekwondo in 1959.[^1]
+Whether the 1955 records themselves used hanja is disputed. Choi's own accounts date the naming to 11 April 1955.[^1] The researcher Lee Kyung-myung dates the first recorded adoption of the name to an advisers' meeting of the [[Chung Do Kwan]] on 19 December 1955. In his account the minutes are written mostly in Hangul, and the name entered in them is a two-syllable form, 태拳 (the Hangul 태 followed by the hanja 拳), not the full three-syllable 태권도. He also disputes Choi's statement that Rhee wrote the name in Chinese characters, saying the president's calligraphy was in Hangul.[^2] The kwan leaders agreed on the name taekwondo in 1959.[^1]
 
 ## Spellings
 

@@ -22,7 +22,7 @@ Irvine has at least six Taekwondo schools. Each school has its own page with sou
 | [[ATA Martial Arts Irvine]] | 15435 Jeffrey Road, Suite 100, 92618 | 1 | School of [[ATA Martial Arts]]; teaches Songahm Taekwondo |
 | [[Dynamic Martial Arts]] | 14805 Jeffrey Road, Suite F, 92618 | 1 | Taekwondo and Hapkido |
 | [[Elite Fitness Taekwondo]] | Woodbury Town Center: 6254 Irvine Boulevard, 92620 | 1 | The second location of [[Il-Do Taekwondo]], per Il-Do's website |
-| [[Il-Do Taekwondo]] | Heritage Plaza: 14220 Culver Drive, Suite D, 92604 | 2 including Elite Fitness | Founded by [[Chang Jin Kang]] in Santa Ana in 1980; Song Moo Kwan lineage |
+| [[Il-Do Taekwondo]] | Heritage Plaza: 14220 Culver Drive, Suite D, 92604 | 2 including Elite Fitness | Founded by [[Chang Jin Kang]] in Santa Ana in 1980; [[Song Moo Kwan]] lineage |
 | [[Master Lee's Talium]] | 3850 Barranca Parkway, Suite G, 92606 | 2 | Second location in Tustin |
 | [[Regulus Taekwondo]] | 1150 Roosevelt, Suite 100, 92620 | 1 | |
 

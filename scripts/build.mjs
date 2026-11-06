@@ -81,6 +81,15 @@ async function main() {
     for (const hit of lintText(prose)) {
       (hit.level === 'error' ? errors : warnings).push(`${page.file}: "${hit.snippet}": ${hit.message}`);
     }
+    // A page that mentions a kwan should link to it at least once, so readers can always click through.
+    for (const k of pages.filter((p) => p.key === 'kwans' && p !== page)) {
+      const bare = page.body
+        .split('\n')
+        .filter((l) => !l.startsWith('#'))
+        .map((l) => l.replace(/\[\[[^\]]*\]\]/g, '').replace(/\]\([^)]*\)/g, ''))
+        .some((l) => new RegExp(`(?<!Do )\\b${k.title}\\b`).test(l));
+      if (bare && !page.body.includes(`[[${k.title}`)) warnings.push(`${page.file}: "${k.title}" is mentioned without a link`);
+    }
     page.r = { html, headings, infobox: [...autoFacts(page), ...infobox], related, backlinks: [], lineage: lineageBlock(page, L) };
     page.out = out;
   }

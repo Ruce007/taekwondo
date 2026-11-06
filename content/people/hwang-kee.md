@@ -30,4 +30,4 @@ His school was first called Hwa Soo Do Moo Duk Kwan, was renamed Tang Soo Do in 
 
 ## A disputed claim
 
-[[Lee Won-kuk]] said that Hwang had trained at the Chung Do Kwan and earned a green-belt equivalent. Hwang disputed this and named only Yang Kuk Jin as his teacher.[^1]
+[[Lee Won-kuk]] said that Hwang had trained at the [[Chung Do Kwan]] and earned a green-belt equivalent. Hwang disputed this and named only Yang Kuk Jin as his teacher.[^1]

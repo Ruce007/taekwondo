@@ -21,7 +21,7 @@ sources:
   - Kang Won-sik and Lee Kyong-myong, A Modern History of Taekwondo (excerpt) | https://www.kidokwan.org/?p=4237
   - Song Moo Kwan, "The original founding Kwans" | https://songmookwan.com/index.php/history/the-original-founding-kwans
 ---
-The Moo Duk Kwan was founded in Korea in 1945 by [[Hwang Kee]]. The organization says Hwang opened his first school in Seoul's Yongsan district on 9 November 1945, and it was unsuccessful under its original name.[^1][^3] Kang Won-sik and Lee Kyong-myong date the start to some time after 1946, at a railway-station dojang, and the Song Moo Kwan's records list its Dang Soo Do club from 1947.[^4][^5]
+The Moo Duk Kwan was founded in Korea in 1945 by [[Hwang Kee]]. The organization says Hwang opened his first school in Seoul's Yongsan district on 9 November 1945, and it was unsuccessful under its original name.[^1][^3] Kang Won-sik and Lee Kyong-myong date the start to some time after 1946, at a railway-station dojang, and the [[Song Moo Kwan]]'s records list its Dang Soo Do club from 1947.[^4][^5]
 
 ## Naming
 

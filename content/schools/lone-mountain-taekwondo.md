@@ -29,7 +29,7 @@ Lone Mountain Taekwondo is a Taekwondo school at 4990 W. Craig Road, Suite 8, La
 
 ## Training and organizations
 
-Training is based on the standards of the [[Kukkiwon]], and the school names the UWTA as its parent organization and a competition circuit.[^1] Its lineage is the [[Moo Duk Kwan]]: Langdon is a Moo Duk Kwan 7th dan and a member of the Moodo Taekwondo Organization.[^2]
+Training is based on the standards of the [[Kukkiwon]], and the school names the UWTA as its parent organization and a competition circuit.[^1] Its lineage is the [[Moo Duk Kwan]]: Langdon is a [[Moo Duk Kwan]] 7th dan and a member of the Moodo Taekwondo Organization.[^2]
 
 ## Programs
 

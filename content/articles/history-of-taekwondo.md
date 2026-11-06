@@ -68,10 +68,10 @@ The ITF divided after 2001 and 2002 into separate groups, commonly called ITF-Vi
 
 | Year | Event |
 |---|---|
-| 1944 | Song Moo Kwan (20 March) and Chung Do Kwan (September) founded[^2] |
-| 1945 | Moo Duk Kwan founded[^2] |
-| 1946 | Chang Moo Kwan and Ji Do Kwan trace their start to this year[^2] |
-| 1953 to 1956 | The later four kwans open: Han Moo Kwan, Kang Duk Won, Jung Do Kwan and Oh Do Kwan; sources differ on the exact years[^2][^10] |
+| 1944 | [[Song Moo Kwan]] (20 March) and [[Chung Do Kwan]] (September) founded[^2] |
+| 1945 | [[Moo Duk Kwan]] founded[^2] |
+| 1946 | [[Chang Moo Kwan]] and [[Ji Do Kwan]] trace their start to this year[^2] |
+| 1953 to 1956 | The later four kwans open: [[Han Moo Kwan]], [[Kang Duk Won]], [[Jung Do Kwan]] and [[Oh Do Kwan]]; sources differ on the exact years[^2][^10] |
 | 1955 | 11 April: the name Taekwon-Do approved (ITF account)[^3] |
 | 1959 | The Korea Taekwondo Association is founded and the kwans agree on the name Taekwondo (Kang and Lee name six kwans at the founding meeting)[^1][^10] |
 | 1961 | A unification conference renames the art Taesoodo, 14 September[^10] |

@@ -25,7 +25,7 @@ The Kang Duk Won was founded in Seoul by [[Hong Jong-pyo]] and [[Park Chul-hee]]
 
 ## Lineage
 
-Hong and Park trained at the YMCA Kwon Bup Bu, the club tied to the [[Chang Moo Kwan]]. Kang and Lee say they left after conflicts with its leaders, and most histories list the Kang Duk Won as an annex of the Chang Moo Kwan. Park himself said the Kang Duk Won could not be called a branch of the Chang Moo Kwan.[^3][^5] Hong was the first kwan jang (head), Park the second and Lee Kum Hong the third, who moved it to Insadong.[^4][^5]
+Hong and Park trained at the YMCA Kwon Bup Bu, the club tied to the [[Chang Moo Kwan]]. Kang and Lee say they left after conflicts with its leaders, and most histories list the Kang Duk Won as an annex of the [[Chang Moo Kwan]]. Park himself said the Kang Duk Won could not be called a branch of the Chang Moo Kwan.[^3][^5] Hong was the first kwan jang (head), Park the second and Lee Kum Hong the third, who moved it to Insadong.[^4][^5]
 
 ## Unification and today
 

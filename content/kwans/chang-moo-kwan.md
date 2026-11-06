@@ -23,7 +23,7 @@ The Chang Moo Kwan traces its origin to a Kwon Bup club at the YMCA started by [
 
 ## Name and succession
 
-Yun disappeared, and his top student Lee Nam Suk carried on his teaching.[^1] After the Korean War, Lee and Kim Soon Bae reopened the club under the name Chang Moo Kwan, which the Song Moo Kwan's records date to 1954.[^3][^4] The name is also spelled Chang Mu Kwan.
+Yun disappeared, and his top student Lee Nam Suk carried on his teaching.[^1] After the Korean War, Lee and Kim Soon Bae reopened the club under the name Chang Moo Kwan, which the [[Song Moo Kwan]]'s records date to 1954.[^3][^4] The name is also spelled Chang Mu Kwan.
 
 ## Relationship to the Ji Do Kwan
 
