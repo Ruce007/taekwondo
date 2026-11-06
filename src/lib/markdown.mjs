@@ -52,7 +52,7 @@ function blocks(lines, ctx, headings, usedIds) {
       usedIds.add(id);
       headings.push({ level, id, text });
       out.push(
-        `<h${level} id="${id}">${inline(h[2], ctx)} <a class="anchor" href="#${id}" aria-label="Link to this section">#</a></h${level}>`,
+        `<h${level} id="${id}">${inline(h[2], ctx)} <a class="anchor" data-pagefind-ignore href="#${id}" aria-label="Link to this section">#</a></h${level}>`,
       );
       i++;
       continue;

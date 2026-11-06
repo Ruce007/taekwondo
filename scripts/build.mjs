@@ -178,7 +178,12 @@ async function main() {
   const put = async (urlPath, html) => {
     const target = urlPath.endsWith('/') ? path.join(dist, urlPath, 'index.html') : path.join(dist, urlPath);
     await mkdir(path.dirname(target), { recursive: true });
-    await writeFile(target, html);
+    // A line break after each block element keeps neighbouring text apart for the search index
+    // ("Locations" and "One listed" would otherwise be read as one word).
+    const spaced = typeof html === 'string' && html.startsWith('<!doctype')
+      ? html.replace(/(<\/(?:h[1-6]|p|li|dt|dd|th|td|summary|figcaption|blockquote)>)(?=<)/g, '$1\n')
+      : html;
+    await writeFile(target, spaced);
   };
 
   const featuredPages = featured.map((k) => lookup.get(k.toLowerCase())).filter(Boolean);

@@ -34,7 +34,7 @@ export function groupPages(col, pages) {
 // ---- notices --------------------------------------------------------------------------------
 
 export const notice = (label, text, extra = '') =>
-  `<aside class="notice" aria-label="${esc(label)}"><p><strong>${esc(label)}.</strong> ${esc(text)}${extra ? ` ${extra}` : ''}</p></aside>`;
+  `<aside class="notice" data-pagefind-ignore aria-label="${esc(label)}"><p><strong>${esc(label)}.</strong> ${esc(text)}${extra ? ` ${extra}` : ''}</p></aside>`;
 
 // ---- quick facts ----------------------------------------------------------------------------
 
