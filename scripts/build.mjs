@@ -11,8 +11,10 @@ import { collections, site, featured } from '../src/site.config.mjs';
 import { loadContent } from '../src/lib/content.mjs';
 import { renderMarkdown, inline } from '../src/lib/markdown.mjs';
 import { autoFacts } from '../src/lib/facts.mjs';
-import { entryPage, indexPage, homePage, searchPage, notFoundPage, placePage, lineagePage, sitemapXml } from '../src/lib/templates.mjs';
+import { entryPage, indexPage, homePage, searchPage, notFoundPage, placePage, lineagePage, localePage, sitemapXml } from '../src/lib/templates.mjs';
 import { buildPlaces, finderIndex } from '../src/lib/places.mjs';
+import { setLocale } from '../src/i18n/index.mjs';
+import { locales, defaultLocale } from '../src/i18n/locales.mjs';
 import { lintText } from '../src/lib/lint.mjs';
 import { buildLineage, lineageBlock } from '../src/lib/lineage.mjs';
 
@@ -23,7 +25,7 @@ const warnings = [];
 
 async function main() {
   const started = Date.now();
-  const pages = await loadContent(root, errors);
+  const { pages, translations } = await loadContent(root, errors);
 
   // ---- 1. lookup table for [[wiki links]] -------------------------------------------------
   const lookup = new Map();
@@ -101,6 +103,52 @@ async function main() {
     }
   }
 
+  // ---- 2b. translations: each one must match an English page of the same file name ----------
+  const byEnglish = new Map(pages.map((p) => [p.path, p]));
+  const altsFor = new Map(); // english page -> [{ locale, path }]
+  const trLookups = new Map();
+  for (const tp of translations) {
+    const en = byEnglish.get(tp.englishPath);
+    if (!en) {
+      errors.push(`${tp.file}: no English page at ${tp.englishPath}; translations must share the English file name`);
+      continue;
+    }
+    tp.en = en;
+    if (!altsFor.has(en)) altsFor.set(en, [{ locale: defaultLocale, path: en.path }]);
+    altsFor.get(en).push({ locale: tp.locale, path: tp.path });
+    const lk = trLookups.get(tp.locale) || trLookups.set(tp.locale, new Map()).get(tp.locale);
+    lk.set(`${tp.col.dir}/${tp.slug}`, tp);
+    lk.set(tp.title.toLowerCase(), tp);
+    tp.aliases.forEach((a) => lk.set(a.toLowerCase(), tp));
+  }
+  for (const tp of translations.filter((x) => x.en)) {
+    setLocale(tp.locale);
+    const lk = trLookups.get(tp.locale);
+    const resolve = (k) => lk.get(k.toLowerCase()) || lookup.get(k.toLowerCase()) || null;
+    const ctx = { resolve, linked: () => {}, sourceCount: tp.sources.length, error: (m) => errors.push(`${tp.file}: ${m}`) };
+    const { html, headings } = renderMarkdown(tp.body, ctx, reserved);
+    const seen = new Set();
+    for (const h of headings) {
+      const k = `${h.level}:${h.text.toLowerCase()}`;
+      if (seen.has(k)) errors.push(`${tp.file}: the section "${h.text}" appears twice; merge the two`);
+      seen.add(k);
+    }
+    const infobox = tp.infobox
+      .map((raw) => {
+        const i = raw.indexOf(': ');
+        if (i === -1) { errors.push(`${tp.file}: infobox line needs "Label: value" (got "${raw}")`); return null; }
+        return { label: raw.slice(0, i), html: inline(raw.slice(i + 2), ctx) };
+      })
+      .filter(Boolean);
+    const related = tp.related.map((t) => resolve(t) || (errors.push(`${tp.file}: unknown related page "${t}"`), null)).filter(Boolean);
+    tp.r = { html, headings, infobox, related, backlinks: [], lineage: '' };
+    // Source lists must match the English page, so a translation never cites something the reference does not.
+    if (tp.sources.length && tp.sources.length !== tp.en.sources.length) warnings.push(`${tp.file}: ${tp.sources.length} sources, but the English page has ${tp.en.sources.length}`);
+  }
+  setLocale(defaultLocale);
+  for (const [en, alts] of altsFor) en.alternates = alts;
+  for (const tp of translations.filter((x) => x.en)) tp.alternates = altsFor.get(tp.en);
+
   if (errors.length) return finish(errors, warnings);
 
   // ---- 3. write the output ----------------------------------------------------------------
@@ -147,6 +195,16 @@ async function main() {
     indexes.push({ path: `${collections[key].base}/`, lastmod: items.map((i) => i.updated).sort().at(-1) || '2026-01-01' });
   }
   for (const p of pages) await put(p.path, entryPage(ctx, p, p.r));
+  const used = [...new Set(translations.filter((x) => x.en).map((x) => x.locale))];
+  for (const tp of translations.filter((x) => x.en)) {
+    setLocale(tp.locale);
+    await put(tp.path, entryPage(ctx, tp, tp.r));
+  }
+  for (const code of used) {
+    setLocale(code);
+    await put(`/${code}/`, localePage(ctx, code, translations.filter((x) => x.locale === code && x.en)));
+  }
+  setLocale(defaultLocale);
 
   // Generated place pages: /schools/us/, /schools/us/ca/, /schools/us/ca/irvine/
   const schoolPages = pages.filter((p) => p.key === 'schools');
@@ -171,7 +229,7 @@ async function main() {
   if (redirects.length) await writeFile(path.join(dist, '_redirects'), `${redirects.join('\n')}\n`);
 
   const latest = pages.map((p) => p.updated).sort().at(-1);
-  await put('/sitemap.xml', sitemapXml(pages, { latest, indexes }));
+  await put('/sitemap.xml', sitemapXml([...pages, ...translations.filter((x) => x.en)], { latest, indexes: [...indexes, ...used.map((c) => ({ path: `/${c}/`, lastmod: latest }))] }));
   await put(
     '/search-index.json',
     JSON.stringify(pages.map((p) => ({ t: p.title, u: p.path, s: p.summary, k: p.col.label, a: p.aliases }))),

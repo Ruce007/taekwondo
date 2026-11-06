@@ -21,7 +21,7 @@
 .meta {
   font-size: 0.85rem;
   color: var(--muted);
-  margin-left: 0.4rem;
+  margin-inline-start: 0.4rem;
 }
 .card-summary {
   display: block;
@@ -30,7 +30,7 @@
   font-size: 0.97rem;
 }
 .plain-list {
-  padding-left: 1.2rem;
+  padding-inline-start: 1.2rem;
 }
 
 .related,
@@ -47,7 +47,7 @@
   padding-bottom: 0.25rem;
 }
 .sources ol {
-  padding-left: 1.5rem;
+  padding-inline-start: 1.5rem;
   font-size: 0.97rem;
 }
 .sources li:target {
@@ -162,7 +162,7 @@ nav.toc ul ul { margin-top: .25rem; }
 .lineage dd { margin: 0; }
 @media (max-width: 30rem) { .lineage dl > div { grid-template-columns: 1fr; gap: 0; } }
 .tree, .tree ul { list-style: none; margin: 0; padding: 0; }
-.tree ul { margin-left: 0.6rem; padding-left: 1.1rem; border-left: 2px solid var(--border); }
+.tree ul { margin-inline-start: 0.6rem; padding-inline-start: 1.1rem; border-inline-start: 2px solid var(--border); }
 .tree li { margin: 0.35rem 0; position: relative; }
 .tree ul > li::before { content: ''; position: absolute; left: -1.1rem; top: 0.85rem; width: 0.8rem; border-top: 2px solid var(--border); }
 .tree-kwan > a { font: 700 1.1rem var(--font-head); }

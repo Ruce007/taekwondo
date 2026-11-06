@@ -5,16 +5,32 @@ import path from 'node:path';
 import { collections, countryNames, statuses } from '../site.config.mjs';
 import { parseFrontmatter } from './frontmatter.mjs';
 import { asArray } from './util.mjs';
+import { locales, defaultLocale } from '../i18n/locales.mjs';
 
 // Front-matter fields every page may use.
-const COMMON_FIELDS = ['title', 'summary', 'updated', 'status', 'statusNote', 'aliases', 'meta', 'infobox', 'related', 'sources', 'order', 'redirectFrom'];
+const COMMON_FIELDS = ['title', 'translator', 'summary', 'updated', 'status', 'statusNote', 'aliases', 'meta', 'infobox', 'related', 'sources', 'order', 'redirectFrom'];
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
+// English pages live in content/<collection>/. Translations live in content/translations/<language>/<collection>/
+// under the same file name as the English page, and are published at /<language>/<english address>.
+const TRANSLATABLE = ['articles', 'people', 'kwans', 'organizations', 'pages'];
+
 export async function loadContent(root, errors) {
+  const pages = await loadLocale(root, errors, defaultLocale);
+  const translations = [];
+  for (const code of Object.keys(locales).filter((c) => c !== defaultLocale)) {
+    translations.push(...(await loadLocale(root, errors, code)));
+  }
+  return { pages, translations };
+}
+
+async function loadLocale(root, errors, locale) {
   const pages = [];
+  const isDefault = locale === defaultLocale;
   for (const [key, col] of Object.entries(collections)) {
-    const dir = path.join(root, 'content', col.dir);
+    if (!isDefault && !TRANSLATABLE.includes(key)) continue;
+    const dir = isDefault ? path.join(root, 'content', col.dir) : path.join(root, 'content', 'translations', locale, col.dir);
     let files = [];
     try {
       files = (await readdir(dir)).filter((f) => f.endsWith('.md')).sort();
@@ -23,7 +39,7 @@ export async function loadContent(root, errors) {
     }
     for (const f of files) {
       const slug = f.slice(0, -3);
-      const file = `content/${col.dir}/${f}`;
+      const file = isDefault ? `content/${col.dir}/${f}` : `content/translations/${locale}/${col.dir}/${f}`;
       const fail = (m) => errors.push(`${file}: ${m}`);
       if (!SLUG.test(slug)) fail(`file name must be lowercase-with-dashes (got "${slug}")`);
 
@@ -39,8 +55,9 @@ export async function loadContent(root, errors) {
       for (const field of ['title', 'summary', 'updated']) {
         if (!fm[field]) fail(`missing required field "${field}"`);
       }
-      if (fm.summary && (fm.summary.length < 40 || fm.summary.length > 160)) {
-        fail(`"summary" is used as the search-engine description: keep it 40-160 characters (now ${fm.summary.length})`);
+      const minSummary = isDefault ? 40 : 15;
+      if (fm.summary && (fm.summary.length < minSummary || fm.summary.length > 160)) {
+        fail(`"summary" is used as the search-engine description: keep it ${minSummary}-160 characters (now ${fm.summary.length})`);
       }
       if (fm.updated && !DATE.test(fm.updated)) fail('"updated" must look like 2026-10-30');
       fm.status = fm.status || 'provisional';
@@ -49,6 +66,7 @@ export async function loadContent(root, errors) {
       // Field rules come from the collection's `fields` in site.config.mjs.
       const rules = { ...(col.fields || {}) };
       for (const [field, rule] of Object.entries(rules)) {
+        if (!isDefault) continue; // translations inherit these from the English page
         if (rule.required && !fm[field]) fail(`missing required field "${field}"`);
         if (rule.values && fm[field] && !rule.values.includes(fm[field])) {
           fail(`"${field}" must be one of: ${rule.values.join(', ')} (got "${fm[field]}")`);
@@ -76,7 +94,9 @@ export async function loadContent(root, errors) {
         col,
         slug,
         file,
-        path: `${col.base}/${slug}/`,
+        locale,
+        path: `${isDefault ? '' : `/${locale}`}${col.base}/${slug}/`,
+        englishPath: `${col.base}/${slug}/`,
         title: fm.title,
         summary: fm.summary,
         updated: fm.updated,

@@ -1,3 +1,5 @@
+import { getLocale } from '../i18n/index.mjs';
+
 export const esc = (s) =>
   String(s ?? '')
     .replace(/&/g, '&amp;')
@@ -26,8 +28,9 @@ export const stripTags = (h) =>
 export const asArray = (v) => (v == null || v === '' ? [] : Array.isArray(v) ? v : [v]);
 
 export function formatDate(iso) {
+  const code = getLocale();
   const d = new Date(`${iso}T00:00:00Z`);
-  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+  return d.toLocaleDateString(code === 'en' ? 'en-GB' : code, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 }
 
 export const jsonLd = (obj) => JSON.stringify(obj).replace(/</g, '\\u003c');

@@ -59,7 +59,7 @@ a:hover {
 
 .skip-link {
   position: absolute;
-  left: 0.5rem;
+  inset-inline-start: 0.5rem;
   top: -4rem;
   background: var(--accent);
   color: var(--accent-text);
@@ -75,3 +75,6 @@ a:hover {
   color: var(--muted);
 }
 
+
+/* Korean breaks lines between words, not inside them. */
+:lang(ko) { word-break: keep-all; }

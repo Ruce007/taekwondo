@@ -5,6 +5,8 @@ import { card, cardList, chipList, groupPages, notice, infobox as infoboxHtml, h
 import { esc, jsonLd, formatDate } from './util.mjs';
 import { buildPlaces, countryLabel, regionLabel } from './places.mjs';
 import { lineageTree } from './lineage.mjs';
+import { t, getLocale } from '../i18n/index.mjs';
+import { locales, defaultLocale } from '../i18n/locales.mjs';
 
 const abs = (p) => `${site.url}${p}`;
 
@@ -13,19 +15,22 @@ const abs = (p) => `${site.url}${p}`;
 const logoSlot = `<svg class="logo-slot" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true" focusable="false"><rect x="1.5" y="1.5" width="37" height="37" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/><text x="20" y="24" text-anchor="middle" font-size="9" font-family="system-ui, sans-serif" fill="currentColor">LOGO</text></svg>`;
 
 export function layout(ctx, o) {
-  const fullTitle = o.home ? `${site.name}: ${site.tagline}` : `${o.title} | ${site.name}`;
+  const loc = getLocale();
+  const tagline = loc === defaultLocale ? site.tagline : t('tagline');
+  const homeHref = loc === defaultLocale ? '/' : `/${loc}/`;
+  const fullTitle = o.home ? `${site.name}: ${tagline}` : `${o.title} | ${site.name}`;
   const url = abs(o.path);
   const robots = o.noindex ? 'noindex, follow' : 'index, follow';
   const ld = (o.jsonld || []).map((j) => `<script type="application/ld+json">${jsonLd(j)}</script>`).join('\n');
   const navHtml = nav
     .map((n) => {
       const current = o.section === n.collection;
-      return `<li><a href="${n.href}"${current ? ' aria-current="true"' : ''}>${esc(n.label)}</a></li>`;
+      return `<li><a href="${n.href}"${current ? ' aria-current="true"' : ''}>${esc(navLabel(n))}</a></li>`;
     })
     .join('');
 
   return `<!doctype html>
-<html lang="${site.locale}">
+<html lang="${loc}" dir="${locales[loc].dir}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +40,8 @@ export function layout(ctx, o) {
 <link rel="canonical" href="${url}">
 <meta name="theme-color" content="#12304f">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta property="og:site_name" content="${esc(site.name)}">
+${alternateLinks(o.alternates)}<meta property="og:site_name" content="${esc(site.name)}">
+<meta property="og:locale" content="${locales[loc].og}">
 <meta property="og:type" content="${o.ogType || 'website'}">
 <meta property="og:title" content="${esc(o.home ? fullTitle : o.title)}">
 <meta property="og:description" content="${esc(o.description)}">
@@ -50,24 +56,24 @@ export function layout(ctx, o) {
 ${ld}
 </head>
 <body id="top">
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">${esc(t('skip'))}</a>
 <header class="site-header">
   <div class="wrap header-row">
-    <a class="brand" href="/">
+    <a class="brand" href="${homeHref}">
       ${logoSlot}
       <span class="brand-name">${esc(site.name)}</span>
     </a>
     <form class="header-search" role="search" action="/search/" method="get">
-      <label class="visually-hidden" for="site-search">Search ${esc(site.name)}</label>
-      <input id="site-search" name="q" type="search" placeholder="Search the wiki" autocomplete="off">
-      <button type="submit">Search</button>
+      <label class="visually-hidden" for="site-search">${esc(t('search'))} ${esc(site.name)}</label>
+      <input id="site-search" name="q" type="search" placeholder="${esc(t('searchPlaceholder'))}" autocomplete="off">
+      <button type="submit">${esc(t('searchBtn'))}</button>
     </form>
-    <div class="theme-switch" role="group" aria-label="Colour theme">
-      <button type="button" data-theme-choice="light" aria-pressed="false" aria-label="Light theme" title="Light"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="lbl">Light</span></button>
-      <button type="button" data-theme-choice="dark" aria-pressed="false" aria-label="Dark theme" title="Dark"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span class="lbl">Dark</span></button>
-      <button type="button" data-theme-choice="system" aria-pressed="true" aria-label="Match device theme" title="Match device"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="lbl">System</span></button>
+    <div class="theme-switch" role="group" aria-label="${esc(t('themeGroup'))}">
+      <button type="button" data-theme-choice="light" aria-pressed="false" aria-label="${esc(t('themeLight'))}" title="${esc(t('themeLight'))}"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="lbl">${esc(t('themeLight'))}</span></button>
+      <button type="button" data-theme-choice="dark" aria-pressed="false" aria-label="${esc(t('themeDark'))}" title="${esc(t('themeDark'))}"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span class="lbl">${esc(t('themeDark'))}</span></button>
+      <button type="button" data-theme-choice="system" aria-pressed="true" aria-label="${esc(t('themeSystem'))}" title="${esc(t('themeSystem'))}"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="lbl">${esc(t('themeSystem'))}</span></button>
     </div>
-    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path class="bars" d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path class="close" d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span class="visually-hidden">Menu</span></button>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path class="bars" d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path class="close" d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span class="visually-hidden">${esc(t('menu'))}</span></button>
   </div>
   <nav class="main-nav" id="site-nav" aria-label="Main">
     <ul class="wrap">${navHtml}</ul>
@@ -80,27 +86,46 @@ ${o.body}
   <div class="wrap footer-grid">
     <div>
       <p class="footer-title">${esc(site.name)}</p>
-      <p>${esc(site.tagline)}.</p>
-      <p class="muted">${esc(site.stage)}.</p>
+      <p>${esc(tagline)}.</p>
+      ${loc === defaultLocale ? `<p class="muted">${esc(site.stage)}.</p>` : ''}
+      ${langSwitch(o.alternates, loc)}
     </div>
-    <nav aria-label="Browse">
-      <p class="footer-title">Browse</p>
-      <ul>${nav.map((n) => `<li><a href="${n.href}">${esc(n.label)}</a></li>`).join('')}</ul>
+    <nav aria-label="${esc(t('browse'))}">
+      <p class="footer-title">${esc(t('browse'))}</p>
+      <ul>${nav.map((n) => `<li><a href="${n.href}">${esc(navLabel(n))}</a></li>`).join('')}</ul>
     </nav>
     <nav aria-label="About this site">
-      <p class="footer-title">About this site</p>
+      <p class="footer-title">${esc(t('aboutSite'))}</p>
       <ul>
-        <li><a href="/editorial-policy/">Editorial policy</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/sitemap.xml">Sitemap</a></li>
+        <li><a href="/editorial-policy/">${esc(t('editorial'))}</a></li>
+        <li><a href="/about/">${esc(t('about'))}</a></li>
+        <li><a href="/sitemap.xml">${esc(t('sitemap'))}</a></li>
       </ul>
     </nav>
   </div>
-  <div class="wrap footer-base">${fundingNote()}<p>&copy; ${ctx.year} ${esc(site.publisher)}. Core access is free.</p></div>
+  <div class="wrap footer-base">${fundingNote()}<p>&copy; ${ctx.year} ${esc(site.publisher)}. ${esc(t('free'))}</p></div>
 </footer>
 </body>
 </html>
 `;
+}
+
+const navLabel = (n) => (n.collection ? t(n.collection === 'pages' ? 'about' : `plural.${n.collection}`) : n.label);
+
+// <link rel="alternate" hreflang> for every language a page exists in, plus x-default (English).
+function alternateLinks(alts) {
+  if (!alts || alts.length < 2) return '';
+  const all = [...alts, ...alts.filter((a) => a.locale === defaultLocale).map((a) => ({ ...a, locale: 'x-default' }))];
+  return all.map((a) => `<link rel="alternate" hreflang="${a.locale}" href="${abs(a.path)}">`).join('\n') + '\n';
+}
+
+// Language menu: lists the languages this page is available in. Hidden when there is only one.
+function langSwitch(alts, current) {
+  if (!alts || alts.length < 2) return '';
+  const items = alts
+    .map((a) => `<li><a href="${a.path}" hreflang="${a.locale}" lang="${a.locale}"${a.locale === current ? ' aria-current="true"' : ''}>${esc(locales[a.locale].name)}</a></li>`)
+    .join('');
+  return `<nav class="lang-switch" aria-label="${esc(t('language'))}"><p class="footer-title">${esc(t('language'))}</p><ul>${items}</ul></nav>`;
 }
 
 function breadcrumb(items) {
@@ -115,41 +140,45 @@ function breadcrumb(items) {
 }
 
 function crumbsFor(page) {
-  const items = [{ name: 'Home', path: '/' }];
-  if (page.key !== 'pages') items.push({ name: page.col.plural, path: `${page.col.base}/` });
+  const translated = page.locale && page.locale !== defaultLocale;
+  const items = [{ name: t('home'), path: translated ? `/${page.locale}/` : '/' }];
+  if (page.key !== 'pages' && !translated) items.push({ name: page.col.plural, path: `${page.col.base}/` });
   items.push({ name: page.title, path: page.path });
   return items;
 }
 
 export function entryPage(ctx, page, r) {
   const st = statuses[page.status];
-  const statusNote = (page.fm && page.fm.statusNote) || st.note;
+  const stLabel = page.status === 'reviewed' ? t('reviewedLabel') : t('provisional');
+  const statusNote = (page.fm && page.fm.statusNote) || (page.status === 'provisional' ? t('provisionalNote') : st.note);
+  const translated = page.locale && page.locale !== defaultLocale;
   const isPage = page.key === 'pages';
   const banner =
     !isPage && page.status !== 'reviewed' && statusNote
-      ? notice(st.label, statusNote, '<a href="/editorial-policy/">How we review</a>.')
+      ? notice(stLabel, statusNote, `<a href="/editorial-policy/">${esc(t('howWeReview'))}</a>.`)
       : '';
   const facts = infoboxHtml(r.infobox);
   const toc = hasToc(r.headings);
   const related = r.related.length
-    ? `<section class="related" aria-labelledby="see-also"><h2 id="see-also">See also</h2><ul>${r.related
-        .map((p) => `<li><a href="${p.path}">${esc(p.title)}</a> <span class="muted">${esc(p.col.label)}</span></li>`)
+    ? `<section class="related" aria-labelledby="see-also"><h2 id="see-also">${esc(t('seeAlso'))}</h2><ul>${r.related
+        .map((p) => `<li><a href="${p.path}">${esc(p.title)}</a> <span class="muted">${esc(t(`label.${p.key}`))}</span></li>`)
         .join('')}</ul></section>`
     : '';
   const sources = page.sources.length
-    ? `<section class="sources" aria-labelledby="sources"><h2 id="sources">Sources</h2><ol>${page.sources
+    ? `<section class="sources" aria-labelledby="sources"><h2 id="sources">${esc(t('sources'))}</h2><ol>${page.sources
         .map((s, i) => {
           const body = s.url ? `${esc(s.text)} <a href="${esc(s.url)}" rel="noopener noreferrer">${esc(hostOf(s.url))}</a>` : esc(s.text);
           return `<li id="source-${i + 1}">${body}</li>`;
         })
-        .join('')}</ol><p class="muted">Online sources last checked ${esc(formatDate(page.updated))}.</p></section>`
+        .join('')}</ol><p class="muted">${esc(t('checked', { date: formatDate(page.updated) }))}</p></section>`
     : '';
   const back = r.backlinks.length
-    ? `<section class="backlinks" aria-labelledby="what-links-here"><h2 id="what-links-here">What links here</h2><ul>${r.backlinks
+    ? `<section class="backlinks" aria-labelledby="what-links-here"><h2 id="what-links-here">${esc(t('whatLinksHere'))}</h2><ul>${r.backlinks
         .map((p) => `<li><a href="${p.path}">${esc(p.title)}</a></li>`)
         .join('')}</ul></section>`
     : '';
-  const kicker = isPage ? '' : `<p class="kicker">${esc(page.col.label)}${page.fm.category ? ` · ${esc(page.fm.category)}` : ''}</p>`;
+  const trNote = translated ? notice(t('translationLabel'), t('translationNote')) : '';
+  const kicker = isPage ? '' : `<p class="kicker">${esc(t(`label.${page.key}`))}${page.fm.category ? ` · ${esc(page.fm.category)}` : ''}</p>`;
   // Optional second ad unit inside long articles, placed before the Nth section heading.
   let prose = r.html;
   const inline = adSlot('article');
@@ -167,8 +196,8 @@ export function entryPage(ctx, page, r) {
     <h1>${esc(page.title)}</h1>
     <p class="lede">${esc(page.summary)}</p>
   </header>
-  ${banner}
-  ${toc ? '<button type="button" class="toc-show" hidden>Show contents</button>' : ''}
+  ${trNote}${banner}
+  ${toc ? `<button type="button" class="toc-show" hidden>${esc(t('showContents'))}</button>` : ''}
   </div>
   ${toc ? tocSide(r.headings) : ''}
   ${rail}
@@ -182,7 +211,7 @@ ${prose}
   ${sources}
   ${back}
   <footer class="entry-footer">
-    <p>Last reviewed <time datetime="${page.updated}">${esc(formatDate(page.updated))}</time>${isPage ? '' : ` &middot; Status: ${esc(st.label)}`} &middot; <a href="/editorial-policy/">Editorial policy</a></p>
+    <p>${t('reviewed', { date: `<time datetime="${page.updated}">${esc(formatDate(page.updated))}</time>` })}${isPage ? '' : ` &middot; ${esc(t('status'))}: ${esc(stLabel)}`} &middot; <a href="/editorial-policy/">${esc(t('editorial'))}</a></p>
   </footer>
   </div>
 </article>
@@ -192,6 +221,7 @@ ${prose}
     description: page.summary,
     path: page.path,
     section: page.key,
+    alternates: page.alternates,
     ogType: page.key === 'articles' ? 'article' : 'website',
     jsonld: structuredData(page),
     body,
@@ -484,6 +514,25 @@ ${lineageTree(L)}`;
     path: '/lineage/',
     section: 'kwans',
     jsonld: [breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Kwans', path: '/kwans/' }, { name: 'Lineage chart', path: '/lineage/' }])],
+    body,
+  });
+}
+
+// Landing page for one language: lists the pages translated into it.
+export function localePage(ctx, code, items) {
+  const groups = {};
+  for (const p of items) (groups[p.key] ||= []).push(p);
+  const sections = Object.entries(groups)
+    .map(([key, ps]) => `<section><h2>${esc(t(`plural.${key}`))}</h2>${cardList(ps.sort((x, y) => x.title.localeCompare(y.title, code)))}</section>`)
+    .join('');
+  const body = `<header class="page-head"><h1>${esc(site.name)}</h1><p class="lede">${esc(t('tagline'))}</p></header>
+${sections}`;
+  return layout(ctx, {
+    title: t('translatedPages'),
+    description: t('tagline'),
+    path: `/${code}/`,
+    home: true,
+    alternates: [{ locale: defaultLocale, path: '/' }, ...[code].map((c) => ({ locale: c, path: `/${c}/` }))],
     body,
   });
 }

@@ -11,7 +11,7 @@
 }
 .breadcrumb li + li::before {
   content: '/';
-  margin-right: 0.25rem;
+  margin-inline-end: 0.25rem;
   color: var(--muted);
 }
 
@@ -49,7 +49,7 @@ h1 {
 .notice {
   background: var(--notice-bg);
   border: 1px solid var(--notice-border);
-  border-left-width: 5px;
+  border-inline-start-width: 5px;
   border-radius: var(--radius);
   padding: 0.75rem 1rem;
   margin: 1rem 0;
@@ -92,7 +92,7 @@ h1 {
 .anchor {
   font-family: var(--font-body);
   font-size: 0.8em;
-  margin-left: 0.3rem;
+  margin-inline-start: 0.3rem;
   text-decoration: none;
   opacity: 0;
 }
@@ -105,7 +105,7 @@ h4:hover .anchor,
 blockquote {
   margin: 1rem 0;
   padding: 0.25rem 1rem;
-  border-left: 4px solid var(--border);
+  border-inline-start: 4px solid var(--border);
   color: var(--muted);
 }
 code {
@@ -136,7 +136,7 @@ table {
 }
 th,
 td {
-  text-align: left;
+  text-align: start;
   vertical-align: top;
   padding: 0.55rem 0.75rem;
   border: 1px solid var(--border);
@@ -208,7 +208,7 @@ tbody th {
   .entry.has-toc .entry-head { grid-column: 2 / -1; grid-row: 1; }
   .entry.has-toc .toc--bar { display: none; }
   .entry.has-toc .toc--side { display: block; grid-column: 1; grid-row: 1 / span 2; align-self: stretch; font-size: 0.9rem; }
-  .toc-inner { position: sticky; top: calc(var(--header-h) + 1rem); max-height: calc(100vh - var(--header-h) - 2rem); overflow-y: auto; padding-right: 0.5rem; }
+  .toc-inner { position: sticky; top: calc(var(--header-h) + 1rem); max-height: calc(100vh - var(--header-h) - 2rem); overflow-y: auto; padding-inline-end: 0.5rem; }
   .entry.has-toc .entry-main { grid-column: 2; grid-row: 2; }
   .entry.has-toc .rail { grid-column: 3; grid-row: 2; }
   /* hidden by the visitor */
@@ -230,9 +230,9 @@ tbody th {
 .toc-show { margin-top: 0.5rem; }
 .toc--side ol { list-style: none; margin: 0; padding: 0; }
 .toc--side li { margin: 0; }
-.toc--side a { display: block; padding: 0.28rem 0 0.28rem 0.7rem; border-left: 2px solid transparent; text-decoration: none; line-height: 1.35; }
+.toc--side a { display: block; padding: 0.28rem 0 0.28rem 0.7rem; border-inline-start: 2px solid transparent; text-decoration: none; line-height: 1.35; }
 .toc--side a:hover { text-decoration: underline; }
-.toc--side ol ol a { padding-left: 1.5rem; font-size: 0.86rem; }
-.toc--side li.is-current > a { border-left-color: var(--link); font-weight: 700; color: var(--text); }
+.toc--side ol ol a { padding-inline-start: 1.5rem; font-size: 0.86rem; }
+.toc--side li.is-current > a { border-inline-start-color: var(--link); font-weight: 700; color: var(--text); }
 .js .toc--side ol ol { display: none; }
 .js .toc--side li.is-current > ol { display: block; }

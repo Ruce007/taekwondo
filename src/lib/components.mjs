@@ -1,5 +1,6 @@
 // Reusable page pieces. Every page is assembled from these, so a change here changes the whole site.
 
+import { t } from '../i18n/index.mjs';
 import { esc } from './util.mjs';
 import { ads, funding } from '../site.config.mjs';
 
@@ -45,9 +46,9 @@ export function infobox(rows) {
   const first = rows.slice(0, FACTS_VISIBLE).map(row).join('');
   const more = rows.slice(FACTS_VISIBLE);
   const rest = more.length
-    ? `<details class="infobox-more"><summary>Show ${more.length} more ${more.length === 1 ? 'fact' : 'facts'}</summary><dl>${more.map(row).join('')}</dl></details>`
+    ? `<details class="infobox-more"><summary>${esc(more.length === 1 ? t('moreFact', { n: more.length }) : t('moreFacts', { n: more.length }))}</summary><dl>${more.map(row).join('')}</dl></details>`
     : '';
-  return `<aside class="infobox" aria-labelledby="infobox-title"><h2 id="infobox-title">Quick facts</h2><dl>${first}</dl>${rest}</aside>`;
+  return `<aside class="infobox" aria-labelledby="infobox-title"><h2 id="infobox-title">${esc(t('quickFacts'))}</h2><dl>${first}</dl>${rest}</aside>`;
 }
 
 // ---- contents -------------------------------------------------------------------------------
@@ -72,10 +73,10 @@ function tocItems(headings) {
 // Two presentations of the same list: a collapsible bar for narrow screens and a sticky
 // column for wide ones. The stylesheet shows whichever fits.
 export function tocBar(headings) {
-  return `<nav class="toc toc--bar" aria-label="Contents"><details><summary>Contents</summary><ol>${tocItems(headings)}</ol></details></nav>`;
+  return `<nav class="toc toc--bar" aria-label="${esc(t('contents'))}"><details><summary>${esc(t('contents'))}</summary><ol>${tocItems(headings)}</ol></details></nav>`;
 }
 export function tocSide(headings) {
-  return `<nav class="toc toc--side" aria-label="Contents"><div class="toc-inner"><div class="toc-head"><h2 class="toc-title">Contents</h2><button type="button" class="toc-hide" aria-expanded="true">hide</button></div><ol><li class="toc-top"><a href="#top">(Top)</a></li>${tocItems(headings)}</ol></div></nav>`;
+  return `<nav class="toc toc--side" aria-label="${esc(t('contents'))}"><div class="toc-inner"><div class="toc-head"><h2 class="toc-title">${esc(t('contents'))}</h2><button type="button" class="toc-hide" aria-expanded="true">${esc(t('hide'))}</button></div><ol><li class="toc-top"><a href="#top">${esc(t('top'))}</a></li>${tocItems(headings)}</ol></div></nav>`;
 }
 
 // ---- advertising ----------------------------------------------------------------------------
