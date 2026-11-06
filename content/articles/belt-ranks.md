@@ -1,24 +1,41 @@
 ---
 title: Belt ranks and grades
-summary: How Taekwondo uses coloured belts for gup (kup) grades and dan grades for black belts, and why the details differ between schools.
-updated: 2026-10-30
+summary: Taekwondo ranks: ten gup grades counted down, nine dan grades counted up, and why colours and requirements differ between schools.
+updated: 2026-11-05
 status: provisional
 category: Practice
-aliases: [Belt system, Gup, Kup, Dan, Black belt]
-related: [articles/taekwondo, articles/techniques-and-forms]
+aliases: [Belt system, Gup, Kup, Dan, Black belt, Poom]
+related: [articles/taekwondo, articles/the-taekwondo-belt, articles/the-taekwondo-uniform, articles/techniques-and-forms]
+sources:
+  - British Taekwondo, "Belts and promotion" | https://www.britishtaekwondo.org.uk/martial-art-gradings/
+  - Kido Kwan, "System of Rank" (ITF-style) | https://www.kidokwan.org/itf/system-of-rank/
+  - International Taekwon-Do Federation, "Belt colour meanings" | https://www.itftaekwondo.com/belt-colour-meanings/
 ---
-> **Needs citations.** This article carries over the general description from the earlier version of the site. It has not yet been tied to published sources, so treat the details as general rather than authoritative.
+Taekwondo ranks fall into two groups. **Gup** grades (also spelled **kup**) are the colour-belt levels. **Dan** grades are the black-belt levels. Both major styles use ten gup grades and nine dan grades.[^1][^2]
 
-Taekwondo uses coloured belts to show a student's progress. Most systems separate **gup** (also spelled **kup**) grades, which are the colour belts, from **dan** grades, which are the black belt levels. Colours, number of grades and promotion requirements differ by organization and by school.
+## How the grades are counted
 
-| Category | Typical belt colours (example only) | Notes |
+Gup grades count **down**. A new student begins at 10th gup, a white belt, and advances toward 1st gup.[^1] Dan grades count **up**, from 1st dan, the first black belt, to 9th dan.[^1][^2] One ITF-style source says the descending gup order is traditional and that its original reason has been lost.[^2]
+
+| Group | Grades | Direction |
 |---|---|---|
-| Beginner gup grades | White, yellow, orange | Basic stances, kicks and blocks, and introductory forms |
-| Intermediate gup grades | Green, blue | More complex combinations, higher kicks, intermediate forms |
-| Advanced gup grades | Brown, red, sometimes with stripes | Advanced technique, tactical sparring, preparation for black belt |
-| Dan grades | Black belt, first dan and above | A long-term practitioner; rank can extend to ninth dan or beyond, depending on the organization |
+| Gup (kup) | 10th to 1st | Counted down toward black belt |
+| Dan | 1st to 9th | Counted up from first black belt |
 
-## What is still to be added
+## Black belt levels
 
-- Rank structures and requirements for World Taekwondo and ITF styles, with sources.
-- How dan certificates are issued and recognized between organizations.
+- British Taekwondo gives about three years of training from beginner level to a first-dan black belt, and states that students aged 14 or under receive **poom** (a junior black-belt rank) instead of dan until they are older.[^1]
+- The same body sets minimum waiting periods between dan grades, from one year between 1st and 2nd dan to nine years between 8th and 9th, and labels 5th and 6th dan "Master" and 8th and 9th dan "Grand Master".[^1]
+- An ITF-style source groups 1st to 3rd dan as novice black-belt stages, 4th dan as the start of the expert class and 7th to 9th dan as masters.[^2]
+
+These figures belong to individual organizations; others set their own waiting periods and titles.
+
+## Colours
+
+The sequence of colours between white and black differs by organization and by school. The ITF publishes a meaning for each colour in its own sequence; see [[The Taekwondo belt]] for the colours, their meanings and how the belt is worn.[^3] Clubs usually hold gradings on a regular cycle, about every three months in the case of British Taekwondo clubs.[^1]
+
+## See also
+
+- [[The Taekwondo belt]]
+- [[The Taekwondo uniform]]
+- [[Major Taekwondo organizations compared]]

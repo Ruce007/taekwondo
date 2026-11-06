@@ -29,24 +29,17 @@ Older Korean martial practices such as taekkyeon (also spelled taekkyon) existed
 
 After liberation in 1945, instructors opened schools that blended their different training backgrounds. Five kwans, usually called the original five, opened in the mid-1940s: the [[Chung Do Kwan]], [[Song Moo Kwan]], [[Moo Duk Kwan]], [[Ji Do Kwan]] and [[Chang Moo Kwan]]. Four more followed after the Korean War: the [[Han Moo Kwan]], [[Kang Duk Won]], [[Jung Do Kwan]] and [[Oh Do Kwan]], making the nine kwans.[^1] Founding dates differ between sources.
 
-### The original five (mid-1940s)
-
-| Kwan | Founder | Founded |
-|---|---|---|
-| [[Song Moo Kwan]] | [[Ro Byung-jick]] | 20 March 1944, Kaesong (1946 in some histories)[^2] |
-| [[Chung Do Kwan]] | [[Lee Won-kuk]] | 1944 (disputed)[^2] |
-| [[Moo Duk Kwan]] | [[Hwang Kee]] | 1945[^2] |
-| [[Chang Moo Kwan]] | [[Yun Byung-in]] | 1946, at a YMCA Kwon Bup club[^2] |
-| [[Ji Do Kwan]] | [[Chun Sang-sup]] | 1946, as a Kong Soo Do club (3 March or 3 May)[^2] |
-
-### The later four (1950s)
-
-| Kwan | Founder | Founded | Origin |
-|---|---|---|---|
-| [[Han Moo Kwan]] | [[Lee Kyo-yoon]] | August 1954 or August 1956[^2][^10] | Annex of the [[Ji Do Kwan]] in most histories |
-| [[Kang Duk Won]] | [[Hong Jong-pyo]] and [[Park Chul-hee]] | 1953, 1954 or 1956[^2][^10] | Annex of the [[Chang Moo Kwan]] in most histories |
-| [[Jung Do Kwan]] | [[Lee Yong-woo]] | 1954 or 1956[^2][^10] | Annex of the [[Chung Do Kwan]] |
-| [[Oh Do Kwan]] | [[Choi Hong-hi]] and [[Nam Tae-hi]] | Mid-1950s (1955 in some accounts)[^2] | Founded within the Korean army |
+| Kwan | Group | Founder | Founded | Origin |
+|---|---|---|---|---|
+| [[Song Moo Kwan]] | Original five | [[Ro Byung-jick]] | 20 March 1944, Kaesong (1946 in some histories)[^2] | |
+| [[Chung Do Kwan]] | Original five | [[Lee Won-kuk]] | 1944 (disputed)[^2] | |
+| [[Moo Duk Kwan]] | Original five | [[Hwang Kee]] | 1945[^2] | |
+| [[Chang Moo Kwan]] | Original five | [[Yun Byung-in]] | 1946, at a YMCA Kwon Bup club[^2] | |
+| [[Ji Do Kwan]] | Original five | [[Chun Sang-sup]] | 1946, as a Kong Soo Do club (3 March or 3 May)[^2] | |
+| [[Han Moo Kwan]] | Later four | [[Lee Kyo-yoon]] | August 1954 or August 1956[^2][^10] | Annex of the [[Ji Do Kwan]] in most histories |
+| [[Kang Duk Won]] | Later four | [[Hong Jong-pyo]] and [[Park Chul-hee]] | 1953, 1954 or 1956[^2][^10] | Annex of the [[Chang Moo Kwan]] in most histories |
+| [[Jung Do Kwan]] | Later four | [[Lee Yong-woo]] | 1954 or 1956[^2][^10] | Annex of the [[Chung Do Kwan]] |
+| [[Oh Do Kwan]] | Later four | [[Choi Hong-hi]] and [[Nam Tae-hi]] | Mid-1950s (1955 in some accounts)[^2] | Founded within the Korean army |
 
 ## Choosing a name (1955 to 1965)
 

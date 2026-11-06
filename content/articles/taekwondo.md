@@ -12,7 +12,7 @@ infobox:
   - Olympic status: Official medal sport since 2000
   - International bodies: [[World Taekwondo]] and the [[International Taekwon-Do Federation]]
   - Technical centre (World Taekwondo style): [[Kukkiwon]]
-related: [articles/history-of-taekwondo, articles/etymology, articles/belt-ranks, articles/techniques-and-forms, articles/taekwondo-at-the-olympics, kwans/chung-do-kwan]
+related: [articles/history-of-taekwondo, articles/etymology, articles/belt-ranks, articles/the-taekwondo-belt, articles/the-taekwondo-uniform, articles/philosophy-and-tenets-of-taekwondo, articles/techniques-and-forms, articles/taekwondo-at-the-olympics, kwans/chung-do-kwan]
 sources:
   - Wikipedia, "Taekwondo" | https://en.wikipedia.org/wiki/Taekwondo
   - Wikipedia, "World Taekwondo" | https://en.wikipedia.org/wiki/World_Taekwondo
