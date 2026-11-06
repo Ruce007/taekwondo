@@ -14,6 +14,7 @@
   }
   var terms = q.toLowerCase().split(/\s+/).filter(Boolean);
 
+  function basicSearch() {
   fetch('/search-index.json')
     .then(function (r) {
       return r.json();
@@ -64,4 +65,38 @@
     .catch(function () {
       status.textContent = 'Search is unavailable right now. Please browse the indexes instead.';
     });
+  }
+
+  // Full-text search with Pagefind when its index was built; otherwise the title index above.
+  function pagefindSearch() {
+    return import('/pagefind/pagefind.js').then(function (pf) {
+      return pf.search(q).then(function (res) {
+        return Promise.all(
+          res.results.slice(0, 30).map(function (r) {
+            return r.data();
+          })
+        ).then(function (items) {
+          status.textContent = res.results.length + (res.results.length === 1 ? ' result' : ' results') + ' for \u201c' + q + '\u201d';
+          items.forEach(function (d) {
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.className = 'card-link';
+            a.href = d.url;
+            a.textContent = (d.meta && d.meta.title) || d.url;
+            var sum = document.createElement('span');
+            sum.className = 'card-summary';
+            sum.innerHTML = d.excerpt;
+            li.appendChild(a);
+            li.appendChild(sum);
+            list.appendChild(li);
+          });
+        });
+      });
+    });
+  }
+
+  pagefindSearch().catch(function () {
+    list.innerHTML = '';
+    basicSearch();
+  });
 })();

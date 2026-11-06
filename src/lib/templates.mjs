@@ -73,7 +73,7 @@ ${ld}
     <ul class="wrap">${navHtml}</ul>
   </nav>
 </header>
-<main id="main" class="wrap">
+<main id="main" class="wrap" data-pagefind-body>
 ${o.body}
 </main>
 <footer class="site-footer">
