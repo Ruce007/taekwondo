@@ -21,9 +21,9 @@ const trigram = (cx, cy, pattern) => {
 
 const flags = {
   // English: United States
-  en: () => `<rect width="32" height="24" fill="#fff"/>${Array.from({ length: 7 }, (_, i) => `<rect y="${(i * 24) / 13 * 2}" width="32" height="${24 / 13}" fill="#b22234"/>`).join('')}<rect width="14" height="12.9" fill="#3c3b6e"/><g fill="#fff">${[0, 1, 2, 3].flatMap((r) => [0, 1, 2].map((c) => `<circle cx="${2.4 + c * 4.6 + (r % 2) * 2.3}" cy="${2.2 + r * 3}" r="0.7"/>`)).join('')}</g>`,
+  en: () => `<rect width="32" height="24" fill="#fff"/>${Array.from({ length: 7 }, (_, i) => `<rect y="${(i * 24) / 13 * 2}" width="32" height="${24 / 13}" fill="#b22234"/>`).join('')}<rect width="14" height="12.9" fill="#3c3b6e"/><g fill="#fff">${[0, 1, 2, 3].flatMap((r) => [0, 1, 2].map((c) => `<circle cx="${2.4 + c * 3.7 + (r % 2) * 1.85}" cy="${2.2 + r * 3}" r="0.7"/>`)).join('')}</g>`,
   // Korean: Taegeukgi
-  ko: () => `<rect width="32" height="24" fill="#fff"/><g transform="rotate(-33.7 16 12)"><path d="M11.5 12a4.5 4.5 0 0 1 9 0a2.25 2.25 0 0 1-4.5 0a2.25 2.25 0 0 0-4.5 0z" fill="#cd2e3a"/><path d="M20.5 12a4.5 4.5 0 0 1-9 0a2.25 2.25 0 0 0 4.5 0a2.25 2.25 0 0 1 4.5 0z" fill="#0047a0"/></g>${trigram(5.2, 4.6, [true, true, true])}${trigram(26.8, 19.4, [false, false, false])}${trigram(26.8, 4.6, [false, true, false])}${trigram(5.2, 19.4, [true, false, true])}`,
+  ko: () => `<rect width="32" height="24" fill="#fff"/><g transform="rotate(-33.7 16 12)"><circle cx="16" cy="12" r="4.5" fill="#cd2e3a"/><path d="M11.5 12a4.5 4.5 0 0 0 9 0z" fill="#0047a0"/><circle cx="13.75" cy="12" r="2.25" fill="#0047a0"/><circle cx="18.25" cy="12" r="2.25" fill="#cd2e3a"/></g>${trigram(5.2, 4.6, [true, true, true])}${trigram(26.8, 19.4, [false, false, false])}${trigram(26.8, 4.6, [false, true, false])}${trigram(5.2, 19.4, [true, false, true])}`,
   es: () => `<rect width="32" height="24" fill="#aa151b"/><rect y="6" width="32" height="12" fill="#f1bf00"/>`,
   'zh-Hans': () => `<rect width="32" height="24" fill="#de2910"/><polygon points="${star(6.5, 6.5, 3.6)}" fill="#ffde00"/><g fill="#ffde00">${[[12.5, 2.6, 20], [14.5, 5, 45], [14.5, 8.2, 70], [12.5, 10.6, 95]].map(([x, y, r]) => `<polygon points="${star(x, y, 1.1, r)}"/>`).join('')}</g>`,
   // Traditional Chinese: Taiwan
@@ -38,5 +38,5 @@ const flags = {
 export function flagSvg(code) {
   const draw = flags[code];
   if (!draw) return '';
-  return `<svg class="flag" viewBox="0 0 32 24" width="24" height="18" aria-hidden="true" focusable="false"><g>${draw()}</g><rect width="32" height="24" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.25"/></svg>`;
+  return `<svg class="flag" viewBox="0 0 32 24" width="24" height="18" aria-hidden="true" focusable="false"><defs><clipPath id="flag-clip"><rect width="32" height="24" rx="3"/></clipPath></defs><g clip-path="url(#flag-clip)">${draw()}</g><rect width="32" height="24" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.25"/></svg>`;
 }
