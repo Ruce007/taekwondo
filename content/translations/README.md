@@ -19,3 +19,9 @@ To add another language, add it in `src/i18n/locales.mjs` and `src/i18n/ui.mjs`.
 
 Schools are not translated (they are listed once, in their own language). Menus and labels come
 from `src/i18n/ui.mjs`; a missing label falls back to English.
+
+## Editing without code
+
+The form editor (Pages CMS, https://app.pagescms.org) reads `.pages.yml`, which is generated from the
+site's own page definitions: run `npm run cms:config` after adding a collection or a language
+(CI fails if it is out of date). Each language has its own entry under "Translations".

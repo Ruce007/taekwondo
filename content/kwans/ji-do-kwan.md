@@ -7,7 +7,7 @@ status: provisional
 aliases: [Jidokwan, Ji Do Kwon, Chosun Yun Moo Kwan, Yun Moo Kwan, Yun Mu Kwan]
 meta: Founded 1946 by Chun Sang-sup
 founded: 1946
-founders: Chun Sang-sup
+founders: [Chun Sang-sup]
 infobox:
   - Founder: [[Chun Sang-sup]]
   - Founded: 1946 (3 March or 3 May), as a Kong Soo Do club

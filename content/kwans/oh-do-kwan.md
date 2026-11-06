@@ -6,7 +6,7 @@ generation: later
 status: provisional
 aliases: [Oh Do Kwon, Ohdokwan]
 meta: Mid-1950s, Choi Hong-hi and Nam Tae-hi
-founders: Choi Hong-hi, Nam Tae-hi
+founders: [Choi Hong-hi, Nam Tae-hi]
 infobox:
   - Founders: [[Choi Hong-hi]] and [[Nam Tae-hi]]
   - Founded: Mid-1950s (1955 in some accounts)

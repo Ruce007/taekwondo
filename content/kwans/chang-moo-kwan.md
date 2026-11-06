@@ -7,7 +7,7 @@ status: provisional
 aliases: [Chang Mu Kwan, Changmookwan, Chang Moo Kwon]
 meta: Founded 1946 by Yun Byung-in
 founded: 1946
-founders: Yun Byung-in
+founders: [Yun Byung-in]
 infobox:
   - Founder: [[Yun Byung-in]]
   - Founded: 1946, as a YMCA Kwon Bup club

@@ -7,7 +7,7 @@ status: provisional
 annexOf: Chung Do Kwan
 aliases: [Jungdokwan, Jeong Do Kwan]
 meta: Mid-1950s, Lee Yong-woo
-founders: Lee Yong-woo
+founders: [Lee Yong-woo]
 infobox:
   - Founder: [[Lee Yong-woo]]
   - Founded: 1954 or 1956, depending on the source

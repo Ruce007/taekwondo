@@ -13,3 +13,4 @@ jobs:
         with:
           node-version-file: .node-version
       - run: npm run build
+      - run: npm run cms:check

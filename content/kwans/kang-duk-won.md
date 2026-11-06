@@ -7,7 +7,7 @@ status: provisional
 annexOf: Chang Moo Kwan
 aliases: [Kang Duk Kwan, Kangdukwon]
 meta: 1950s, Hong Jong-pyo and Park Chul-hee
-founders: Hong Jong-pyo, Park Chul-hee
+founders: [Hong Jong-pyo, Park Chul-hee]
 infobox:
   - Founders: [[Hong Jong-pyo]] and [[Park Chul-hee]]
   - Founded: 1953, 1954 or 1956, depending on the source

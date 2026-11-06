@@ -7,7 +7,7 @@ status: provisional
 aliases: [Chung Do Kwon, Chungdokwan]
 meta: Founded 1944 by Lee Won-kuk
 founded: 1944
-founders: Lee Won-kuk
+founders: [Lee Won-kuk]
 infobox:
   - Founder: [[Lee Won-kuk]]
   - Founded: 1944 (accounts differ)

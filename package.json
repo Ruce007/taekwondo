@@ -13,6 +13,8 @@
     "dev": "node scripts/dev.mjs",
     "new": "node scripts/new.mjs",
     "check:links": "node scripts/check-links.mjs",
-    "build:site": "node scripts/build.mjs"
+    "build:site": "node scripts/build.mjs",
+    "cms:config": "node scripts/cms-config.mjs",
+    "cms:check": "node scripts/cms-config.mjs --check"
   }
 }

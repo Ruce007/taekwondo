@@ -7,7 +7,7 @@ status: provisional
 aliases: [Moo Duk Kwon, Soo Bahk Do Moo Duk Kwan, Tang Soo Do Moo Duk Kwan]
 meta: Founded 1945 by Hwang Kee
 founded: 1945
-founders: Hwang Kee
+founders: [Hwang Kee]
 website: https://worldmoodukkwan.com/
 infobox:
   - Founder: [[Hwang Kee]]

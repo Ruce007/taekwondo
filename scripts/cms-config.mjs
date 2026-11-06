@@ -1,0 +1,122 @@
+// Writes .pages.yml, the configuration for the Pages CMS form editor (https://pagescms.org),
+// from the same collection definitions the site is built from, so a new collection or language
+// appears in the editor without hand-editing.
+//   node scripts/cms-config.mjs          write .pages.yml
+//   node scripts/cms-config.mjs --check  fail if .pages.yml is out of date (used by CI)
+import { readFile, writeFile } from 'node:fs/promises';
+import { collections, articleCategories } from '../src/site.config.mjs';
+import { locales, defaultLocale } from '../src/i18n/locales.mjs';
+
+const q = (s) => JSON.stringify(s);
+const pad = (n) => ' '.repeat(n);
+
+// Field definitions shared by every page type.
+const common = [
+  { name: 'title', type: 'string', required: true, description: 'Page title.' },
+  { name: 'summary', type: 'text', required: true, description: 'One or two sentences, 40 to 160 characters. Used as the search-engine description.' },
+  { name: 'updated', type: 'date', required: true, description: 'Date the sources were last checked.' },
+  { name: 'status', type: 'select', values: ['provisional', 'reviewed'], description: 'Use "reviewed" only after the facts were checked against primary sources.' },
+  { name: 'statusNote', type: 'text', description: 'Optional. Replaces the standard provisional note with a page-specific one.' },
+  { name: 'meta', type: 'string', description: 'Short line under the title in listings, for example "Founder of the ITF, 1918 to 2002".' },
+  { name: 'aliases', type: 'string', list: true, description: 'Other names people use for this page. Each one works as a [[link]].' },
+  { name: 'infobox', type: 'string', list: true, description: 'Quick facts, one per line, written "Label: value".' },
+  { name: 'related', type: 'string', list: true, description: 'Related pages, for example "articles/etymology" or a page title.' },
+  { name: 'sources', type: 'string', list: true, description: 'Sources in order, written "Title | https://address". Citation [^1] is the first one.' },
+  { name: 'redirectFrom', type: 'string', list: true, description: 'Old addresses that should lead here, for example /old-page/.' },
+];
+const body = { name: 'body', type: 'code', options: { language: 'markdown' }, description: 'Page text in Markdown. [[Page title]] links to a page; [^1] cites a source.' };
+
+// Fields specific to a collection, in the form they are stored in the files.
+const LISTS = new Set(['teachers', 'founders']);
+const DESCRIPTIONS = {
+  role: 'kwan-founder or later-kwan-founder for founders; leave empty otherwise.',
+  generation: 'original (the five kwans of the 1940s) or later (the four of the 1950s).',
+  founded: 'Year or date, for example 1944 or 1944-03-20.',
+  founders: 'Names of the founders, as the people pages are titled.',
+  teachers: 'Teachers of this person, as the people pages are titled.',
+  kwan: 'The kwan this person or school descends from, as the kwan page is titled.',
+  annexOf: 'The kwan this one split from, as the kwan page is titled.',
+  website: 'Full address starting with https://',
+  phone: 'International format, for example +1-949-555-0100.',
+  country: 'Two-letter code, for example US.',
+  region: 'State or province code, for example CA.',
+  street: 'Street address including suite.',
+  postal: 'ZIP or postal code.',
+  addressNote: 'Optional note about the address.',
+};
+function specific(col) {
+  return Object.entries(col.fields || {}).map(([name, rule]) => {
+    const f = { name, required: Boolean(rule.required), description: DESCRIPTIONS[name] };
+    if (name === 'category') return { ...f, type: 'select', values: articleCategories, description: 'Where the page appears on the Wiki index.' };
+    if (rule.values) return { ...f, type: 'select', values: rule.values };
+    if (LISTS.has(name)) return { ...f, type: 'string', list: true };
+    return { ...f, type: 'string' };
+  });
+}
+
+function fieldYaml(f, indent) {
+  const p = pad(indent);
+  const out = [`${p}- name: ${f.name}`, `${p}  type: ${f.type}`];
+  if (f.label) out.push(`${p}  label: ${q(f.label)}`);
+  if (f.list) out.push(`${p}  list: true`);
+  if (f.required) out.push(`${p}  required: true`);
+  if (f.values) out.push(`${p}  options:`, `${p}    values: [${f.values.map(q).join(', ')}]`);
+  if (f.options && f.options.language) out.push(`${p}  options:`, `${p}    language: ${f.options.language}`);
+  if (f.description) out.push(`${p}  description: ${q(f.description)}`);
+  return out.join('\n');
+}
+
+function entry(name, label, dir, fields, indent) {
+  const p = pad(indent);
+  return [
+    `${p}- name: ${name}`,
+    `${p}  label: ${q(label)}`,
+    `${p}  type: collection`,
+    `${p}  path: ${dir}`,
+    `${p}  format: yaml-frontmatter`,
+    `${p}  filename: "{primary}.md"`,
+    `${p}  subfolders: false`,
+    `${p}  view:`,
+    `${p}    primary: title`,
+    `${p}  fields:`,
+    ...fields.map((f) => fieldYaml(f, indent + 4)),
+  ].join('\n');
+}
+
+export function buildConfig() {
+  const lines = [
+    '# Generated by scripts/cms-config.mjs. Do not edit by hand; run `npm run cms:config`.',
+    'media:',
+    '  input: public/media',
+    '  output: /media',
+    'content:',
+  ];
+  for (const [key, col] of Object.entries(collections)) {
+    const fields = [...common, ...specific(col), body];
+    lines.push(entry(key, col.plural, `content/${col.dir}`, fields, 2));
+  }
+  // One entry per language. Translations mirror the English folders (articles/, people/, ...), so the
+  // editor shows each language's folder tree and the file name must match the English page.
+  const groupItems = Object.keys(locales)
+    .filter((c) => c !== defaultLocale)
+    .map((code) => {
+      const fields = [...common, { name: 'translator', type: 'string', description: 'Who translated and who reviewed it, for example "reviewed by Name".' }, body];
+      return entry(code, locales[code].name, `content/translations/${code}`, fields, 6).replace('subfolders: false', 'subfolders: true');
+    });
+  lines.push('  - name: translations', '    label: Translations', '    type: group', '    items:', ...groupItems);
+  return lines.join('\n') + '\n';
+}
+
+const out = new URL('../.pages.yml', import.meta.url);
+const next = buildConfig();
+if (process.argv.includes('--check')) {
+  const cur = await readFile(out, 'utf8').catch(() => '');
+  if (cur !== next) {
+    console.error('.pages.yml is out of date. Run: npm run cms:config');
+    process.exit(1);
+  }
+  console.log('.pages.yml is up to date.');
+} else {
+  await writeFile(out, next);
+  console.log(`Wrote .pages.yml (${next.split('\n').length} lines)`);
+}
